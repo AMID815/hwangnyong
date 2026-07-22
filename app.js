@@ -4,7 +4,6 @@
    windows 키는 하드코딩하지 않고 순회(RS_WINDOWS 설정 변화 대응). */
 
 const DATA_URL = "https://raw.githubusercontent.com/AMID815/rs-screener/data/rs-latest.json";
-const NAVER = c => `https://m.stock.naver.com/domestic/stock/${c}/total`;
 const TIER_ORDER = ["1000", "700"];             // 표시 순서 — 데이터에 있는 것만 노출
 const TIER_LABEL = { "1000": "1,000억+", "700": "700억+" };
 const SORTS = [["value", "거래대금순"], ["strong", "강한순"], ["weak", "약한순"]];
@@ -93,7 +92,7 @@ function rowRS(r, maxAbs, i) {
   const cls = r.rs >= 0 ? "p" : "n";
   const mgColor = r.merged_return >= 0 ? "up" : "down";
   const w = Math.max(4, Math.round(Math.abs(r.rs) / (maxAbs || 1) * 100));
-  return `<li><a class="row" href="${NAVER(r.code)}" target="_blank" rel="noopener">
+  return `<li><div class="row">
     <div class="top">
       <span class="rank num">${i}</span>
       <span class="name">${esc(r.name)}<span class="code">${esc(r.code)}</span></span>
@@ -104,14 +103,14 @@ function rowRS(r, maxAbs, i) {
       <span class="sub2 num">몸통 <b style="color:var(--${mgColor})">${sign(r.merged_return)}%</b> · <span style="color:var(--dim)">${eok(r.trading_value_eok)}</span></span>
     </div>
     <div class="bar"><i class="${cls}" style="width:${w}%"></i></div>
-  </a></li>`;
+  </div></li>`;
 }
 function rowTier(r, winN, i) {
   const rsHtml = r.rs == null
     ? `<span class="rs none num">—</span>`
     : `<span class="rs ${r.rs >= 0 ? "p" : "n"} num">${sign(r.rs)}<span class="u">%p</span></span>`;
   const w = Math.min(100, Math.round((r.days || 0) / winN * 100));
-  return `<li><a class="row tierrow" href="${NAVER(r.code)}" target="_blank" rel="noopener">
+  return `<li><div class="row tierrow">
     <div class="top">
       <span class="rank tier num">${i}</span>
       <span class="name">${esc(r.name)}<span class="code">${esc(r.code)}</span></span>
@@ -124,7 +123,7 @@ function rowTier(r, winN, i) {
       <span class="sub2 num">돌파 <b class="brk">${r.days}일</b></span>
     </div>
     <div class="bar"><i class="g" style="width:${w}%"></i></div>
-  </a></li>`;
+  </div></li>`;
 }
 
 // 선택 조합의 티어 종목 = 1,000억+ (∪ 700억 구간) 를 방향(RS 부호)으로 필터.
