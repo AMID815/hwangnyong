@@ -4,13 +4,14 @@
    windows 키는 하드코딩하지 않고 순회(RS_WINDOWS 설정 변화 대응). */
 
 const DATA_URL = "https://raw.githubusercontent.com/AMID815/rs-screener/data/rs-latest.json";
+const IDX_ORDER = ["201", "401", "150", "772"]; // 지수 표시 순서 — 그 외 코드는 뒤에
 const TIER_ORDER = ["1000", "700"];             // 표시 순서 — 데이터에 있는 것만 노출
 const TIER_LABEL = { "1000": "1,000억+", "700": "700억+" };
 const SORTS = [["value", "거래대금순"], ["strong", "강한순"], ["weak", "약한순"]];
 const STALE_MS = 5 * 60 * 1000;                 // 탭 복귀 시 이보다 오래됐으면 재로딩
 
-let data = null, loadedAt = 0;
-let win = null, dir = "강세", tier = "all", sort = "value";
+let data = null, indicesMap = {}, loadedAt = 0;
+let idx = null, win = null, dir = "강세", tier = "all", sort = "value";
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"']/g,
@@ -32,8 +33,21 @@ function eok(e) {
   }
   return `${e.toLocaleString("en-US")}억`;
 }
-const winKeys = () => Object.keys((data && data.windows) || {}).sort((a, b) => +a - +b);
-const curWin = () => (data.windows || {})[win] || {};
+// v2.1 다지수(indices) 우선, v2 단일 스키마는 코스피200 하나로 정규화
+function buildIndicesMap(d) {
+  if (d && d.indices && Object.keys(d.indices).length) return d.indices;
+  if (d && d.windows && Object.keys(d.windows).length)
+    return { "201": { name: "코스피200", index: d.index, windows: d.windows } };
+  return {};
+}
+// 숫자형 키 객체는 삽입 순서가 무시됨(JS 스펙: 정수형 키는 오름차순) — 순서를 직접 계산
+const idxKeys = () =>
+  IDX_ORDER.filter(cd => indicesMap[cd])
+    .concat(Object.keys(indicesMap).filter(cd => !IDX_ORDER.includes(cd)));
+const curIdx = () => indicesMap[idx] || {};
+const idxLabel = cd => (indicesMap[cd] && indicesMap[cd].name) || cd;
+const winKeys = () => Object.keys(curIdx().windows || {}).sort((a, b) => +a - +b);
+const curWin = () => (curIdx().windows || {})[win] || {};
 
 function showNotice(html, warn) {
   const n = $("notice");
@@ -47,12 +61,12 @@ function hideNotice() { $("notice").hidden = true; }
 function renderHeader() {
   $("meta").innerHTML =
     `<span class="num">${dashDate(data.date)}</span> (${weekday(data.date)}) · 15:37 마감 기준 · 키움`;
-  const idx = data.index || {};
+  const im = curIdx().index || {};
   $("stats").innerHTML = winKeys().map(n => {
-    const m = idx["merged_" + n], ws = idx["window_start_" + n];
+    const m = im["merged_" + n], ws = im["window_start_" + n];
     if (m == null) return "";
     return `<div class="stat ${m >= 0 ? "up" : "down"}">
-      <div class="k">지수 몸통 · ${n}캔들</div>
+      <div class="k">${esc(idxLabel(idx))} 몸통 · ${n}캔들</div>
       <div class="v num">${sign(m)}<span style="font-size:14px">%</span></div>
       <div class="cap">${ws ? shortDate(ws) + " 시가 → 오늘 종가" : ""}</div></div>`;
   }).join("");
@@ -60,7 +74,11 @@ function renderHeader() {
 
 // ---- tabs ----
 function buildTabs() {
-  const winSeg = $("winSeg"), dirSeg = $("dirSeg"), tierSeg = $("tierSeg");
+  const idxSeg = $("idxSeg"), winSeg = $("winSeg"), dirSeg = $("dirSeg"), tierSeg = $("tierSeg");
+  idxSeg.querySelectorAll("button").forEach(b => b.remove());
+  idxKeys().forEach(cd => idxSeg.insertAdjacentHTML("beforeend",
+    `<button role="tab" data-i="${cd}" aria-selected="${cd === idx}">${esc(idxLabel(cd))}</button>`));
+  idxSeg.hidden = idxKeys().length <= 1;
   winSeg.querySelectorAll("button").forEach(b => b.remove());
   winKeys().forEach(k => winSeg.insertAdjacentHTML("beforeend",
     `<button role="tab" data-w="${k}" aria-selected="${k === win}">${k}캔들</button>`));
@@ -142,6 +160,8 @@ function tierRows() {
 
 // ---- main render ----
 function render() {
+  if (!winKeys().includes(win)) win = winKeys()[0] || null;  // 지수 전환 시 창 재검증
+  renderHeader();  // 지수 몸통 카드도 선택 지수 기준
   buildTabs();
   const lead = $("lead"), sortEl = $("sortEl"), list = $("list");
   lead.hidden = false;
@@ -171,7 +191,7 @@ function renderStatus() {
   $("lead").hidden = true;
   $("sortEl").innerHTML = "";
   $("list").innerHTML = "";
-  if (data.status === "executed" && winKeys().length) {
+  if (data.status === "executed" && idxKeys().length) {
     hideNotice();
     controls.hidden = false;
     render();
@@ -211,13 +231,18 @@ async function load() {
     return;
   }
   loadedAt = Date.now();
-  const keys = winKeys();
-  if (!keys.includes(win)) win = keys[0] || null;
+  indicesMap = buildIndicesMap(data);
+  if (!idxKeys().includes(idx)) idx = idxKeys()[0] || null;
+  if (!winKeys().includes(win)) win = winKeys()[0] || null;
   renderHeader();
   renderStatus();
 }
 
 // ---- events ----
+$("idxSeg").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b || !data) return;
+  idx = b.dataset.i; render();
+});
 $("winSeg").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b || !data) return;
   win = b.dataset.w; render();
