@@ -99,12 +99,26 @@ function buildTabs() {
 // ---- rows ----
 function chipsRS(r) {
   let s = "";
+  if (r.loss) s += `<span class="chip loss">적자</span>`;
   const vr = r.value_ratio;
   if (vr != null) s += vr >= 2
     ? `<span class="chip fire">🔥${vr.toFixed(1)}×</span>`
     : `<span class="chip v">${vr.toFixed(1)}×</span>`;
   if ((r.appearances || 0) >= 2) s += `<span class="chip star">★${r.appearances}</span>`;
   return s;
+}
+// 재무 서브라인 (2026-07-23) — ROE · PER · 52주 고점 대비. 필드 없으면 줄 생략(구 데이터 호환)
+function fundLine(r) {
+  if (r.roe == null && r.per == null && r.hi52 == null) return "";
+  const roe = r.roe == null ? "—"
+    : (r.roe < 0 ? `<span class="neg">${r.roe.toFixed(1)}</span>` : r.roe.toFixed(1));
+  const per = r.per == null ? "—" : r.per.toFixed(1);
+  let hi = "—";
+  if (r.hi52 != null) {
+    const t = `${sign(r.hi52)}%`;
+    hi = r.hi52 >= -5 ? `<span class="hot">${t}</span>` : t;  // 신고가 −5% 이내 = 금색
+  }
+  return `<div class="fund num"><span>ROE <b>${roe}</b></span><span>PER <b>${per}</b></span><span>고점 <b>${hi}</b></span></div>`;
 }
 function rowRS(r, maxAbs, i) {
   const cls = r.rs >= 0 ? "p" : "n";
@@ -120,6 +134,7 @@ function rowRS(r, maxAbs, i) {
       <span class="rs ${cls} num">${sign(r.rs)}<span class="u">%p</span></span>
       <span class="sub2 num">몸통 <b style="color:var(--${mgColor})">${sign(r.merged_return)}%</b> · <span style="color:var(--dim)">${eok(r.trading_value_eok)}</span></span>
     </div>
+    ${fundLine(r)}
     <div class="bar"><i class="${cls}" style="width:${w}%"></i></div>
   </div></li>`;
 }
@@ -132,6 +147,7 @@ function rowTier(r, winN, i) {
     <div class="top">
       <span class="rank tier num">${i}</span>
       <span class="name">${esc(r.name)}<span class="code">${esc(r.code)}</span></span>
+      ${r.loss ? '<span class="chip loss">적자</span>' : ""}
       ${r.new_breach ? '<span class="chip new">🆕</span>' : ""}
       ${rsHtml}
     </div>
@@ -140,6 +156,7 @@ function rowTier(r, winN, i) {
       <span class="sub2 num" style="color:var(--faint)">최대 ${shortDate(r.max_value_dt)}</span>
       <span class="sub2 num">돌파 <b class="brk">${r.days}일</b></span>
     </div>
+    ${fundLine(r)}
     <div class="bar"><i class="g" style="width:${w}%"></i></div>
   </div></li>`;
 }

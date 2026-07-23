@@ -7,6 +7,7 @@
   --down:#3b93ff; --down-dim:#3b93ff33; --down-track:#3b93ff24;
   --gold:#e3a63c; --gold-dim:#e3a63c1f;
   --new:#2ecc9a;
+  --loss:#e0565e; --loss-dim:#e0565e26;
   --shadow:0 1px 0 #ffffff08 inset, 0 8px 24px -12px #000000cc;
   --mono:"SF Mono",ui-monospace,"Menlo","Consolas",monospace;
   --sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Segoe UI",sans-serif;
@@ -20,6 +21,7 @@
     --down:#1f6fe0; --down-dim:#1f6fe022; --down-track:#1f6fe016;
     --gold:#b47913; --gold-dim:#b4791316;
     --new:#149a72;
+    --loss:#c03038; --loss-dim:#c0303818;
     --shadow:0 1px 2px #1118231a, 0 10px 24px -14px #11182333;
   }
 }
@@ -112,12 +114,19 @@ ul{list-style:none;display:block}
 .chip.v{background:var(--surface-2);color:var(--dim)}
 .chip.star{background:var(--surface-2);color:var(--gold)}
 .chip.new{background:#2ecc9a1f;color:var(--new)}
+.chip.loss{background:var(--loss-dim);color:var(--loss)}
 .metrics{display:flex;align-items:baseline;gap:12px;margin:5px 0 3px;
   padding-left:27px}
 .rs{font-size:18px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .rs.p{color:var(--up)} .rs.n{color:var(--down)} .rs.none{color:var(--faint)}
 .rs .u{font-size:11px;font-weight:600;color:var(--faint);margin-left:1px}
 .sub2{font-size:12px;color:var(--dim);font-variant-numeric:tabular-nums}
+/* 재무 서브라인 (2026-07-23) — 흐린 소형, 신고가 근접(-5% 이내)은 금색 */
+.fund{display:flex;gap:10px;padding-left:27px;margin:2px 0 3px;
+  font-size:11px;color:var(--faint);font-variant-numeric:tabular-nums;white-space:nowrap}
+.fund b{font-weight:600;color:var(--dim)}
+.fund .hot{color:var(--gold);font-weight:700}
+.fund .neg{color:var(--loss);font-weight:600}
 .bar{height:3px;border-radius:2px;margin:5px 0 0 27px;overflow:hidden;
   background:var(--surface-2)}
 .bar i{display:block;height:100%;border-radius:2px}
