@@ -38,6 +38,19 @@ a{color:inherit;text-decoration:none}
 /* header */
 header{background:var(--bg);
   padding:18px 16px 14px;border-bottom:1px solid var(--border)}
+/* 제목(좌) + 페이지 전환(우) — 좌우 분할이라 링크가 늘어도 절대 겹치지 않는다 */
+.hrow{display:flex;align-items:flex-start;gap:10px}
+.htitle{flex:1;min-width:0}
+/* 페이지 전환 — 링크가 늘면 우측에서 줄바꿈되며 아래로 자란다 */
+.pagenav{flex:none;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px;
+  max-width:50%}
+.pagenav a{font-size:11.5px;font-weight:700;padding:5px 10px;border-radius:8px;
+  border:1px solid var(--border);background:var(--surface);color:var(--dim);
+  white-space:nowrap;transition:background .12s,color .12s,border-color .12s}
+.pagenav a:hover{background:var(--raised);color:var(--text)}
+.pagenav a.on{background:var(--raised);color:var(--text);border-color:var(--border-2);
+  box-shadow:var(--shadow)}
+.pagenav a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--faint);font-weight:700;display:flex;gap:8px;align-items:center}
 .eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--up);
