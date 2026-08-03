@@ -1,0 +1,8615 @@
+{
+ "date": "20260803",
+ "base_date": "20260731",
+ "status": "executed",
+ "as_of": "15:01",
+ "provisional": true,
+ "criteria": {
+  "rise_pct": 13.0,
+  "value_eok": 700.0,
+  "mcap_eok": 1000.0,
+  "value_drop_ratio": 0.7,
+  "watch_days": 10,
+  "require_prev_drop": false,
+  "detect_once": true
+ },
+ "funnel": {
+  "new_bases": 18,
+  "watching_total": 44,
+  "detected": 16,
+  "watching_pending": 28,
+  "watch_entries": 50
+ },
+ "warnings": [
+  "snapshot_unavailable"
+ ],
+ "picks": [
+  {
+   "code": "000660",
+   "name": "SK하이닉스",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 29.95,
+   "base_value_eok": 175488.3,
+   "mcap_eok": 11527170.0,
+   "open": 1642000,
+   "price": 1578000,
+   "today_pct": -8.15,
+   "vs_open_pct": -3.9,
+   "value_eok": 70278.5,
+   "value_ratio": 0.4,
+   "prev_value_ratio": 0.4,
+   "vol_down_prev": true,
+   "gap_pct": -4.42,
+   "vol_ratio": 0.419,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 1
+  },
+  {
+   "code": "005930",
+   "name": "삼성전자",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 26.81,
+   "base_value_eok": 149242.4,
+   "mcap_eok": 14001837.0,
+   "open": 248000,
+   "price": 239500,
+   "today_pct": -8.76,
+   "vs_open_pct": -3.43,
+   "value_eok": 55619.2,
+   "value_ratio": 0.373,
+   "prev_value_ratio": 0.373,
+   "vol_down_prev": true,
+   "gap_pct": -5.52,
+   "vol_ratio": 0.392,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 2
+  },
+  {
+   "code": "042700",
+   "name": "한미반도체",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 27.98,
+   "base_value_eok": 4617.6,
+   "mcap_eok": 191578.0,
+   "open": 209500,
+   "price": 201000,
+   "today_pct": -6.29,
+   "vs_open_pct": -4.06,
+   "value_eok": 1257.3,
+   "value_ratio": 0.272,
+   "prev_value_ratio": 0.272,
+   "vol_down_prev": true,
+   "gap_pct": -2.33,
+   "vol_ratio": 0.281,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 3
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 19.56,
+   "base_value_eok": 4309.5,
+   "mcap_eok": 526234.0,
+   "open": 347000,
+   "price": 324500,
+   "today_pct": -7.68,
+   "vs_open_pct": -6.48,
+   "value_eok": 858.0,
+   "value_ratio": 0.199,
+   "prev_value_ratio": 0.199,
+   "vol_down_prev": true,
+   "gap_pct": -1.28,
+   "vol_ratio": 0.21,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 4
+  },
+  {
+   "code": "298040",
+   "name": "효성중공업",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 27.61,
+   "base_value_eok": 2444.9,
+   "mcap_eok": 230969.0,
+   "open": 2585000,
+   "price": 2477000,
+   "today_pct": 2.48,
+   "vs_open_pct": -4.18,
+   "value_eok": 1539.0,
+   "value_ratio": 0.629,
+   "prev_value_ratio": 0.629,
+   "vol_down_prev": true,
+   "gap_pct": 6.95,
+   "vol_ratio": 0.582,
+   "rising_bear": true,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 5
+  },
+  {
+   "code": "034730",
+   "name": "SK",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 18.89,
+   "base_value_eok": 2294.2,
+   "mcap_eok": 374839.0,
+   "open": 540000,
+   "price": 517000,
+   "today_pct": -7.18,
+   "vs_open_pct": -4.26,
+   "value_eok": 1055.3,
+   "value_ratio": 0.46,
+   "prev_value_ratio": 0.46,
+   "vol_down_prev": true,
+   "gap_pct": -3.05,
+   "vol_ratio": 0.483,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 6
+  },
+  {
+   "code": "100090",
+   "name": "SK오션플랜트",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 19.61,
+   "base_value_eok": 2164.4,
+   "mcap_eok": 7785.0,
+   "open": 12500,
+   "price": 12460,
+   "today_pct": -0.48,
+   "vs_open_pct": -0.32,
+   "value_eok": 82.9,
+   "value_ratio": 0.038,
+   "prev_value_ratio": 0.381,
+   "vol_down_prev": true,
+   "gap_pct": -0.16,
+   "vol_ratio": 0.053,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "watch",
+   "rank": 7
+  },
+  {
+   "code": "240810",
+   "name": "원익IPS",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 27.92,
+   "base_value_eok": 2010.4,
+   "mcap_eok": 45943.0,
+   "open": 93900,
+   "price": 93600,
+   "today_pct": -4.1,
+   "vs_open_pct": -0.32,
+   "value_eok": 1177.0,
+   "value_ratio": 0.585,
+   "prev_value_ratio": 0.585,
+   "vol_down_prev": true,
+   "gap_pct": -3.79,
+   "vol_ratio": 0.588,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 8
+  },
+  {
+   "code": "032830",
+   "name": "삼성생명",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 17.99,
+   "base_value_eok": 1720.1,
+   "mcap_eok": 565000.0,
+   "open": 298000,
+   "price": 282500,
+   "today_pct": -9.31,
+   "vs_open_pct": -5.2,
+   "value_eok": 889.1,
+   "value_ratio": 0.517,
+   "prev_value_ratio": 0.517,
+   "vol_down_prev": true,
+   "gap_pct": -4.33,
+   "vol_ratio": 0.553,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 9
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 17.32,
+   "base_value_eok": 1711.1,
+   "mcap_eok": 241876.0,
+   "open": 678000,
+   "price": 671000,
+   "today_pct": -1.9,
+   "vs_open_pct": -1.03,
+   "value_eok": 706.9,
+   "value_ratio": 0.413,
+   "prev_value_ratio": 0.413,
+   "vol_down_prev": true,
+   "gap_pct": -0.88,
+   "vol_ratio": 0.41,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 10
+  },
+  {
+   "code": "073240",
+   "name": "금호타이어",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 19.9,
+   "base_value_eok": 1475.3,
+   "mcap_eok": 19017.0,
+   "open": 7100,
+   "price": 6620,
+   "today_pct": -9.19,
+   "vs_open_pct": -6.76,
+   "value_eok": 380.4,
+   "value_ratio": 0.258,
+   "prev_value_ratio": 0.258,
+   "vol_down_prev": true,
+   "gap_pct": -2.61,
+   "vol_ratio": 0.259,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 11
+  },
+  {
+   "code": "460930",
+   "name": "현대힘스",
+   "base_date": "20260724",
+   "day_n": 6,
+   "base_rise_pct": 22.5,
+   "base_value_eok": 1153.8,
+   "mcap_eok": 4741.0,
+   "open": 13420,
+   "price": 13350,
+   "today_pct": -2.2,
+   "vs_open_pct": -0.52,
+   "value_eok": 86.0,
+   "value_ratio": 0.075,
+   "prev_value_ratio": 0.548,
+   "vol_down_prev": true,
+   "gap_pct": -1.68,
+   "vol_ratio": 0.089,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 12
+  },
+  {
+   "code": "006800",
+   "name": "미래에셋증권",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 14.4,
+   "base_value_eok": 1017.3,
+   "mcap_eok": 183538.0,
+   "open": 33650,
+   "price": 32800,
+   "today_pct": -5.07,
+   "vs_open_pct": -2.53,
+   "value_eok": 433.5,
+   "value_ratio": 0.426,
+   "prev_value_ratio": 0.426,
+   "vol_down_prev": true,
+   "gap_pct": -2.6,
+   "vol_ratio": 0.431,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 13
+  },
+  {
+   "code": "319660",
+   "name": "피에스케이",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 27.81,
+   "base_value_eok": 1014.0,
+   "mcap_eok": 36208.0,
+   "open": 126400,
+   "price": 125000,
+   "today_pct": -3.55,
+   "vs_open_pct": -1.11,
+   "value_eok": 546.5,
+   "value_ratio": 0.539,
+   "prev_value_ratio": 0.539,
+   "vol_down_prev": true,
+   "gap_pct": -2.47,
+   "vol_ratio": 0.532,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 14
+  },
+  {
+   "code": "477850",
+   "name": "마키나락스",
+   "base_date": "20260722",
+   "day_n": 8,
+   "base_rise_pct": 14.95,
+   "base_value_eok": 977.5,
+   "mcap_eok": 3569.0,
+   "open": 20500,
+   "price": 20100,
+   "today_pct": 0.55,
+   "vs_open_pct": -1.95,
+   "value_eok": 174.3,
+   "value_ratio": 0.178,
+   "prev_value_ratio": 0.595,
+   "vol_down_prev": true,
+   "gap_pct": 2.55,
+   "vol_ratio": 0.193,
+   "rising_bear": true,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 15
+  },
+  {
+   "code": "089970",
+   "name": "브이엠",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 29.45,
+   "base_value_eok": 744.3,
+   "mcap_eok": 16717.0,
+   "open": 64800,
+   "price": 63500,
+   "today_pct": -3.05,
+   "vs_open_pct": -2.01,
+   "value_eok": 409.3,
+   "value_ratio": 0.55,
+   "prev_value_ratio": 0.55,
+   "vol_down_prev": true,
+   "gap_pct": -1.07,
+   "vol_ratio": 0.544,
+   "rising_bear": false,
+   "repeat_n": 1,
+   "source": "rank",
+   "rank": 16
+  }
+ ],
+ "watching": [
+  {
+   "code": "402340",
+   "name": "SK스퀘어",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 29.91,
+   "base_value_eok": 10640.5,
+   "price": 1015000,
+   "open": 1070000,
+   "bearish": true,
+   "value_eok": 7467.5,
+   "value_ratio": 0.702,
+   "mcap_eok": 1339378.0,
+   "miss": [
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "009150",
+   "name": "삼성전기",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 29.92,
+   "base_value_eok": 6962.5,
+   "price": 1167000,
+   "open": 1221000,
+   "bearish": true,
+   "value_eok": 12535.6,
+   "value_ratio": 1.8,
+   "mcap_eok": 871675.0,
+   "miss": [
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "010120",
+   "name": "LS ELECTRIC",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 22.95,
+   "base_value_eok": 3093.0,
+   "price": 187300,
+   "open": 180000,
+   "bearish": false,
+   "value_eok": 1568.1,
+   "value_ratio": 0.507,
+   "mcap_eok": 280950.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "036930",
+   "name": "주성엔지니어링",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 26.65,
+   "base_value_eok": 3020.1,
+   "price": 128100,
+   "open": 124600,
+   "bearish": false,
+   "value_eok": 2133.7,
+   "value_ratio": 0.707,
+   "mcap_eok": 59542.0,
+   "miss": [
+    "not_bearish",
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "011070",
+   "name": "LG이노텍",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 21.23,
+   "base_value_eok": 2709.4,
+   "price": 506000,
+   "open": 498000,
+   "bearish": false,
+   "value_eok": 1356.2,
+   "value_ratio": 0.501,
+   "mcap_eok": 119756.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "080220",
+   "name": "제주반도체",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 29.94,
+   "base_value_eok": 2162.0,
+   "price": 65100,
+   "open": 63500,
+   "bearish": false,
+   "value_eok": 1114.4,
+   "value_ratio": 0.515,
+   "mcap_eok": 22422.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "006340",
+   "name": "대원전선",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 25.97,
+   "base_value_eok": 2009.0,
+   "price": 13080,
+   "open": 13000,
+   "bearish": false,
+   "value_eok": 1129.4,
+   "value_ratio": 0.562,
+   "mcap_eok": 10257.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "058610",
+   "name": "에스피지",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 23.18,
+   "base_value_eok": 1870.0,
+   "price": 107200,
+   "open": 100600,
+   "bearish": false,
+   "value_eok": 2917.6,
+   "value_ratio": 1.56,
+   "mcap_eok": 23774.0,
+   "miss": [
+    "not_bearish",
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "403870",
+   "name": "HPSP",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 21.19,
+   "base_value_eok": 1612.4,
+   "price": 33950,
+   "open": 33300,
+   "bearish": false,
+   "value_eok": 561.4,
+   "value_ratio": 0.348,
+   "mcap_eok": 27941.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 30.0,
+   "base_value_eok": 1529.7,
+   "price": 1223000,
+   "open": 1189000,
+   "bearish": false,
+   "value_eok": 1245.0,
+   "value_ratio": 0.814,
+   "mcap_eok": 198051.0,
+   "miss": [
+    "not_bearish",
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 29.93,
+   "base_value_eok": 1362.2,
+   "price": 97000,
+   "open": 98200,
+   "bearish": true,
+   "value_eok": 1293.7,
+   "value_ratio": 0.95,
+   "mcap_eok": 47934.0,
+   "miss": [
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "000720",
+   "name": "현대건설",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 15.79,
+   "base_value_eok": 1275.4,
+   "price": 94700,
+   "open": 94500,
+   "bearish": false,
+   "value_eok": 398.7,
+   "value_ratio": 0.313,
+   "mcap_eok": 105454.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 14.11,
+   "base_value_eok": 1234.6,
+   "price": 13250,
+   "open": 12720,
+   "bearish": false,
+   "value_eok": 747.4,
+   "value_ratio": 0.605,
+   "mcap_eok": 54445.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "277810",
+   "name": "레인보우로보틱스",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 16.09,
+   "base_value_eok": 1125.2,
+   "price": 458500,
+   "open": 442000,
+   "bearish": false,
+   "value_eok": 1304.9,
+   "value_ratio": 1.16,
+   "mcap_eok": 88948.0,
+   "miss": [
+    "not_bearish",
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "007660",
+   "name": "이수페타시스",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 25.84,
+   "base_value_eok": 887.4,
+   "price": 73900,
+   "open": 72400,
+   "bearish": false,
+   "value_eok": 397.1,
+   "value_ratio": 0.447,
+   "mcap_eok": 54249.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "067310",
+   "name": "하나마이크론",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 20.0,
+   "base_value_eok": 873.4,
+   "price": 30100,
+   "open": 28600,
+   "bearish": false,
+   "value_eok": 368.3,
+   "value_ratio": 0.422,
+   "mcap_eok": 20014.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "098460",
+   "name": "고영",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 20.84,
+   "base_value_eok": 813.0,
+   "price": 27400,
+   "open": 26900,
+   "bearish": false,
+   "value_eok": 489.9,
+   "value_ratio": 0.603,
+   "mcap_eok": 18688.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "010170",
+   "name": "대한광통신",
+   "base_date": "20260731",
+   "day_n": 1,
+   "base_rise_pct": 19.13,
+   "base_value_eok": 807.0,
+   "price": 9260,
+   "open": 8510,
+   "bearish": false,
+   "value_eok": 1299.8,
+   "value_ratio": 1.611,
+   "mcap_eok": 14398.0,
+   "miss": [
+    "not_bearish",
+    "value_not_down"
+   ]
+  },
+  {
+   "code": "319400",
+   "name": "현대무벡스",
+   "base_date": "20260727",
+   "day_n": 5,
+   "base_rise_pct": 13.68,
+   "base_value_eok": 1485.3,
+   "price": 22950,
+   "open": 21700,
+   "bearish": false,
+   "value_eok": 868.6,
+   "value_ratio": 0.585,
+   "mcap_eok": 25561.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "475150",
+   "name": "SK이터닉스",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 30.0,
+   "base_value_eok": 13595.7,
+   "price": 46400,
+   "open": 45450,
+   "bearish": false,
+   "value_eok": 2067.5,
+   "value_ratio": 0.152,
+   "mcap_eok": 15807.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "006360",
+   "name": "GS건설",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 18.21,
+   "base_value_eok": 2638.6,
+   "price": 24150,
+   "open": 23400,
+   "bearish": false,
+   "value_eok": 567.2,
+   "value_ratio": 0.215,
+   "mcap_eok": 20668.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "322000",
+   "name": "HD현대에너지솔루션",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 29.73,
+   "base_value_eok": 1649.6,
+   "price": 121600,
+   "open": 112000,
+   "bearish": false,
+   "value_eok": 303.7,
+   "value_ratio": 0.184,
+   "mcap_eok": 13619.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "196170",
+   "name": "알테오젠",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 14.37,
+   "base_value_eok": 1630.2,
+   "price": 313500,
+   "open": 303000,
+   "bearish": false,
+   "value_eok": 883.5,
+   "value_ratio": 0.542,
+   "mcap_eok": 167993.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "119850",
+   "name": "지엔씨에너지",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 29.96,
+   "base_value_eok": 1249.5,
+   "price": 41850,
+   "open": 36050,
+   "bearish": false,
+   "value_eok": 716.5,
+   "value_ratio": 0.573,
+   "mcap_eok": 6884.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 30.0,
+   "base_value_eok": 1082.2,
+   "price": 202500,
+   "open": 184100,
+   "bearish": false,
+   "value_eok": 386.4,
+   "value_ratio": 0.357,
+   "mcap_eok": 37807.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "064260",
+   "name": "다날",
+   "base_date": "20260723",
+   "day_n": 7,
+   "base_rise_pct": 17.94,
+   "base_value_eok": 830.3,
+   "price": 4540,
+   "open": 4455,
+   "bearish": false,
+   "value_eok": 102.0,
+   "value_ratio": 0.123,
+   "mcap_eok": 3434.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "base_date": "20260722",
+   "day_n": 8,
+   "base_rise_pct": 15.68,
+   "base_value_eok": 1077.1,
+   "price": 135300,
+   "open": 131700,
+   "bearish": false,
+   "value_eok": 209.3,
+   "value_ratio": 0.194,
+   "mcap_eok": 40289.0,
+   "miss": [
+    "not_bearish"
+   ]
+  },
+  {
+   "code": "005860",
+   "name": "한일사료",
+   "base_date": "20260720",
+   "day_n": 10,
+   "base_rise_pct": 14.94,
+   "base_value_eok": 711.2,
+   "price": 2205,
+   "open": 2145,
+   "bearish": false,
+   "value_eok": 12.7,
+   "value_ratio": 0.018,
+   "mcap_eok": 869.0,
+   "miss": [
+    "not_bearish",
+    "mcap"
+   ]
+  }
+ ],
+ "tracking": [
+  {
+   "date": "20260803",
+   "code": "477850",
+   "name": "마키나락스",
+   "base_close": 20100,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "460930",
+   "name": "현대힘스",
+   "base_close": 13350,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "319660",
+   "name": "피에스케이",
+   "base_close": 125300,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "298040",
+   "name": "효성중공업",
+   "base_close": 2477000,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "base_close": 671000,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "240810",
+   "name": "원익IPS",
+   "base_close": 93600,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "100090",
+   "name": "SK오션플랜트",
+   "base_close": 12460,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "089970",
+   "name": "브이엠",
+   "base_close": 63500,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "073240",
+   "name": "금호타이어",
+   "base_close": 6620,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "042700",
+   "name": "한미반도체",
+   "base_close": 201000,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "034730",
+   "name": "SK",
+   "base_close": 516000,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "032830",
+   "name": "삼성생명",
+   "base_close": 283500,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "028260",
+   "name": "삼성물산",
+   "base_close": 325000,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "006800",
+   "name": "미래에셋증권",
+   "base_close": 32750,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "005930",
+   "name": "삼성전자",
+   "base_close": 240250,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  },
+  {
+   "date": "20260803",
+   "code": "000660",
+   "name": "SK하이닉스",
+   "base_close": 1583000,
+   "d1_open_pct": null,
+   "d1_high_pct": null,
+   "closes_pct": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "max_pct": null,
+   "min_pct": null,
+   "days_elapsed": 0
+  }
+ ],
+ "excluded": [
+  {
+   "code": "000087",
+   "reason": "preferred"
+  },
+  {
+   "code": "0000D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0000H0",
+   "reason": "etp"
+  },
+  {
+   "code": "0000J0",
+   "reason": "etp"
+  },
+  {
+   "code": "0000Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "000105",
+   "reason": "preferred"
+  },
+  {
+   "code": "000145",
+   "reason": "preferred"
+  },
+  {
+   "code": "000155",
+   "reason": "preferred"
+  },
+  {
+   "code": "000157",
+   "reason": "preferred"
+  },
+  {
+   "code": "0001P0",
+   "reason": "etp"
+  },
+  {
+   "code": "000215",
+   "reason": "preferred"
+  },
+  {
+   "code": "000225",
+   "reason": "preferred"
+  },
+  {
+   "code": "000227",
+   "reason": "preferred"
+  },
+  {
+   "code": "0002C0",
+   "reason": "etp"
+  },
+  {
+   "code": "000300",
+   "reason": "managed"
+  },
+  {
+   "code": "000325",
+   "reason": "preferred"
+  },
+  {
+   "code": "000545",
+   "reason": "preferred"
+  },
+  {
+   "code": "0005A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0005C0",
+   "reason": "etp"
+  },
+  {
+   "code": "0005D0",
+   "reason": "etp"
+  },
+  {
+   "code": "000725",
+   "reason": "preferred"
+  },
+  {
+   "code": "0007F0",
+   "reason": "etp"
+  },
+  {
+   "code": "0007G0",
+   "reason": "etp"
+  },
+  {
+   "code": "000815",
+   "reason": "preferred"
+  },
+  {
+   "code": "000880",
+   "reason": "managed"
+  },
+  {
+   "code": "00088K",
+   "reason": "preferred"
+  },
+  {
+   "code": "0008E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0008S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0008T0",
+   "reason": "etp"
+  },
+  {
+   "code": "001045",
+   "reason": "preferred"
+  },
+  {
+   "code": "00104K",
+   "reason": "preferred"
+  },
+  {
+   "code": "001065",
+   "reason": "preferred"
+  },
+  {
+   "code": "001067",
+   "reason": "preferred"
+  },
+  {
+   "code": "001275",
+   "reason": "preferred"
+  },
+  {
+   "code": "0013P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0013R0",
+   "reason": "etp"
+  },
+  {
+   "code": "001465",
+   "reason": "preferred"
+  },
+  {
+   "code": "001470",
+   "reason": "managed"
+  },
+  {
+   "code": "001515",
+   "reason": "preferred"
+  },
+  {
+   "code": "001525",
+   "reason": "preferred"
+  },
+  {
+   "code": "001527",
+   "reason": "preferred"
+  },
+  {
+   "code": "001570",
+   "reason": "managed"
+  },
+  {
+   "code": "0015B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0015E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0015F0",
+   "reason": "etp"
+  },
+  {
+   "code": "0015K0",
+   "reason": "etp"
+  },
+  {
+   "code": "001685",
+   "reason": "preferred"
+  },
+  {
+   "code": "0016X0",
+   "reason": "etp"
+  },
+  {
+   "code": "001755",
+   "reason": "preferred"
+  },
+  {
+   "code": "001770",
+   "reason": "managed"
+  },
+  {
+   "code": "001795",
+   "reason": "preferred"
+  },
+  {
+   "code": "0018C0",
+   "reason": "etp"
+  },
+  {
+   "code": "0018Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "002025",
+   "reason": "preferred"
+  },
+  {
+   "code": "0020H0",
+   "reason": "etp"
+  },
+  {
+   "code": "0022T0",
+   "reason": "etp"
+  },
+  {
+   "code": "002355",
+   "reason": "preferred"
+  },
+  {
+   "code": "0023A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0023B0",
+   "reason": "etp"
+  },
+  {
+   "code": "002410",
+   "reason": "managed"
+  },
+  {
+   "code": "0025N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0026E0",
+   "reason": "etp"
+  },
+  {
+   "code": "002785",
+   "reason": "preferred"
+  },
+  {
+   "code": "002787",
+   "reason": "preferred"
+  },
+  {
+   "code": "002795",
+   "reason": "preferred"
+  },
+  {
+   "code": "00279K",
+   "reason": "preferred"
+  },
+  {
+   "code": "0028X0",
+   "reason": "etp"
+  },
+  {
+   "code": "002995",
+   "reason": "preferred"
+  },
+  {
+   "code": "003075",
+   "reason": "preferred"
+  },
+  {
+   "code": "0030R0",
+   "reason": "etp"
+  },
+  {
+   "code": "003465",
+   "reason": "preferred"
+  },
+  {
+   "code": "003475",
+   "reason": "preferred"
+  },
+  {
+   "code": "003495",
+   "reason": "preferred"
+  },
+  {
+   "code": "003535",
+   "reason": "preferred"
+  },
+  {
+   "code": "003545",
+   "reason": "preferred"
+  },
+  {
+   "code": "003547",
+   "reason": "preferred"
+  },
+  {
+   "code": "003555",
+   "reason": "preferred"
+  },
+  {
+   "code": "0035T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0036R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0036Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0038A0",
+   "reason": "etp"
+  },
+  {
+   "code": "003925",
+   "reason": "preferred"
+  },
+  {
+   "code": "0040S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0040X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0040Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "004105",
+   "reason": "preferred"
+  },
+  {
+   "code": "0041D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0041E0",
+   "reason": "etp"
+  },
+  {
+   "code": "004255",
+   "reason": "preferred"
+  },
+  {
+   "code": "004365",
+   "reason": "preferred"
+  },
+  {
+   "code": "0043B0",
+   "reason": "etp"
+  },
+  {
+   "code": "004415",
+   "reason": "preferred"
+  },
+  {
+   "code": "004545",
+   "reason": "preferred"
+  },
+  {
+   "code": "0046A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0046Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "0047A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0047N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0047P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0047R0",
+   "reason": "etp"
+  },
+  {
+   "code": "004835",
+   "reason": "preferred"
+  },
+  {
+   "code": "0048J0",
+   "reason": "etp"
+  },
+  {
+   "code": "0048K0",
+   "reason": "etp"
+  },
+  {
+   "code": "004985",
+   "reason": "preferred"
+  },
+  {
+   "code": "00499K",
+   "reason": "preferred"
+  },
+  {
+   "code": "0049K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0049M0",
+   "reason": "etp"
+  },
+  {
+   "code": "005030",
+   "reason": "managed"
+  },
+  {
+   "code": "0050E0",
+   "reason": "etp"
+  },
+  {
+   "code": "005110",
+   "reason": "managed"
+  },
+  {
+   "code": "0051A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0051G0",
+   "reason": "etp"
+  },
+  {
+   "code": "005257",
+   "reason": "preferred"
+  },
+  {
+   "code": "0052D0",
+   "reason": "etp"
+  },
+  {
+   "code": "005305",
+   "reason": "preferred"
+  },
+  {
+   "code": "005385",
+   "reason": "preferred"
+  },
+  {
+   "code": "005387",
+   "reason": "preferred"
+  },
+  {
+   "code": "005389",
+   "reason": "preferred"
+  },
+  {
+   "code": "0053L0",
+   "reason": "etp"
+  },
+  {
+   "code": "005725",
+   "reason": "preferred"
+  },
+  {
+   "code": "005745",
+   "reason": "preferred"
+  },
+  {
+   "code": "0057H0",
+   "reason": "etp"
+  },
+  {
+   "code": "005935",
+   "reason": "preferred"
+  },
+  {
+   "code": "005945",
+   "reason": "preferred"
+  },
+  {
+   "code": "005965",
+   "reason": "preferred"
+  },
+  {
+   "code": "0060H0",
+   "reason": "etp"
+  },
+  {
+   "code": "006125",
+   "reason": "preferred"
+  },
+  {
+   "code": "0061Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "006345",
+   "reason": "preferred"
+  },
+  {
+   "code": "006380",
+   "reason": "managed"
+  },
+  {
+   "code": "006405",
+   "reason": "preferred"
+  },
+  {
+   "code": "006490",
+   "reason": "managed"
+  },
+  {
+   "code": "0064K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0065G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0066W0",
+   "reason": "etp"
+  },
+  {
+   "code": "0067V0",
+   "reason": "etp"
+  },
+  {
+   "code": "0067Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "006805",
+   "reason": "preferred"
+  },
+  {
+   "code": "00680K",
+   "reason": "preferred"
+  },
+  {
+   "code": "0068M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0072R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0073X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0074K0",
+   "reason": "etp"
+  },
+  {
+   "code": "007575",
+   "reason": "preferred"
+  },
+  {
+   "code": "007815",
+   "reason": "preferred"
+  },
+  {
+   "code": "00781K",
+   "reason": "preferred"
+  },
+  {
+   "code": "0078V0",
+   "reason": "etp"
+  },
+  {
+   "code": "0079X0",
+   "reason": "etp"
+  },
+  {
+   "code": "00806K",
+   "reason": "preferred"
+  },
+  {
+   "code": "0080G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0080X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0080Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "0082F0",
+   "reason": "etp"
+  },
+  {
+   "code": "0082V0",
+   "reason": "etp"
+  },
+  {
+   "code": "008355",
+   "reason": "preferred"
+  },
+  {
+   "code": "0084D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0084E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0085N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0085P0",
+   "reason": "etp"
+  },
+  {
+   "code": "008600",
+   "reason": "managed"
+  },
+  {
+   "code": "0086B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0086C0",
+   "reason": "etp"
+  },
+  {
+   "code": "008775",
+   "reason": "preferred"
+  },
+  {
+   "code": "0087F0",
+   "reason": "etp"
+  },
+  {
+   "code": "0089B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0089C0",
+   "reason": "etp"
+  },
+  {
+   "code": "0089D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0090B0",
+   "reason": "etp"
+  },
+  {
+   "code": "009155",
+   "reason": "preferred"
+  },
+  {
+   "code": "0091C0",
+   "reason": "etp"
+  },
+  {
+   "code": "0091M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0091P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0092B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0092C0",
+   "reason": "etp"
+  },
+  {
+   "code": "009310",
+   "reason": "managed"
+  },
+  {
+   "code": "0093A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0093B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0093D0",
+   "reason": "etp"
+  },
+  {
+   "code": "009415",
+   "reason": "preferred"
+  },
+  {
+   "code": "009440",
+   "reason": "managed"
+  },
+  {
+   "code": "0094K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0094L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0094M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0097L0",
+   "reason": "etp"
+  },
+  {
+   "code": "009835",
+   "reason": "preferred"
+  },
+  {
+   "code": "0098F0",
+   "reason": "etp"
+  },
+  {
+   "code": "0098N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0098Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0099L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0100K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0101N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0102A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0102X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0104G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0104H0",
+   "reason": "etp"
+  },
+  {
+   "code": "0104N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0104P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0105D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0105E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0107F0",
+   "reason": "etp"
+  },
+  {
+   "code": "010955",
+   "reason": "preferred"
+  },
+  {
+   "code": "011000",
+   "reason": "managed"
+  },
+  {
+   "code": "011090",
+   "reason": "warned"
+  },
+  {
+   "code": "011155",
+   "reason": "preferred"
+  },
+  {
+   "code": "0111J0",
+   "reason": "etp"
+  },
+  {
+   "code": "0112X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0113G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0114X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0115C0",
+   "reason": "etp"
+  },
+  {
+   "code": "0115D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0115E0",
+   "reason": "etp"
+  },
+  {
+   "code": "011785",
+   "reason": "preferred"
+  },
+  {
+   "code": "0117L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0117V0",
+   "reason": "etp"
+  },
+  {
+   "code": "011810",
+   "reason": "managed"
+  },
+  {
+   "code": "0118S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0118Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0119H0",
+   "reason": "etp"
+  },
+  {
+   "code": "0120J0",
+   "reason": "etp"
+  },
+  {
+   "code": "012205",
+   "reason": "preferred"
+  },
+  {
+   "code": "0122W0",
+   "reason": "etp"
+  },
+  {
+   "code": "0123G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0123S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0127M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0127P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0127R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0127T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0127V0",
+   "reason": "etp"
+  },
+  {
+   "code": "0128D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0131A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0132D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0132H0",
+   "reason": "etp"
+  },
+  {
+   "code": "0132K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0133E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0137V0",
+   "reason": "etp"
+  },
+  {
+   "code": "0137W0",
+   "reason": "etp"
+  },
+  {
+   "code": "0138D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0138T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0138Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "0139F0",
+   "reason": "etp"
+  },
+  {
+   "code": "0139P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0141S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0141T0",
+   "reason": "etp"
+  },
+  {
+   "code": "014285",
+   "reason": "preferred"
+  },
+  {
+   "code": "0142D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0144L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0144M0",
+   "reason": "etp"
+  },
+  {
+   "code": "014825",
+   "reason": "preferred"
+  },
+  {
+   "code": "0148J0",
+   "reason": "etp"
+  },
+  {
+   "code": "014915",
+   "reason": "preferred"
+  },
+  {
+   "code": "015020",
+   "reason": "managed"
+  },
+  {
+   "code": "0150K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0151P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0151S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0152E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0153K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0153P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0153X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0154H0",
+   "reason": "etp"
+  },
+  {
+   "code": "0155M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0155N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0162L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0162M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0162Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0163Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "0164G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0166N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0166S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0166T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0167A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0167B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0167Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0168K0",
+   "reason": "etp"
+  },
+  {
+   "code": "017040",
+   "reason": "managed"
+  },
+  {
+   "code": "0172Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "0173Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "0174B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0174R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0176E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0176P0",
+   "reason": "etp"
+  },
+  {
+   "code": "0177N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0177R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0177X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0180V0",
+   "reason": "etp"
+  },
+  {
+   "code": "0181B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0181L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0183J0",
+   "reason": "etp"
+  },
+  {
+   "code": "0183V0",
+   "reason": "etp"
+  },
+  {
+   "code": "0184L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0184N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0184V0",
+   "reason": "etp"
+  },
+  {
+   "code": "0186L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0189B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0190C0",
+   "reason": "etp"
+  },
+  {
+   "code": "0190G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0190M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0190Y0",
+   "reason": "etp"
+  },
+  {
+   "code": "019175",
+   "reason": "preferred"
+  },
+  {
+   "code": "0191M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0191W0",
+   "reason": "etp"
+  },
+  {
+   "code": "0192L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0192M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0192S0",
+   "reason": "etp"
+  },
+  {
+   "code": "0192T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0192Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0193G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0193K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0193L0",
+   "reason": "etp"
+  },
+  {
+   "code": "0193M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0193T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0193W0",
+   "reason": "etp"
+  },
+  {
+   "code": "019490",
+   "reason": "managed"
+  },
+  {
+   "code": "0194M0",
+   "reason": "etp"
+  },
+  {
+   "code": "0194N0",
+   "reason": "etp"
+  },
+  {
+   "code": "0194R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0194T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0195R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0195S0",
+   "reason": "etp"
+  },
+  {
+   "code": "019685",
+   "reason": "preferred"
+  },
+  {
+   "code": "0197W0",
+   "reason": "etp"
+  },
+  {
+   "code": "0197X0",
+   "reason": "etp"
+  },
+  {
+   "code": "0198A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0198B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0198D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0199C0",
+   "reason": "etp"
+  },
+  {
+   "code": "0203D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0204D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0204S0",
+   "reason": "etp"
+  },
+  {
+   "code": "020760",
+   "reason": "managed"
+  },
+  {
+   "code": "0207G0",
+   "reason": "etp"
+  },
+  {
+   "code": "0207Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0209D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0209Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0210A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0210E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0215T0",
+   "reason": "etp"
+  },
+  {
+   "code": "0216K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0216Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0218J0",
+   "reason": "etp"
+  },
+  {
+   "code": "0218K0",
+   "reason": "etp"
+  },
+  {
+   "code": "0219B0",
+   "reason": "etp"
+  },
+  {
+   "code": "0219E0",
+   "reason": "etp"
+  },
+  {
+   "code": "0220A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0221Z0",
+   "reason": "etp"
+  },
+  {
+   "code": "0222D0",
+   "reason": "etp"
+  },
+  {
+   "code": "0223A0",
+   "reason": "etp"
+  },
+  {
+   "code": "0223R0",
+   "reason": "etp"
+  },
+  {
+   "code": "0224D0",
+   "reason": "etp"
+  },
+  {
+   "code": "027970",
+   "reason": "managed"
+  },
+  {
+   "code": "02826K",
+   "reason": "preferred"
+  },
+  {
+   "code": "031440",
+   "reason": "managed"
+  },
+  {
+   "code": "03473K",
+   "reason": "preferred"
+  },
+  {
+   "code": "036420",
+   "reason": "managed"
+  },
+  {
+   "code": "044380",
+   "reason": "managed"
+  },
+  {
+   "code": "051905",
+   "reason": "preferred"
+  },
+  {
+   "code": "051915",
+   "reason": "preferred"
+  },
+  {
+   "code": "066575",
+   "reason": "preferred"
+  },
+  {
+   "code": "069460",
+   "reason": "managed"
+  },
+  {
+   "code": "069500",
+   "reason": "etp"
+  },
+  {
+   "code": "069660",
+   "reason": "etp"
+  },
+  {
+   "code": "071055",
+   "reason": "preferred"
+  },
+  {
+   "code": "074610",
+   "reason": "managed"
+  },
+  {
+   "code": "078935",
+   "reason": "preferred"
+  },
+  {
+   "code": "084695",
+   "reason": "preferred"
+  },
+  {
+   "code": "090355",
+   "reason": "preferred"
+  },
+  {
+   "code": "090435",
+   "reason": "preferred"
+  },
+  {
+   "code": "091160",
+   "reason": "etp"
+  },
+  {
+   "code": "091170",
+   "reason": "etp"
+  },
+  {
+   "code": "091180",
+   "reason": "etp"
+  },
+  {
+   "code": "091220",
+   "reason": "etp"
+  },
+  {
+   "code": "091230",
+   "reason": "etp"
+  },
+  {
+   "code": "096775",
+   "reason": "preferred"
+  },
+  {
+   "code": "097955",
+   "reason": "preferred"
+  },
+  {
+   "code": "099140",
+   "reason": "etp"
+  },
+  {
+   "code": "100910",
+   "reason": "etp"
+  },
+  {
+   "code": "101280",
+   "reason": "etp"
+  },
+  {
+   "code": "102110",
+   "reason": "etp"
+  },
+  {
+   "code": "102780",
+   "reason": "etp"
+  },
+  {
+   "code": "102960",
+   "reason": "etp"
+  },
+  {
+   "code": "102970",
+   "reason": "etp"
+  },
+  {
+   "code": "104520",
+   "reason": "etp"
+  },
+  {
+   "code": "104530",
+   "reason": "etp"
+  },
+  {
+   "code": "105010",
+   "reason": "etp"
+  },
+  {
+   "code": "105190",
+   "reason": "etp"
+  },
+  {
+   "code": "105780",
+   "reason": "etp"
+  },
+  {
+   "code": "108450",
+   "reason": "etp"
+  },
+  {
+   "code": "108590",
+   "reason": "etp"
+  },
+  {
+   "code": "108675",
+   "reason": "preferred"
+  },
+  {
+   "code": "114100",
+   "reason": "etp"
+  },
+  {
+   "code": "114260",
+   "reason": "etp"
+  },
+  {
+   "code": "114460",
+   "reason": "etp"
+  },
+  {
+   "code": "114470",
+   "reason": "etp"
+  },
+  {
+   "code": "114800",
+   "reason": "etp"
+  },
+  {
+   "code": "114820",
+   "reason": "etp"
+  },
+  {
+   "code": "117460",
+   "reason": "etp"
+  },
+  {
+   "code": "117680",
+   "reason": "etp"
+  },
+  {
+   "code": "117690",
+   "reason": "etp"
+  },
+  {
+   "code": "117700",
+   "reason": "etp"
+  },
+  {
+   "code": "119650",
+   "reason": "managed"
+  },
+  {
+   "code": "120115",
+   "reason": "preferred"
+  },
+  {
+   "code": "122090",
+   "reason": "etp"
+  },
+  {
+   "code": "122260",
+   "reason": "etp"
+  },
+  {
+   "code": "122630",
+   "reason": "etp"
+  },
+  {
+   "code": "123310",
+   "reason": "etp"
+  },
+  {
+   "code": "123320",
+   "reason": "etp"
+  },
+  {
+   "code": "130680",
+   "reason": "etp"
+  },
+  {
+   "code": "130730",
+   "reason": "etp"
+  },
+  {
+   "code": "131890",
+   "reason": "etp"
+  },
+  {
+   "code": "132030",
+   "reason": "etp"
+  },
+  {
+   "code": "133690",
+   "reason": "etp"
+  },
+  {
+   "code": "136340",
+   "reason": "etp"
+  },
+  {
+   "code": "137610",
+   "reason": "etp"
+  },
+  {
+   "code": "138230",
+   "reason": "etp"
+  },
+  {
+   "code": "138520",
+   "reason": "etp"
+  },
+  {
+   "code": "138530",
+   "reason": "etp"
+  },
+  {
+   "code": "138540",
+   "reason": "etp"
+  },
+  {
+   "code": "138910",
+   "reason": "etp"
+  },
+  {
+   "code": "138920",
+   "reason": "etp"
+  },
+  {
+   "code": "139220",
+   "reason": "etp"
+  },
+  {
+   "code": "139230",
+   "reason": "etp"
+  },
+  {
+   "code": "139240",
+   "reason": "etp"
+  },
+  {
+   "code": "139250",
+   "reason": "etp"
+  },
+  {
+   "code": "139260",
+   "reason": "etp"
+  },
+  {
+   "code": "139270",
+   "reason": "etp"
+  },
+  {
+   "code": "139280",
+   "reason": "etp"
+  },
+  {
+   "code": "139290",
+   "reason": "etp"
+  },
+  {
+   "code": "139320",
+   "reason": "etp"
+  },
+  {
+   "code": "139660",
+   "reason": "etp"
+  },
+  {
+   "code": "140570",
+   "reason": "etp"
+  },
+  {
+   "code": "140580",
+   "reason": "etp"
+  },
+  {
+   "code": "140700",
+   "reason": "etp"
+  },
+  {
+   "code": "140710",
+   "reason": "etp"
+  },
+  {
+   "code": "143210",
+   "reason": "managed"
+  },
+  {
+   "code": "143850",
+   "reason": "etp"
+  },
+  {
+   "code": "143860",
+   "reason": "etp"
+  },
+  {
+   "code": "144600",
+   "reason": "etp"
+  },
+  {
+   "code": "145210",
+   "reason": "managed"
+  },
+  {
+   "code": "145270",
+   "reason": "etp"
+  },
+  {
+   "code": "145670",
+   "reason": "etp"
+  },
+  {
+   "code": "145850",
+   "reason": "etp"
+  },
+  {
+   "code": "145995",
+   "reason": "preferred"
+  },
+  {
+   "code": "147970",
+   "reason": "etp"
+  },
+  {
+   "code": "148020",
+   "reason": "etp"
+  },
+  {
+   "code": "148070",
+   "reason": "etp"
+  },
+  {
+   "code": "150460",
+   "reason": "etp"
+  },
+  {
+   "code": "152100",
+   "reason": "etp"
+  },
+  {
+   "code": "152380",
+   "reason": "etp"
+  },
+  {
+   "code": "152500",
+   "reason": "etp"
+  },
+  {
+   "code": "153130",
+   "reason": "etp"
+  },
+  {
+   "code": "153270",
+   "reason": "etp"
+  },
+  {
+   "code": "156080",
+   "reason": "etp"
+  },
+  {
+   "code": "157450",
+   "reason": "etp"
+  },
+  {
+   "code": "157490",
+   "reason": "etp"
+  },
+  {
+   "code": "157500",
+   "reason": "etp"
+  },
+  {
+   "code": "159800",
+   "reason": "etp"
+  },
+  {
+   "code": "160580",
+   "reason": "etp"
+  },
+  {
+   "code": "161510",
+   "reason": "etp"
+  },
+  {
+   "code": "166400",
+   "reason": "etp"
+  },
+  {
+   "code": "167860",
+   "reason": "etp"
+  },
+  {
+   "code": "168580",
+   "reason": "etp"
+  },
+  {
+   "code": "169950",
+   "reason": "etp"
+  },
+  {
+   "code": "174350",
+   "reason": "etp"
+  },
+  {
+   "code": "174360",
+   "reason": "etp"
+  },
+  {
+   "code": "176950",
+   "reason": "etp"
+  },
+  {
+   "code": "18064K",
+   "reason": "preferred"
+  },
+  {
+   "code": "181480",
+   "reason": "etp"
+  },
+  {
+   "code": "182480",
+   "reason": "etp"
+  },
+  {
+   "code": "182490",
+   "reason": "etp"
+  },
+  {
+   "code": "183700",
+   "reason": "etp"
+  },
+  {
+   "code": "183710",
+   "reason": "etp"
+  },
+  {
+   "code": "185680",
+   "reason": "etp"
+  },
+  {
+   "code": "189400",
+   "reason": "etp"
+  },
+  {
+   "code": "190620",
+   "reason": "etp"
+  },
+  {
+   "code": "192090",
+   "reason": "etp"
+  },
+  {
+   "code": "195920",
+   "reason": "etp"
+  },
+  {
+   "code": "195930",
+   "reason": "etp"
+  },
+  {
+   "code": "195970",
+   "reason": "etp"
+  },
+  {
+   "code": "195980",
+   "reason": "etp"
+  },
+  {
+   "code": "196030",
+   "reason": "etp"
+  },
+  {
+   "code": "196230",
+   "reason": "etp"
+  },
+  {
+   "code": "200030",
+   "reason": "etp"
+  },
+  {
+   "code": "200250",
+   "reason": "etp"
+  },
+  {
+   "code": "203780",
+   "reason": "etp"
+  },
+  {
+   "code": "204450",
+   "reason": "etp"
+  },
+  {
+   "code": "204480",
+   "reason": "etp"
+  },
+  {
+   "code": "205720",
+   "reason": "etp"
+  },
+  {
+   "code": "210780",
+   "reason": "etp"
+  },
+  {
+   "code": "211560",
+   "reason": "etp"
+  },
+  {
+   "code": "211900",
+   "reason": "etp"
+  },
+  {
+   "code": "213610",
+   "reason": "etp"
+  },
+  {
+   "code": "213630",
+   "reason": "etp"
+  },
+  {
+   "code": "214980",
+   "reason": "etp"
+  },
+  {
+   "code": "217770",
+   "reason": "etp"
+  },
+  {
+   "code": "217780",
+   "reason": "etp"
+  },
+  {
+   "code": "218420",
+   "reason": "etp"
+  },
+  {
+   "code": "219390",
+   "reason": "etp"
+  },
+  {
+   "code": "219480",
+   "reason": "etp"
+  },
+  {
+   "code": "219900",
+   "reason": "etp"
+  },
+  {
+   "code": "220130",
+   "reason": "etp"
+  },
+  {
+   "code": "223190",
+   "reason": "etp"
+  },
+  {
+   "code": "225030",
+   "reason": "etp"
+  },
+  {
+   "code": "225040",
+   "reason": "etp"
+  },
+  {
+   "code": "225050",
+   "reason": "etp"
+  },
+  {
+   "code": "225060",
+   "reason": "etp"
+  },
+  {
+   "code": "225130",
+   "reason": "etp"
+  },
+  {
+   "code": "225800",
+   "reason": "etp"
+  },
+  {
+   "code": "226380",
+   "reason": "etp"
+  },
+  {
+   "code": "226490",
+   "reason": "etp"
+  },
+  {
+   "code": "226980",
+   "reason": "etp"
+  },
+  {
+   "code": "227540",
+   "reason": "etp"
+  },
+  {
+   "code": "227550",
+   "reason": "etp"
+  },
+  {
+   "code": "227560",
+   "reason": "etp"
+  },
+  {
+   "code": "227570",
+   "reason": "etp"
+  },
+  {
+   "code": "227830",
+   "reason": "etp"
+  },
+  {
+   "code": "228790",
+   "reason": "etp"
+  },
+  {
+   "code": "228800",
+   "reason": "etp"
+  },
+  {
+   "code": "228810",
+   "reason": "etp"
+  },
+  {
+   "code": "228820",
+   "reason": "etp"
+  },
+  {
+   "code": "229200",
+   "reason": "etp"
+  },
+  {
+   "code": "229720",
+   "reason": "etp"
+  },
+  {
+   "code": "230480",
+   "reason": "etp"
+  },
+  {
+   "code": "232080",
+   "reason": "etp"
+  },
+  {
+   "code": "233160",
+   "reason": "etp"
+  },
+  {
+   "code": "233740",
+   "reason": "etp"
+  },
+  {
+   "code": "234310",
+   "reason": "etp"
+  },
+  {
+   "code": "236350",
+   "reason": "etp"
+  },
+  {
+   "code": "237350",
+   "reason": "etp"
+  },
+  {
+   "code": "237370",
+   "reason": "etp"
+  },
+  {
+   "code": "237440",
+   "reason": "etp"
+  },
+  {
+   "code": "238670",
+   "reason": "etp"
+  },
+  {
+   "code": "238720",
+   "reason": "etp"
+  },
+  {
+   "code": "239660",
+   "reason": "etp"
+  },
+  {
+   "code": "241180",
+   "reason": "etp"
+  },
+  {
+   "code": "241390",
+   "reason": "etp"
+  },
+  {
+   "code": "243880",
+   "reason": "etp"
+  },
+  {
+   "code": "243890",
+   "reason": "etp"
+  },
+  {
+   "code": "244580",
+   "reason": "etp"
+  },
+  {
+   "code": "244620",
+   "reason": "etp"
+  },
+  {
+   "code": "244660",
+   "reason": "etp"
+  },
+  {
+   "code": "244670",
+   "reason": "etp"
+  },
+  {
+   "code": "245340",
+   "reason": "etp"
+  },
+  {
+   "code": "245350",
+   "reason": "etp"
+  },
+  {
+   "code": "245360",
+   "reason": "etp"
+  },
+  {
+   "code": "245710",
+   "reason": "etp"
+  },
+  {
+   "code": "248270",
+   "reason": "etp"
+  },
+  {
+   "code": "250730",
+   "reason": "etp"
+  },
+  {
+   "code": "250780",
+   "reason": "etp"
+  },
+  {
+   "code": "251340",
+   "reason": "etp"
+  },
+  {
+   "code": "251350",
+   "reason": "etp"
+  },
+  {
+   "code": "251590",
+   "reason": "etp"
+  },
+  {
+   "code": "251600",
+   "reason": "etp"
+  },
+  {
+   "code": "252000",
+   "reason": "etp"
+  },
+  {
+   "code": "252400",
+   "reason": "etp"
+  },
+  {
+   "code": "252410",
+   "reason": "etp"
+  },
+  {
+   "code": "252420",
+   "reason": "etp"
+  },
+  {
+   "code": "252650",
+   "reason": "etp"
+  },
+  {
+   "code": "252670",
+   "reason": "etp"
+  },
+  {
+   "code": "252710",
+   "reason": "etp"
+  },
+  {
+   "code": "253150",
+   "reason": "etp"
+  },
+  {
+   "code": "253160",
+   "reason": "etp"
+  },
+  {
+   "code": "253230",
+   "reason": "etp"
+  },
+  {
+   "code": "253240",
+   "reason": "etp"
+  },
+  {
+   "code": "253250",
+   "reason": "etp"
+  },
+  {
+   "code": "253280",
+   "reason": "etp"
+  },
+  {
+   "code": "253290",
+   "reason": "etp"
+  },
+  {
+   "code": "256440",
+   "reason": "etp"
+  },
+  {
+   "code": "256450",
+   "reason": "etp"
+  },
+  {
+   "code": "256750",
+   "reason": "etp"
+  },
+  {
+   "code": "261060",
+   "reason": "etp"
+  },
+  {
+   "code": "261070",
+   "reason": "etp"
+  },
+  {
+   "code": "261110",
+   "reason": "etp"
+  },
+  {
+   "code": "261120",
+   "reason": "etp"
+  },
+  {
+   "code": "261140",
+   "reason": "etp"
+  },
+  {
+   "code": "261220",
+   "reason": "etp"
+  },
+  {
+   "code": "261240",
+   "reason": "etp"
+  },
+  {
+   "code": "261250",
+   "reason": "etp"
+  },
+  {
+   "code": "261260",
+   "reason": "etp"
+  },
+  {
+   "code": "261270",
+   "reason": "etp"
+  },
+  {
+   "code": "261920",
+   "reason": "etp"
+  },
+  {
+   "code": "26490K",
+   "reason": "preferred"
+  },
+  {
+   "code": "265690",
+   "reason": "etp"
+  },
+  {
+   "code": "266160",
+   "reason": "etp"
+  },
+  {
+   "code": "266360",
+   "reason": "etp"
+  },
+  {
+   "code": "266370",
+   "reason": "etp"
+  },
+  {
+   "code": "266390",
+   "reason": "etp"
+  },
+  {
+   "code": "266410",
+   "reason": "etp"
+  },
+  {
+   "code": "266420",
+   "reason": "etp"
+  },
+  {
+   "code": "266550",
+   "reason": "etp"
+  },
+  {
+   "code": "267440",
+   "reason": "etp"
+  },
+  {
+   "code": "267450",
+   "reason": "etp"
+  },
+  {
+   "code": "267490",
+   "reason": "etp"
+  },
+  {
+   "code": "267770",
+   "reason": "etp"
+  },
+  {
+   "code": "269370",
+   "reason": "etp"
+  },
+  {
+   "code": "269420",
+   "reason": "etp"
+  },
+  {
+   "code": "269530",
+   "reason": "etp"
+  },
+  {
+   "code": "269540",
+   "reason": "etp"
+  },
+  {
+   "code": "270800",
+   "reason": "etp"
+  },
+  {
+   "code": "270810",
+   "reason": "etp"
+  },
+  {
+   "code": "271050",
+   "reason": "etp"
+  },
+  {
+   "code": "271060",
+   "reason": "etp"
+  },
+  {
+   "code": "272560",
+   "reason": "etp"
+  },
+  {
+   "code": "272570",
+   "reason": "etp"
+  },
+  {
+   "code": "272580",
+   "reason": "etp"
+  },
+  {
+   "code": "272910",
+   "reason": "etp"
+  },
+  {
+   "code": "273130",
+   "reason": "etp"
+  },
+  {
+   "code": "273140",
+   "reason": "etp"
+  },
+  {
+   "code": "275280",
+   "reason": "etp"
+  },
+  {
+   "code": "275290",
+   "reason": "etp"
+  },
+  {
+   "code": "275300",
+   "reason": "etp"
+  },
+  {
+   "code": "275750",
+   "reason": "etp"
+  },
+  {
+   "code": "275980",
+   "reason": "etp"
+  },
+  {
+   "code": "276000",
+   "reason": "etp"
+  },
+  {
+   "code": "276650",
+   "reason": "etp"
+  },
+  {
+   "code": "276970",
+   "reason": "etp"
+  },
+  {
+   "code": "276990",
+   "reason": "etp"
+  },
+  {
+   "code": "277540",
+   "reason": "etp"
+  },
+  {
+   "code": "277630",
+   "reason": "etp"
+  },
+  {
+   "code": "277640",
+   "reason": "etp"
+  },
+  {
+   "code": "277650",
+   "reason": "etp"
+  },
+  {
+   "code": "278240",
+   "reason": "etp"
+  },
+  {
+   "code": "278530",
+   "reason": "etp"
+  },
+  {
+   "code": "278540",
+   "reason": "etp"
+  },
+  {
+   "code": "278620",
+   "reason": "etp"
+  },
+  {
+   "code": "279530",
+   "reason": "etp"
+  },
+  {
+   "code": "279540",
+   "reason": "etp"
+  },
+  {
+   "code": "280320",
+   "reason": "etp"
+  },
+  {
+   "code": "280920",
+   "reason": "etp"
+  },
+  {
+   "code": "280930",
+   "reason": "etp"
+  },
+  {
+   "code": "280940",
+   "reason": "etp"
+  },
+  {
+   "code": "281990",
+   "reason": "etp"
+  },
+  {
+   "code": "282000",
+   "reason": "etp"
+  },
+  {
+   "code": "283580",
+   "reason": "etp"
+  },
+  {
+   "code": "284430",
+   "reason": "etp"
+  },
+  {
+   "code": "284980",
+   "reason": "etp"
+  },
+  {
+   "code": "28513K",
+   "reason": "preferred"
+  },
+  {
+   "code": "285690",
+   "reason": "etp"
+  },
+  {
+   "code": "287180",
+   "reason": "etp"
+  },
+  {
+   "code": "289040",
+   "reason": "etp"
+  },
+  {
+   "code": "289250",
+   "reason": "etp"
+  },
+  {
+   "code": "289260",
+   "reason": "etp"
+  },
+  {
+   "code": "289480",
+   "reason": "etp"
+  },
+  {
+   "code": "289670",
+   "reason": "etp"
+  },
+  {
+   "code": "290080",
+   "reason": "etp"
+  },
+  {
+   "code": "290130",
+   "reason": "etp"
+  },
+  {
+   "code": "291130",
+   "reason": "etp"
+  },
+  {
+   "code": "291620",
+   "reason": "etp"
+  },
+  {
+   "code": "291630",
+   "reason": "etp"
+  },
+  {
+   "code": "291680",
+   "reason": "etp"
+  },
+  {
+   "code": "291890",
+   "reason": "etp"
+  },
+  {
+   "code": "292050",
+   "reason": "etp"
+  },
+  {
+   "code": "292150",
+   "reason": "etp"
+  },
+  {
+   "code": "292160",
+   "reason": "etp"
+  },
+  {
+   "code": "292190",
+   "reason": "etp"
+  },
+  {
+   "code": "292500",
+   "reason": "etp"
+  },
+  {
+   "code": "292560",
+   "reason": "etp"
+  },
+  {
+   "code": "292770",
+   "reason": "etp"
+  },
+  {
+   "code": "293180",
+   "reason": "etp"
+  },
+  {
+   "code": "293940",
+   "reason": "etp"
+  },
+  {
+   "code": "294400",
+   "reason": "etp"
+  },
+  {
+   "code": "295000",
+   "reason": "etp"
+  },
+  {
+   "code": "295020",
+   "reason": "etp"
+  },
+  {
+   "code": "295040",
+   "reason": "etp"
+  },
+  {
+   "code": "298340",
+   "reason": "etp"
+  },
+  {
+   "code": "298770",
+   "reason": "etp"
+  },
+  {
+   "code": "300610",
+   "reason": "etp"
+  },
+  {
+   "code": "300640",
+   "reason": "etp"
+  },
+  {
+   "code": "300950",
+   "reason": "etp"
+  },
+  {
+   "code": "301400",
+   "reason": "etp"
+  },
+  {
+   "code": "302190",
+   "reason": "etp"
+  },
+  {
+   "code": "302450",
+   "reason": "etp"
+  },
+  {
+   "code": "304660",
+   "reason": "etp"
+  },
+  {
+   "code": "304670",
+   "reason": "etp"
+  },
+  {
+   "code": "304760",
+   "reason": "etp"
+  },
+  {
+   "code": "304770",
+   "reason": "etp"
+  },
+  {
+   "code": "304780",
+   "reason": "etp"
+  },
+  {
+   "code": "304940",
+   "reason": "etp"
+  },
+  {
+   "code": "305050",
+   "reason": "etp"
+  },
+  {
+   "code": "305080",
+   "reason": "etp"
+  },
+  {
+   "code": "305540",
+   "reason": "etp"
+  },
+  {
+   "code": "305720",
+   "reason": "etp"
+  },
+  {
+   "code": "306520",
+   "reason": "etp"
+  },
+  {
+   "code": "306530",
+   "reason": "etp"
+  },
+  {
+   "code": "306950",
+   "reason": "etp"
+  },
+  {
+   "code": "307510",
+   "reason": "etp"
+  },
+  {
+   "code": "307520",
+   "reason": "etp"
+  },
+  {
+   "code": "308620",
+   "reason": "etp"
+  },
+  {
+   "code": "309230",
+   "reason": "etp"
+  },
+  {
+   "code": "310080",
+   "reason": "etp"
+  },
+  {
+   "code": "310960",
+   "reason": "etp"
+  },
+  {
+   "code": "310970",
+   "reason": "etp"
+  },
+  {
+   "code": "314250",
+   "reason": "etp"
+  },
+  {
+   "code": "314700",
+   "reason": "etp"
+  },
+  {
+   "code": "315270",
+   "reason": "etp"
+  },
+  {
+   "code": "315930",
+   "reason": "etp"
+  },
+  {
+   "code": "315960",
+   "reason": "etp"
+  },
+  {
+   "code": "316300",
+   "reason": "etp"
+  },
+  {
+   "code": "316670",
+   "reason": "etp"
+  },
+  {
+   "code": "319640",
+   "reason": "etp"
+  },
+  {
+   "code": "321410",
+   "reason": "etp"
+  },
+  {
+   "code": "322400",
+   "reason": "etp"
+  },
+  {
+   "code": "322410",
+   "reason": "etp"
+  },
+  {
+   "code": "325010",
+   "reason": "etp"
+  },
+  {
+   "code": "325020",
+   "reason": "etp"
+  },
+  {
+   "code": "326230",
+   "reason": "etp"
+  },
+  {
+   "code": "326240",
+   "reason": "etp"
+  },
+  {
+   "code": "328370",
+   "reason": "etp"
+  },
+  {
+   "code": "329200",
+   "reason": "etp"
+  },
+  {
+   "code": "329650",
+   "reason": "etp"
+  },
+  {
+   "code": "329660",
+   "reason": "etp"
+  },
+  {
+   "code": "329670",
+   "reason": "etp"
+  },
+  {
+   "code": "329750",
+   "reason": "etp"
+  },
+  {
+   "code": "330590",
+   "reason": "etp"
+  },
+  {
+   "code": "332500",
+   "reason": "etp"
+  },
+  {
+   "code": "332610",
+   "reason": "etp"
+  },
+  {
+   "code": "332620",
+   "reason": "etp"
+  },
+  {
+   "code": "332930",
+   "reason": "etp"
+  },
+  {
+   "code": "332940",
+   "reason": "etp"
+  },
+  {
+   "code": "334690",
+   "reason": "etp"
+  },
+  {
+   "code": "334700",
+   "reason": "etp"
+  },
+  {
+   "code": "334890",
+   "reason": "etp"
+  },
+  {
+   "code": "336160",
+   "reason": "etp"
+  },
+  {
+   "code": "33626K",
+   "reason": "preferred"
+  },
+  {
+   "code": "33626L",
+   "reason": "preferred"
+  },
+  {
+   "code": "33637K",
+   "reason": "preferred"
+  },
+  {
+   "code": "33637L",
+   "reason": "preferred"
+  },
+  {
+   "code": "337120",
+   "reason": "etp"
+  },
+  {
+   "code": "337140",
+   "reason": "etp"
+  },
+  {
+   "code": "337150",
+   "reason": "etp"
+  },
+  {
+   "code": "337160",
+   "reason": "etp"
+  },
+  {
+   "code": "338100",
+   "reason": "etp"
+  },
+  {
+   "code": "341850",
+   "reason": "etp"
+  },
+  {
+   "code": "348950",
+   "reason": "etp"
+  },
+  {
+   "code": "350520",
+   "reason": "etp"
+  },
+  {
+   "code": "352540",
+   "reason": "etp"
+  },
+  {
+   "code": "352560",
+   "reason": "etp"
+  },
+  {
+   "code": "35320K",
+   "reason": "preferred"
+  },
+  {
+   "code": "354240",
+   "reason": "etp"
+  },
+  {
+   "code": "354350",
+   "reason": "etp"
+  },
+  {
+   "code": "354500",
+   "reason": "etp"
+  },
+  {
+   "code": "356540",
+   "reason": "etp"
+  },
+  {
+   "code": "357120",
+   "reason": "etp"
+  },
+  {
+   "code": "357250",
+   "reason": "etp"
+  },
+  {
+   "code": "357430",
+   "reason": "etp"
+  },
+  {
+   "code": "357870",
+   "reason": "etp"
+  },
+  {
+   "code": "359210",
+   "reason": "etp"
+  },
+  {
+   "code": "360140",
+   "reason": "etp"
+  },
+  {
+   "code": "360150",
+   "reason": "etp"
+  },
+  {
+   "code": "360200",
+   "reason": "etp"
+  },
+  {
+   "code": "360750",
+   "reason": "etp"
+  },
+  {
+   "code": "361580",
+   "reason": "etp"
+  },
+  {
+   "code": "36328K",
+   "reason": "preferred"
+  },
+  {
+   "code": "363510",
+   "reason": "etp"
+  },
+  {
+   "code": "363570",
+   "reason": "etp"
+  },
+  {
+   "code": "363580",
+   "reason": "etp"
+  },
+  {
+   "code": "364690",
+   "reason": "etp"
+  },
+  {
+   "code": "364960",
+   "reason": "etp"
+  },
+  {
+   "code": "364970",
+   "reason": "etp"
+  },
+  {
+   "code": "364980",
+   "reason": "etp"
+  },
+  {
+   "code": "364990",
+   "reason": "etp"
+  },
+  {
+   "code": "365000",
+   "reason": "etp"
+  },
+  {
+   "code": "365040",
+   "reason": "etp"
+  },
+  {
+   "code": "365550",
+   "reason": "etp"
+  },
+  {
+   "code": "365780",
+   "reason": "etp"
+  },
+  {
+   "code": "367380",
+   "reason": "etp"
+  },
+  {
+   "code": "367740",
+   "reason": "etp"
+  },
+  {
+   "code": "367760",
+   "reason": "etp"
+  },
+  {
+   "code": "367770",
+   "reason": "etp"
+  },
+  {
+   "code": "368190",
+   "reason": "etp"
+  },
+  {
+   "code": "368590",
+   "reason": "etp"
+  },
+  {
+   "code": "368680",
+   "reason": "etp"
+  },
+  {
+   "code": "371150",
+   "reason": "etp"
+  },
+  {
+   "code": "371160",
+   "reason": "etp"
+  },
+  {
+   "code": "371450",
+   "reason": "etp"
+  },
+  {
+   "code": "371460",
+   "reason": "etp"
+  },
+  {
+   "code": "371470",
+   "reason": "etp"
+  },
+  {
+   "code": "371870",
+   "reason": "etp"
+  },
+  {
+   "code": "372330",
+   "reason": "etp"
+  },
+  {
+   "code": "373490",
+   "reason": "etp"
+  },
+  {
+   "code": "373790",
+   "reason": "etp"
+  },
+  {
+   "code": "375270",
+   "reason": "etp"
+  },
+  {
+   "code": "37550K",
+   "reason": "preferred"
+  },
+  {
+   "code": "37550L",
+   "reason": "preferred"
+  },
+  {
+   "code": "375760",
+   "reason": "etp"
+  },
+  {
+   "code": "375770",
+   "reason": "etp"
+  },
+  {
+   "code": "376410",
+   "reason": "etp"
+  },
+  {
+   "code": "377190",
+   "reason": "etp"
+  },
+  {
+   "code": "377990",
+   "reason": "etp"
+  },
+  {
+   "code": "379780",
+   "reason": "etp"
+  },
+  {
+   "code": "379790",
+   "reason": "etp"
+  },
+  {
+   "code": "379800",
+   "reason": "etp"
+  },
+  {
+   "code": "379810",
+   "reason": "etp"
+  },
+  {
+   "code": "380340",
+   "reason": "etp"
+  },
+  {
+   "code": "381170",
+   "reason": "etp"
+  },
+  {
+   "code": "381180",
+   "reason": "etp"
+  },
+  {
+   "code": "381560",
+   "reason": "etp"
+  },
+  {
+   "code": "381570",
+   "reason": "etp"
+  },
+  {
+   "code": "38380K",
+   "reason": "preferred"
+  },
+  {
+   "code": "385510",
+   "reason": "etp"
+  },
+  {
+   "code": "385520",
+   "reason": "etp"
+  },
+  {
+   "code": "385540",
+   "reason": "etp"
+  },
+  {
+   "code": "385550",
+   "reason": "etp"
+  },
+  {
+   "code": "385560",
+   "reason": "etp"
+  },
+  {
+   "code": "385590",
+   "reason": "etp"
+  },
+  {
+   "code": "385600",
+   "reason": "etp"
+  },
+  {
+   "code": "387270",
+   "reason": "etp"
+  },
+  {
+   "code": "387280",
+   "reason": "etp"
+  },
+  {
+   "code": "388280",
+   "reason": "etp"
+  },
+  {
+   "code": "388420",
+   "reason": "etp"
+  },
+  {
+   "code": "390390",
+   "reason": "etp"
+  },
+  {
+   "code": "390400",
+   "reason": "etp"
+  },
+  {
+   "code": "391600",
+   "reason": "etp"
+  },
+  {
+   "code": "394660",
+   "reason": "etp"
+  },
+  {
+   "code": "394670",
+   "reason": "etp"
+  },
+  {
+   "code": "395150",
+   "reason": "etp"
+  },
+  {
+   "code": "395160",
+   "reason": "etp"
+  },
+  {
+   "code": "395170",
+   "reason": "etp"
+  },
+  {
+   "code": "395270",
+   "reason": "etp"
+  },
+  {
+   "code": "395280",
+   "reason": "etp"
+  },
+  {
+   "code": "395290",
+   "reason": "etp"
+  },
+  {
+   "code": "395400",
+   "reason": "etp"
+  },
+  {
+   "code": "395750",
+   "reason": "etp"
+  },
+  {
+   "code": "395760",
+   "reason": "etp"
+  },
+  {
+   "code": "396500",
+   "reason": "etp"
+  },
+  {
+   "code": "396510",
+   "reason": "etp"
+  },
+  {
+   "code": "396520",
+   "reason": "etp"
+  },
+  {
+   "code": "396690",
+   "reason": "etp"
+  },
+  {
+   "code": "397420",
+   "reason": "etp"
+  },
+  {
+   "code": "399110",
+   "reason": "etp"
+  },
+  {
+   "code": "399580",
+   "reason": "etp"
+  },
+  {
+   "code": "400570",
+   "reason": "etp"
+  },
+  {
+   "code": "400580",
+   "reason": "etp"
+  },
+  {
+   "code": "400590",
+   "reason": "etp"
+  },
+  {
+   "code": "400760",
+   "reason": "etp"
+  },
+  {
+   "code": "400970",
+   "reason": "etp"
+  },
+  {
+   "code": "401170",
+   "reason": "etp"
+  },
+  {
+   "code": "401470",
+   "reason": "etp"
+  },
+  {
+   "code": "401590",
+   "reason": "etp"
+  },
+  {
+   "code": "402460",
+   "reason": "etp"
+  },
+  {
+   "code": "402970",
+   "reason": "etp"
+  },
+  {
+   "code": "404260",
+   "reason": "etp"
+  },
+  {
+   "code": "404540",
+   "reason": "etp"
+  },
+  {
+   "code": "404650",
+   "reason": "etp"
+  },
+  {
+   "code": "404990",
+   "reason": "etp"
+  },
+  {
+   "code": "407300",
+   "reason": "etp"
+  },
+  {
+   "code": "407310",
+   "reason": "etp"
+  },
+  {
+   "code": "407820",
+   "reason": "etp"
+  },
+  {
+   "code": "407830",
+   "reason": "etp"
+  },
+  {
+   "code": "409810",
+   "reason": "etp"
+  },
+  {
+   "code": "409820",
+   "reason": "etp"
+  },
+  {
+   "code": "411060",
+   "reason": "etp"
+  },
+  {
+   "code": "411420",
+   "reason": "etp"
+  },
+  {
+   "code": "411540",
+   "reason": "etp"
+  },
+  {
+   "code": "411860",
+   "reason": "etp"
+  },
+  {
+   "code": "412560",
+   "reason": "etp"
+  },
+  {
+   "code": "412570",
+   "reason": "etp"
+  },
+  {
+   "code": "412770",
+   "reason": "etp"
+  },
+  {
+   "code": "413220",
+   "reason": "etp"
+  },
+  {
+   "code": "414270",
+   "reason": "etp"
+  },
+  {
+   "code": "414780",
+   "reason": "etp"
+  },
+  {
+   "code": "415340",
+   "reason": "etp"
+  },
+  {
+   "code": "415760",
+   "reason": "etp"
+  },
+  {
+   "code": "415920",
+   "reason": "etp"
+  },
+  {
+   "code": "416090",
+   "reason": "etp"
+  },
+  {
+   "code": "417310",
+   "reason": "etp"
+  },
+  {
+   "code": "417450",
+   "reason": "etp"
+  },
+  {
+   "code": "417630",
+   "reason": "etp"
+  },
+  {
+   "code": "418660",
+   "reason": "etp"
+  },
+  {
+   "code": "418670",
+   "reason": "etp"
+  },
+  {
+   "code": "419420",
+   "reason": "etp"
+  },
+  {
+   "code": "419430",
+   "reason": "etp"
+  },
+  {
+   "code": "419650",
+   "reason": "etp"
+  },
+  {
+   "code": "419890",
+   "reason": "etp"
+  },
+  {
+   "code": "421320",
+   "reason": "etp"
+  },
+  {
+   "code": "422420",
+   "reason": "etp"
+  },
+  {
+   "code": "423160",
+   "reason": "etp"
+  },
+  {
+   "code": "423170",
+   "reason": "etp"
+  },
+  {
+   "code": "423920",
+   "reason": "etp"
+  },
+  {
+   "code": "427120",
+   "reason": "etp"
+  },
+  {
+   "code": "428510",
+   "reason": "etp"
+  },
+  {
+   "code": "428560",
+   "reason": "etp"
+  },
+  {
+   "code": "429000",
+   "reason": "etp"
+  },
+  {
+   "code": "429010",
+   "reason": "etp"
+  },
+  {
+   "code": "429740",
+   "reason": "etp"
+  },
+  {
+   "code": "429760",
+   "reason": "etp"
+  },
+  {
+   "code": "429980",
+   "reason": "etp"
+  },
+  {
+   "code": "430500",
+   "reason": "etp"
+  },
+  {
+   "code": "432320",
+   "reason": "etp"
+  },
+  {
+   "code": "432600",
+   "reason": "etp"
+  },
+  {
+   "code": "432840",
+   "reason": "etp"
+  },
+  {
+   "code": "433220",
+   "reason": "etp"
+  },
+  {
+   "code": "433250",
+   "reason": "etp"
+  },
+  {
+   "code": "433330",
+   "reason": "etp"
+  },
+  {
+   "code": "433500",
+   "reason": "etp"
+  },
+  {
+   "code": "433880",
+   "reason": "etp"
+  },
+  {
+   "code": "433970",
+   "reason": "etp"
+  },
+  {
+   "code": "433980",
+   "reason": "etp"
+  },
+  {
+   "code": "434060",
+   "reason": "etp"
+  },
+  {
+   "code": "434730",
+   "reason": "etp"
+  },
+  {
+   "code": "435040",
+   "reason": "etp"
+  },
+  {
+   "code": "435420",
+   "reason": "etp"
+  },
+  {
+   "code": "435530",
+   "reason": "etp"
+  },
+  {
+   "code": "435540",
+   "reason": "etp"
+  },
+  {
+   "code": "435550",
+   "reason": "etp"
+  },
+  {
+   "code": "436140",
+   "reason": "etp"
+  },
+  {
+   "code": "437070",
+   "reason": "etp"
+  },
+  {
+   "code": "437080",
+   "reason": "etp"
+  },
+  {
+   "code": "437350",
+   "reason": "etp"
+  },
+  {
+   "code": "437370",
+   "reason": "etp"
+  },
+  {
+   "code": "438080",
+   "reason": "etp"
+  },
+  {
+   "code": "438100",
+   "reason": "etp"
+  },
+  {
+   "code": "438320",
+   "reason": "etp"
+  },
+  {
+   "code": "438330",
+   "reason": "etp"
+  },
+  {
+   "code": "438560",
+   "reason": "etp"
+  },
+  {
+   "code": "438570",
+   "reason": "etp"
+  },
+  {
+   "code": "438900",
+   "reason": "etp"
+  },
+  {
+   "code": "439860",
+   "reason": "etp"
+  },
+  {
+   "code": "439870",
+   "reason": "etp"
+  },
+  {
+   "code": "440340",
+   "reason": "etp"
+  },
+  {
+   "code": "440640",
+   "reason": "etp"
+  },
+  {
+   "code": "440650",
+   "reason": "etp"
+  },
+  {
+   "code": "441540",
+   "reason": "etp"
+  },
+  {
+   "code": "441640",
+   "reason": "etp"
+  },
+  {
+   "code": "441680",
+   "reason": "etp"
+  },
+  {
+   "code": "442090",
+   "reason": "etp"
+  },
+  {
+   "code": "442260",
+   "reason": "etp"
+  },
+  {
+   "code": "442320",
+   "reason": "etp"
+  },
+  {
+   "code": "442550",
+   "reason": "etp"
+  },
+  {
+   "code": "442560",
+   "reason": "etp"
+  },
+  {
+   "code": "442570",
+   "reason": "etp"
+  },
+  {
+   "code": "442580",
+   "reason": "etp"
+  },
+  {
+   "code": "444200",
+   "reason": "etp"
+  },
+  {
+   "code": "445150",
+   "reason": "etp"
+  },
+  {
+   "code": "445290",
+   "reason": "etp"
+  },
+  {
+   "code": "445690",
+   "reason": "etp"
+  },
+  {
+   "code": "445910",
+   "reason": "etp"
+  },
+  {
+   "code": "446690",
+   "reason": "etp"
+  },
+  {
+   "code": "446700",
+   "reason": "etp"
+  },
+  {
+   "code": "446720",
+   "reason": "etp"
+  },
+  {
+   "code": "446770",
+   "reason": "etp"
+  },
+  {
+   "code": "447430",
+   "reason": "etp"
+  },
+  {
+   "code": "447620",
+   "reason": "etp"
+  },
+  {
+   "code": "447660",
+   "reason": "etp"
+  },
+  {
+   "code": "447770",
+   "reason": "etp"
+  },
+  {
+   "code": "448290",
+   "reason": "etp"
+  },
+  {
+   "code": "448300",
+   "reason": "etp"
+  },
+  {
+   "code": "448330",
+   "reason": "etp"
+  },
+  {
+   "code": "448490",
+   "reason": "etp"
+  },
+  {
+   "code": "448540",
+   "reason": "etp"
+  },
+  {
+   "code": "448570",
+   "reason": "etp"
+  },
+  {
+   "code": "448630",
+   "reason": "etp"
+  },
+  {
+   "code": "448730",
+   "reason": "etp"
+  },
+  {
+   "code": "449170",
+   "reason": "etp"
+  },
+  {
+   "code": "449180",
+   "reason": "etp"
+  },
+  {
+   "code": "449190",
+   "reason": "etp"
+  },
+  {
+   "code": "449450",
+   "reason": "etp"
+  },
+  {
+   "code": "449580",
+   "reason": "etp"
+  },
+  {
+   "code": "449680",
+   "reason": "etp"
+  },
+  {
+   "code": "449690",
+   "reason": "etp"
+  },
+  {
+   "code": "449770",
+   "reason": "etp"
+  },
+  {
+   "code": "449780",
+   "reason": "etp"
+  },
+  {
+   "code": "450180",
+   "reason": "etp"
+  },
+  {
+   "code": "450190",
+   "reason": "etp"
+  },
+  {
+   "code": "450910",
+   "reason": "etp"
+  },
+  {
+   "code": "451000",
+   "reason": "etp"
+  },
+  {
+   "code": "451150",
+   "reason": "etp"
+  },
+  {
+   "code": "451530",
+   "reason": "etp"
+  },
+  {
+   "code": "451540",
+   "reason": "etp"
+  },
+  {
+   "code": "451600",
+   "reason": "etp"
+  },
+  {
+   "code": "451670",
+   "reason": "etp"
+  },
+  {
+   "code": "451800",
+   "reason": "etp"
+  },
+  {
+   "code": "452250",
+   "reason": "etp"
+  },
+  {
+   "code": "45226K",
+   "reason": "preferred"
+  },
+  {
+   "code": "452360",
+   "reason": "etp"
+  },
+  {
+   "code": "453010",
+   "reason": "etp"
+  },
+  {
+   "code": "453060",
+   "reason": "etp"
+  },
+  {
+   "code": "453080",
+   "reason": "etp"
+  },
+  {
+   "code": "453330",
+   "reason": "etp"
+  },
+  {
+   "code": "453630",
+   "reason": "etp"
+  },
+  {
+   "code": "453640",
+   "reason": "etp"
+  },
+  {
+   "code": "453650",
+   "reason": "etp"
+  },
+  {
+   "code": "453660",
+   "reason": "etp"
+  },
+  {
+   "code": "453810",
+   "reason": "etp"
+  },
+  {
+   "code": "453820",
+   "reason": "etp"
+  },
+  {
+   "code": "453850",
+   "reason": "etp"
+  },
+  {
+   "code": "453870",
+   "reason": "etp"
+  },
+  {
+   "code": "453950",
+   "reason": "etp"
+  },
+  {
+   "code": "454180",
+   "reason": "etp"
+  },
+  {
+   "code": "454320",
+   "reason": "etp"
+  },
+  {
+   "code": "454780",
+   "reason": "etp"
+  },
+  {
+   "code": "455030",
+   "reason": "etp"
+  },
+  {
+   "code": "455660",
+   "reason": "etp"
+  },
+  {
+   "code": "455850",
+   "reason": "etp"
+  },
+  {
+   "code": "455860",
+   "reason": "etp"
+  },
+  {
+   "code": "455890",
+   "reason": "etp"
+  },
+  {
+   "code": "455960",
+   "reason": "etp"
+  },
+  {
+   "code": "456200",
+   "reason": "etp"
+  },
+  {
+   "code": "456250",
+   "reason": "etp"
+  },
+  {
+   "code": "456610",
+   "reason": "etp"
+  },
+  {
+   "code": "456680",
+   "reason": "etp"
+  },
+  {
+   "code": "456880",
+   "reason": "etp"
+  },
+  {
+   "code": "457480",
+   "reason": "etp"
+  },
+  {
+   "code": "457690",
+   "reason": "etp"
+  },
+  {
+   "code": "457700",
+   "reason": "etp"
+  },
+  {
+   "code": "457930",
+   "reason": "etp"
+  },
+  {
+   "code": "457990",
+   "reason": "etp"
+  },
+  {
+   "code": "458210",
+   "reason": "etp"
+  },
+  {
+   "code": "458250",
+   "reason": "etp"
+  },
+  {
+   "code": "458260",
+   "reason": "etp"
+  },
+  {
+   "code": "458730",
+   "reason": "etp"
+  },
+  {
+   "code": "458750",
+   "reason": "etp"
+  },
+  {
+   "code": "458760",
+   "reason": "etp"
+  },
+  {
+   "code": "459560",
+   "reason": "etp"
+  },
+  {
+   "code": "459580",
+   "reason": "etp"
+  },
+  {
+   "code": "459750",
+   "reason": "etp"
+  },
+  {
+   "code": "459790",
+   "reason": "etp"
+  },
+  {
+   "code": "460270",
+   "reason": "etp"
+  },
+  {
+   "code": "460660",
+   "reason": "etp"
+  },
+  {
+   "code": "460960",
+   "reason": "etp"
+  },
+  {
+   "code": "461340",
+   "reason": "etp"
+  },
+  {
+   "code": "461450",
+   "reason": "etp"
+  },
+  {
+   "code": "461460",
+   "reason": "etp"
+  },
+  {
+   "code": "461490",
+   "reason": "etp"
+  },
+  {
+   "code": "461500",
+   "reason": "etp"
+  },
+  {
+   "code": "461580",
+   "reason": "etp"
+  },
+  {
+   "code": "461600",
+   "reason": "etp"
+  },
+  {
+   "code": "461900",
+   "reason": "etp"
+  },
+  {
+   "code": "461910",
+   "reason": "etp"
+  },
+  {
+   "code": "461950",
+   "reason": "etp"
+  },
+  {
+   "code": "462010",
+   "reason": "etp"
+  },
+  {
+   "code": "462330",
+   "reason": "etp"
+  },
+  {
+   "code": "462340",
+   "reason": "etp"
+  },
+  {
+   "code": "462900",
+   "reason": "etp"
+  },
+  {
+   "code": "463250",
+   "reason": "etp"
+  },
+  {
+   "code": "463300",
+   "reason": "etp"
+  },
+  {
+   "code": "463640",
+   "reason": "etp"
+  },
+  {
+   "code": "463680",
+   "reason": "etp"
+  },
+  {
+   "code": "463690",
+   "reason": "etp"
+  },
+  {
+   "code": "464240",
+   "reason": "etp"
+  },
+  {
+   "code": "464310",
+   "reason": "etp"
+  },
+  {
+   "code": "464470",
+   "reason": "etp"
+  },
+  {
+   "code": "464600",
+   "reason": "etp"
+  },
+  {
+   "code": "464610",
+   "reason": "etp"
+  },
+  {
+   "code": "464920",
+   "reason": "etp"
+  },
+  {
+   "code": "464930",
+   "reason": "etp"
+  },
+  {
+   "code": "465330",
+   "reason": "etp"
+  },
+  {
+   "code": "465350",
+   "reason": "etp"
+  },
+  {
+   "code": "465580",
+   "reason": "etp"
+  },
+  {
+   "code": "465610",
+   "reason": "etp"
+  },
+  {
+   "code": "465620",
+   "reason": "etp"
+  },
+  {
+   "code": "465660",
+   "reason": "etp"
+  },
+  {
+   "code": "465670",
+   "reason": "etp"
+  },
+  {
+   "code": "465770",
+   "reason": "warned"
+  },
+  {
+   "code": "465780",
+   "reason": "etp"
+  },
+  {
+   "code": "466810",
+   "reason": "etp"
+  },
+  {
+   "code": "466920",
+   "reason": "etp"
+  },
+  {
+   "code": "466930",
+   "reason": "etp"
+  },
+  {
+   "code": "466940",
+   "reason": "etp"
+  },
+  {
+   "code": "466950",
+   "reason": "etp"
+  },
+  {
+   "code": "468370",
+   "reason": "etp"
+  },
+  {
+   "code": "468380",
+   "reason": "etp"
+  },
+  {
+   "code": "468630",
+   "reason": "etp"
+  },
+  {
+   "code": "469050",
+   "reason": "etp"
+  },
+  {
+   "code": "469060",
+   "reason": "etp"
+  },
+  {
+   "code": "469070",
+   "reason": "etp"
+  },
+  {
+   "code": "469150",
+   "reason": "etp"
+  },
+  {
+   "code": "469160",
+   "reason": "etp"
+  },
+  {
+   "code": "469170",
+   "reason": "etp"
+  },
+  {
+   "code": "469530",
+   "reason": "etp"
+  },
+  {
+   "code": "469790",
+   "reason": "etp"
+  },
+  {
+   "code": "469830",
+   "reason": "etp"
+  },
+  {
+   "code": "470310",
+   "reason": "etp"
+  },
+  {
+   "code": "471040",
+   "reason": "etp"
+  },
+  {
+   "code": "471230",
+   "reason": "etp"
+  },
+  {
+   "code": "471460",
+   "reason": "etp"
+  },
+  {
+   "code": "471760",
+   "reason": "etp"
+  },
+  {
+   "code": "471780",
+   "reason": "etp"
+  },
+  {
+   "code": "471990",
+   "reason": "etp"
+  },
+  {
+   "code": "472150",
+   "reason": "etp"
+  },
+  {
+   "code": "472160",
+   "reason": "etp"
+  },
+  {
+   "code": "472170",
+   "reason": "etp"
+  },
+  {
+   "code": "472830",
+   "reason": "etp"
+  },
+  {
+   "code": "472870",
+   "reason": "etp"
+  },
+  {
+   "code": "473290",
+   "reason": "etp"
+  },
+  {
+   "code": "473330",
+   "reason": "etp"
+  },
+  {
+   "code": "473440",
+   "reason": "etp"
+  },
+  {
+   "code": "473460",
+   "reason": "etp"
+  },
+  {
+   "code": "473490",
+   "reason": "etp"
+  },
+  {
+   "code": "473590",
+   "reason": "etp"
+  },
+  {
+   "code": "473640",
+   "reason": "etp"
+  },
+  {
+   "code": "474220",
+   "reason": "etp"
+  },
+  {
+   "code": "474390",
+   "reason": "etp"
+  },
+  {
+   "code": "474800",
+   "reason": "etp"
+  },
+  {
+   "code": "474920",
+   "reason": "etp"
+  },
+  {
+   "code": "475050",
+   "reason": "etp"
+  },
+  {
+   "code": "475070",
+   "reason": "etp"
+  },
+  {
+   "code": "475080",
+   "reason": "etp"
+  },
+  {
+   "code": "475260",
+   "reason": "etp"
+  },
+  {
+   "code": "475270",
+   "reason": "etp"
+  },
+  {
+   "code": "475280",
+   "reason": "etp"
+  },
+  {
+   "code": "475300",
+   "reason": "etp"
+  },
+  {
+   "code": "475310",
+   "reason": "etp"
+  },
+  {
+   "code": "475350",
+   "reason": "etp"
+  },
+  {
+   "code": "475380",
+   "reason": "etp"
+  },
+  {
+   "code": "475630",
+   "reason": "etp"
+  },
+  {
+   "code": "475720",
+   "reason": "etp"
+  },
+  {
+   "code": "476000",
+   "reason": "etp"
+  },
+  {
+   "code": "476030",
+   "reason": "etp"
+  },
+  {
+   "code": "476070",
+   "reason": "etp"
+  },
+  {
+   "code": "476260",
+   "reason": "etp"
+  },
+  {
+   "code": "476310",
+   "reason": "etp"
+  },
+  {
+   "code": "476450",
+   "reason": "etp"
+  },
+  {
+   "code": "476550",
+   "reason": "etp"
+  },
+  {
+   "code": "476690",
+   "reason": "etp"
+  },
+  {
+   "code": "476750",
+   "reason": "etp"
+  },
+  {
+   "code": "476760",
+   "reason": "etp"
+  },
+  {
+   "code": "476800",
+   "reason": "etp"
+  },
+  {
+   "code": "476850",
+   "reason": "etp"
+  },
+  {
+   "code": "477050",
+   "reason": "etp"
+  },
+  {
+   "code": "477080",
+   "reason": "etp"
+  },
+  {
+   "code": "477490",
+   "reason": "etp"
+  },
+  {
+   "code": "477730",
+   "reason": "etp"
+  },
+  {
+   "code": "479520",
+   "reason": "etp"
+  },
+  {
+   "code": "479620",
+   "reason": "etp"
+  },
+  {
+   "code": "479730",
+   "reason": "etp"
+  },
+  {
+   "code": "479850",
+   "reason": "etp"
+  },
+  {
+   "code": "480020",
+   "reason": "etp"
+  },
+  {
+   "code": "480030",
+   "reason": "etp"
+  },
+  {
+   "code": "480040",
+   "reason": "etp"
+  },
+  {
+   "code": "480260",
+   "reason": "etp"
+  },
+  {
+   "code": "480310",
+   "reason": "etp"
+  },
+  {
+   "code": "481050",
+   "reason": "etp"
+  },
+  {
+   "code": "481060",
+   "reason": "etp"
+  },
+  {
+   "code": "481180",
+   "reason": "etp"
+  },
+  {
+   "code": "481190",
+   "reason": "etp"
+  },
+  {
+   "code": "481340",
+   "reason": "etp"
+  },
+  {
+   "code": "481430",
+   "reason": "etp"
+  },
+  {
+   "code": "481850",
+   "reason": "etp"
+  },
+  {
+   "code": "482030",
+   "reason": "etp"
+  },
+  {
+   "code": "482730",
+   "reason": "etp"
+  },
+  {
+   "code": "483020",
+   "reason": "etp"
+  },
+  {
+   "code": "483030",
+   "reason": "etp"
+  },
+  {
+   "code": "483280",
+   "reason": "etp"
+  },
+  {
+   "code": "483290",
+   "reason": "etp"
+  },
+  {
+   "code": "483320",
+   "reason": "etp"
+  },
+  {
+   "code": "483330",
+   "reason": "etp"
+  },
+  {
+   "code": "483340",
+   "reason": "etp"
+  },
+  {
+   "code": "483570",
+   "reason": "etp"
+  },
+  {
+   "code": "484790",
+   "reason": "etp"
+  },
+  {
+   "code": "484880",
+   "reason": "etp"
+  },
+  {
+   "code": "484890",
+   "reason": "etp"
+  },
+  {
+   "code": "485540",
+   "reason": "etp"
+  },
+  {
+   "code": "485690",
+   "reason": "etp"
+  },
+  {
+   "code": "486290",
+   "reason": "etp"
+  },
+  {
+   "code": "486450",
+   "reason": "etp"
+  },
+  {
+   "code": "486830",
+   "reason": "etp"
+  },
+  {
+   "code": "487130",
+   "reason": "etp"
+  },
+  {
+   "code": "487230",
+   "reason": "etp"
+  },
+  {
+   "code": "487240",
+   "reason": "etp"
+  },
+  {
+   "code": "487340",
+   "reason": "etp"
+  },
+  {
+   "code": "487750",
+   "reason": "etp"
+  },
+  {
+   "code": "487910",
+   "reason": "etp"
+  },
+  {
+   "code": "487920",
+   "reason": "etp"
+  },
+  {
+   "code": "487950",
+   "reason": "etp"
+  },
+  {
+   "code": "488080",
+   "reason": "etp"
+  },
+  {
+   "code": "488200",
+   "reason": "etp"
+  },
+  {
+   "code": "488210",
+   "reason": "etp"
+  },
+  {
+   "code": "488480",
+   "reason": "etp"
+  },
+  {
+   "code": "488500",
+   "reason": "etp"
+  },
+  {
+   "code": "488770",
+   "reason": "etp"
+  },
+  {
+   "code": "488980",
+   "reason": "etp"
+  },
+  {
+   "code": "489000",
+   "reason": "etp"
+  },
+  {
+   "code": "489010",
+   "reason": "etp"
+  },
+  {
+   "code": "489030",
+   "reason": "etp"
+  },
+  {
+   "code": "489250",
+   "reason": "etp"
+  },
+  {
+   "code": "489860",
+   "reason": "etp"
+  },
+  {
+   "code": "490090",
+   "reason": "etp"
+  },
+  {
+   "code": "490330",
+   "reason": "etp"
+  },
+  {
+   "code": "490480",
+   "reason": "etp"
+  },
+  {
+   "code": "490490",
+   "reason": "etp"
+  },
+  {
+   "code": "490590",
+   "reason": "etp"
+  },
+  {
+   "code": "490600",
+   "reason": "etp"
+  },
+  {
+   "code": "491010",
+   "reason": "etp"
+  },
+  {
+   "code": "491090",
+   "reason": "etp"
+  },
+  {
+   "code": "491220",
+   "reason": "etp"
+  },
+  {
+   "code": "491230",
+   "reason": "etp"
+  },
+  {
+   "code": "491620",
+   "reason": "etp"
+  },
+  {
+   "code": "491630",
+   "reason": "etp"
+  },
+  {
+   "code": "491820",
+   "reason": "etp"
+  },
+  {
+   "code": "491830",
+   "reason": "etp"
+  },
+  {
+   "code": "493420",
+   "reason": "etp"
+  },
+  {
+   "code": "493810",
+   "reason": "etp"
+  },
+  {
+   "code": "494210",
+   "reason": "etp"
+  },
+  {
+   "code": "494220",
+   "reason": "etp"
+  },
+  {
+   "code": "494300",
+   "reason": "etp"
+  },
+  {
+   "code": "494310",
+   "reason": "etp"
+  },
+  {
+   "code": "494330",
+   "reason": "etp"
+  },
+  {
+   "code": "494340",
+   "reason": "etp"
+  },
+  {
+   "code": "494410",
+   "reason": "etp"
+  },
+  {
+   "code": "494420",
+   "reason": "etp"
+  },
+  {
+   "code": "494670",
+   "reason": "etp"
+  },
+  {
+   "code": "494840",
+   "reason": "etp"
+  },
+  {
+   "code": "494890",
+   "reason": "etp"
+  },
+  {
+   "code": "495040",
+   "reason": "etp"
+  },
+  {
+   "code": "495050",
+   "reason": "etp"
+  },
+  {
+   "code": "495230",
+   "reason": "etp"
+  },
+  {
+   "code": "495550",
+   "reason": "etp"
+  },
+  {
+   "code": "495750",
+   "reason": "etp"
+  },
+  {
+   "code": "495850",
+   "reason": "etp"
+  },
+  {
+   "code": "495940",
+   "reason": "etp"
+  },
+  {
+   "code": "496080",
+   "reason": "etp"
+  },
+  {
+   "code": "496090",
+   "reason": "etp"
+  },
+  {
+   "code": "496120",
+   "reason": "etp"
+  },
+  {
+   "code": "496770",
+   "reason": "etp"
+  },
+  {
+   "code": "497510",
+   "reason": "etp"
+  },
+  {
+   "code": "497520",
+   "reason": "etp"
+  },
+  {
+   "code": "497570",
+   "reason": "etp"
+  },
+  {
+   "code": "497780",
+   "reason": "etp"
+  },
+  {
+   "code": "497880",
+   "reason": "etp"
+  },
+  {
+   "code": "498050",
+   "reason": "etp"
+  },
+  {
+   "code": "498270",
+   "reason": "etp"
+  },
+  {
+   "code": "498400",
+   "reason": "etp"
+  },
+  {
+   "code": "498410",
+   "reason": "etp"
+  },
+  {
+   "code": "498610",
+   "reason": "etp"
+  },
+  {
+   "code": "498860",
+   "reason": "etp"
+  },
+  {
+   "code": "499150",
+   "reason": "etp"
+  },
+  {
+   "code": "499660",
+   "reason": "etp"
+  },
+  {
+   "code": "500061",
+   "reason": "etp"
+  },
+  {
+   "code": "500063",
+   "reason": "etp"
+  },
+  {
+   "code": "500067",
+   "reason": "etp"
+  },
+  {
+   "code": "500068",
+   "reason": "etp"
+  },
+  {
+   "code": "500069",
+   "reason": "etp"
+  },
+  {
+   "code": "500071",
+   "reason": "etp"
+  },
+  {
+   "code": "500072",
+   "reason": "etp"
+  },
+  {
+   "code": "500085",
+   "reason": "etp"
+  },
+  {
+   "code": "500086",
+   "reason": "etp"
+  },
+  {
+   "code": "500091",
+   "reason": "etp"
+  },
+  {
+   "code": "500093",
+   "reason": "etp"
+  },
+  {
+   "code": "500094",
+   "reason": "etp"
+  },
+  {
+   "code": "500095",
+   "reason": "etp"
+  },
+  {
+   "code": "500096",
+   "reason": "etp"
+  },
+  {
+   "code": "500097",
+   "reason": "etp"
+  },
+  {
+   "code": "500098",
+   "reason": "etp"
+  },
+  {
+   "code": "500099",
+   "reason": "etp"
+  },
+  {
+   "code": "500100",
+   "reason": "etp"
+  },
+  {
+   "code": "500101",
+   "reason": "etp"
+  },
+  {
+   "code": "500102",
+   "reason": "etp"
+  },
+  {
+   "code": "500035",
+   "reason": "etp"
+  },
+  {
+   "code": "500036",
+   "reason": "etp"
+  },
+  {
+   "code": "500020",
+   "reason": "etp"
+  },
+  {
+   "code": "500028",
+   "reason": "etp"
+  },
+  {
+   "code": "500050",
+   "reason": "etp"
+  },
+  {
+   "code": "500051",
+   "reason": "etp"
+  },
+  {
+   "code": "500023",
+   "reason": "etp"
+  },
+  {
+   "code": "500024",
+   "reason": "etp"
+  },
+  {
+   "code": "500029",
+   "reason": "etp"
+  },
+  {
+   "code": "500030",
+   "reason": "etp"
+  },
+  {
+   "code": "500037",
+   "reason": "etp"
+  },
+  {
+   "code": "500038",
+   "reason": "etp"
+  },
+  {
+   "code": "500040",
+   "reason": "etp"
+  },
+  {
+   "code": "500041",
+   "reason": "etp"
+  },
+  {
+   "code": "510027",
+   "reason": "etp"
+  },
+  {
+   "code": "510043",
+   "reason": "etp"
+  },
+  {
+   "code": "510044",
+   "reason": "etp"
+  },
+  {
+   "code": "510045",
+   "reason": "etp"
+  },
+  {
+   "code": "520037",
+   "reason": "etp"
+  },
+  {
+   "code": "520038",
+   "reason": "etp"
+  },
+  {
+   "code": "520039",
+   "reason": "etp"
+  },
+  {
+   "code": "520040",
+   "reason": "etp"
+  },
+  {
+   "code": "520046",
+   "reason": "etp"
+  },
+  {
+   "code": "520047",
+   "reason": "etp"
+  },
+  {
+   "code": "520054",
+   "reason": "etp"
+  },
+  {
+   "code": "520056",
+   "reason": "etp"
+  },
+  {
+   "code": "520057",
+   "reason": "etp"
+  },
+  {
+   "code": "520064",
+   "reason": "etp"
+  },
+  {
+   "code": "520065",
+   "reason": "etp"
+  },
+  {
+   "code": "520066",
+   "reason": "etp"
+  },
+  {
+   "code": "520072",
+   "reason": "etp"
+  },
+  {
+   "code": "520073",
+   "reason": "etp"
+  },
+  {
+   "code": "520074",
+   "reason": "etp"
+  },
+  {
+   "code": "520075",
+   "reason": "etp"
+  },
+  {
+   "code": "520076",
+   "reason": "etp"
+  },
+  {
+   "code": "520077",
+   "reason": "etp"
+  },
+  {
+   "code": "520078",
+   "reason": "etp"
+  },
+  {
+   "code": "520079",
+   "reason": "etp"
+  },
+  {
+   "code": "520080",
+   "reason": "etp"
+  },
+  {
+   "code": "520081",
+   "reason": "etp"
+  },
+  {
+   "code": "520082",
+   "reason": "etp"
+  },
+  {
+   "code": "520083",
+   "reason": "etp"
+  },
+  {
+   "code": "520084",
+   "reason": "etp"
+  },
+  {
+   "code": "520085",
+   "reason": "etp"
+  },
+  {
+   "code": "520086",
+   "reason": "etp"
+  },
+  {
+   "code": "520087",
+   "reason": "etp"
+  },
+  {
+   "code": "520088",
+   "reason": "etp"
+  },
+  {
+   "code": "520089",
+   "reason": "etp"
+  },
+  {
+   "code": "520090",
+   "reason": "etp"
+  },
+  {
+   "code": "520091",
+   "reason": "etp"
+  },
+  {
+   "code": "520092",
+   "reason": "etp"
+  },
+  {
+   "code": "520093",
+   "reason": "etp"
+  },
+  {
+   "code": "520094",
+   "reason": "etp"
+  },
+  {
+   "code": "520097",
+   "reason": "etp"
+  },
+  {
+   "code": "520098",
+   "reason": "etp"
+  },
+  {
+   "code": "520099",
+   "reason": "etp"
+  },
+  {
+   "code": "520100",
+   "reason": "etp"
+  },
+  {
+   "code": "520101",
+   "reason": "etp"
+  },
+  {
+   "code": "520102",
+   "reason": "etp"
+  },
+  {
+   "code": "530089",
+   "reason": "etp"
+  },
+  {
+   "code": "530090",
+   "reason": "etp"
+  },
+  {
+   "code": "530092",
+   "reason": "etp"
+  },
+  {
+   "code": "530094",
+   "reason": "etp"
+  },
+  {
+   "code": "530095",
+   "reason": "etp"
+  },
+  {
+   "code": "530096",
+   "reason": "etp"
+  },
+  {
+   "code": "530104",
+   "reason": "etp"
+  },
+  {
+   "code": "530106",
+   "reason": "etp"
+  },
+  {
+   "code": "530107",
+   "reason": "etp"
+  },
+  {
+   "code": "530112",
+   "reason": "etp"
+  },
+  {
+   "code": "530113",
+   "reason": "etp"
+  },
+  {
+   "code": "530114",
+   "reason": "etp"
+  },
+  {
+   "code": "530115",
+   "reason": "etp"
+  },
+  {
+   "code": "530116",
+   "reason": "etp"
+  },
+  {
+   "code": "530117",
+   "reason": "etp"
+  },
+  {
+   "code": "530118",
+   "reason": "etp"
+  },
+  {
+   "code": "530119",
+   "reason": "etp"
+  },
+  {
+   "code": "530120",
+   "reason": "etp"
+  },
+  {
+   "code": "530121",
+   "reason": "etp"
+  },
+  {
+   "code": "530122",
+   "reason": "etp"
+  },
+  {
+   "code": "530123",
+   "reason": "etp"
+  },
+  {
+   "code": "530124",
+   "reason": "etp"
+  },
+  {
+   "code": "530125",
+   "reason": "etp"
+  },
+  {
+   "code": "530126",
+   "reason": "etp"
+  },
+  {
+   "code": "530127",
+   "reason": "etp"
+  },
+  {
+   "code": "530128",
+   "reason": "etp"
+  },
+  {
+   "code": "530129",
+   "reason": "etp"
+  },
+  {
+   "code": "530130",
+   "reason": "etp"
+  },
+  {
+   "code": "530131",
+   "reason": "etp"
+  },
+  {
+   "code": "530132",
+   "reason": "etp"
+  },
+  {
+   "code": "530133",
+   "reason": "etp"
+  },
+  {
+   "code": "530134",
+   "reason": "etp"
+  },
+  {
+   "code": "530135",
+   "reason": "etp"
+  },
+  {
+   "code": "530136",
+   "reason": "etp"
+  },
+  {
+   "code": "530137",
+   "reason": "etp"
+  },
+  {
+   "code": "530138",
+   "reason": "etp"
+  },
+  {
+   "code": "530139",
+   "reason": "etp"
+  },
+  {
+   "code": "530140",
+   "reason": "etp"
+  },
+  {
+   "code": "530141",
+   "reason": "etp"
+  },
+  {
+   "code": "530142",
+   "reason": "etp"
+  },
+  {
+   "code": "530143",
+   "reason": "etp"
+  },
+  {
+   "code": "530145",
+   "reason": "etp"
+  },
+  {
+   "code": "530067",
+   "reason": "etp"
+  },
+  {
+   "code": "530060",
+   "reason": "etp"
+  },
+  {
+   "code": "530031",
+   "reason": "etp"
+  },
+  {
+   "code": "530055",
+   "reason": "etp"
+  },
+  {
+   "code": "530056",
+   "reason": "etp"
+  },
+  {
+   "code": "530061",
+   "reason": "etp"
+  },
+  {
+   "code": "530062",
+   "reason": "etp"
+  },
+  {
+   "code": "530063",
+   "reason": "etp"
+  },
+  {
+   "code": "530064",
+   "reason": "etp"
+  },
+  {
+   "code": "550064",
+   "reason": "etp"
+  },
+  {
+   "code": "550069",
+   "reason": "etp"
+  },
+  {
+   "code": "550070",
+   "reason": "etp"
+  },
+  {
+   "code": "550082",
+   "reason": "etp"
+  },
+  {
+   "code": "550084",
+   "reason": "etp"
+  },
+  {
+   "code": "550085",
+   "reason": "etp"
+  },
+  {
+   "code": "550087",
+   "reason": "etp"
+  },
+  {
+   "code": "550088",
+   "reason": "etp"
+  },
+  {
+   "code": "550089",
+   "reason": "etp"
+  },
+  {
+   "code": "550091",
+   "reason": "etp"
+  },
+  {
+   "code": "550092",
+   "reason": "etp"
+  },
+  {
+   "code": "550093",
+   "reason": "etp"
+  },
+  {
+   "code": "550095",
+   "reason": "etp"
+  },
+  {
+   "code": "550096",
+   "reason": "etp"
+  },
+  {
+   "code": "550097",
+   "reason": "etp"
+  },
+  {
+   "code": "550098",
+   "reason": "etp"
+  },
+  {
+   "code": "550099",
+   "reason": "etp"
+  },
+  {
+   "code": "550100",
+   "reason": "etp"
+  },
+  {
+   "code": "550041",
+   "reason": "etp"
+  },
+  {
+   "code": "570047",
+   "reason": "etp"
+  },
+  {
+   "code": "570050",
+   "reason": "etp"
+  },
+  {
+   "code": "570051",
+   "reason": "etp"
+  },
+  {
+   "code": "570061",
+   "reason": "etp"
+  },
+  {
+   "code": "570063",
+   "reason": "etp"
+  },
+  {
+   "code": "570064",
+   "reason": "etp"
+  },
+  {
+   "code": "570065",
+   "reason": "etp"
+  },
+  {
+   "code": "570066",
+   "reason": "etp"
+  },
+  {
+   "code": "570069",
+   "reason": "etp"
+  },
+  {
+   "code": "570070",
+   "reason": "etp"
+  },
+  {
+   "code": "570071",
+   "reason": "etp"
+  },
+  {
+   "code": "570072",
+   "reason": "etp"
+  },
+  {
+   "code": "570073",
+   "reason": "etp"
+  },
+  {
+   "code": "570074",
+   "reason": "etp"
+  },
+  {
+   "code": "570081",
+   "reason": "etp"
+  },
+  {
+   "code": "570082",
+   "reason": "etp"
+  },
+  {
+   "code": "570085",
+   "reason": "etp"
+  },
+  {
+   "code": "570090",
+   "reason": "etp"
+  },
+  {
+   "code": "570091",
+   "reason": "etp"
+  },
+  {
+   "code": "570092",
+   "reason": "etp"
+  },
+  {
+   "code": "570094",
+   "reason": "etp"
+  },
+  {
+   "code": "570095",
+   "reason": "etp"
+  },
+  {
+   "code": "570096",
+   "reason": "etp"
+  },
+  {
+   "code": "570097",
+   "reason": "etp"
+  },
+  {
+   "code": "570098",
+   "reason": "etp"
+  },
+  {
+   "code": "570099",
+   "reason": "etp"
+  },
+  {
+   "code": "570100",
+   "reason": "etp"
+  },
+  {
+   "code": "570101",
+   "reason": "etp"
+  },
+  {
+   "code": "570102",
+   "reason": "etp"
+  },
+  {
+   "code": "570103",
+   "reason": "etp"
+  },
+  {
+   "code": "570104",
+   "reason": "etp"
+  },
+  {
+   "code": "570105",
+   "reason": "etp"
+  },
+  {
+   "code": "570106",
+   "reason": "etp"
+  },
+  {
+   "code": "570107",
+   "reason": "etp"
+  },
+  {
+   "code": "570108",
+   "reason": "etp"
+  },
+  {
+   "code": "570109",
+   "reason": "etp"
+  },
+  {
+   "code": "570110",
+   "reason": "etp"
+  },
+  {
+   "code": "570111",
+   "reason": "etp"
+  },
+  {
+   "code": "570114",
+   "reason": "etp"
+  },
+  {
+   "code": "570115",
+   "reason": "etp"
+  },
+  {
+   "code": "570116",
+   "reason": "etp"
+  },
+  {
+   "code": "570117",
+   "reason": "etp"
+  },
+  {
+   "code": "570118",
+   "reason": "etp"
+  },
+  {
+   "code": "570119",
+   "reason": "etp"
+  },
+  {
+   "code": "570120",
+   "reason": "etp"
+  },
+  {
+   "code": "570121",
+   "reason": "etp"
+  },
+  {
+   "code": "570122",
+   "reason": "etp"
+  },
+  {
+   "code": "570123",
+   "reason": "etp"
+  },
+  {
+   "code": "570124",
+   "reason": "etp"
+  },
+  {
+   "code": "570125",
+   "reason": "etp"
+  },
+  {
+   "code": "570126",
+   "reason": "etp"
+  },
+  {
+   "code": "570127",
+   "reason": "etp"
+  },
+  {
+   "code": "570019",
+   "reason": "etp"
+  },
+  {
+   "code": "570029",
+   "reason": "etp"
+  },
+  {
+   "code": "570022",
+   "reason": "etp"
+  },
+  {
+   "code": "570023",
+   "reason": "etp"
+  },
+  {
+   "code": "580026",
+   "reason": "etp"
+  },
+  {
+   "code": "580032",
+   "reason": "etp"
+  },
+  {
+   "code": "580033",
+   "reason": "etp"
+  },
+  {
+   "code": "580034",
+   "reason": "etp"
+  },
+  {
+   "code": "580035",
+   "reason": "etp"
+  },
+  {
+   "code": "580039",
+   "reason": "etp"
+  },
+  {
+   "code": "580043",
+   "reason": "etp"
+  },
+  {
+   "code": "580044",
+   "reason": "etp"
+  },
+  {
+   "code": "580047",
+   "reason": "etp"
+  },
+  {
+   "code": "580048",
+   "reason": "etp"
+  },
+  {
+   "code": "580049",
+   "reason": "etp"
+  },
+  {
+   "code": "580050",
+   "reason": "etp"
+  },
+  {
+   "code": "580051",
+   "reason": "etp"
+  },
+  {
+   "code": "580052",
+   "reason": "etp"
+  },
+  {
+   "code": "580053",
+   "reason": "etp"
+  },
+  {
+   "code": "580054",
+   "reason": "etp"
+  },
+  {
+   "code": "580056",
+   "reason": "etp"
+  },
+  {
+   "code": "580057",
+   "reason": "etp"
+  },
+  {
+   "code": "580058",
+   "reason": "etp"
+  },
+  {
+   "code": "580059",
+   "reason": "etp"
+  },
+  {
+   "code": "580060",
+   "reason": "etp"
+  },
+  {
+   "code": "580061",
+   "reason": "etp"
+  },
+  {
+   "code": "580062",
+   "reason": "etp"
+  },
+  {
+   "code": "580063",
+   "reason": "etp"
+  },
+  {
+   "code": "580064",
+   "reason": "etp"
+  },
+  {
+   "code": "580065",
+   "reason": "etp"
+  },
+  {
+   "code": "580066",
+   "reason": "etp"
+  },
+  {
+   "code": "580067",
+   "reason": "etp"
+  },
+  {
+   "code": "580068",
+   "reason": "etp"
+  },
+  {
+   "code": "580069",
+   "reason": "etp"
+  },
+  {
+   "code": "580070",
+   "reason": "etp"
+  },
+  {
+   "code": "580071",
+   "reason": "etp"
+  },
+  {
+   "code": "580072",
+   "reason": "etp"
+  },
+  {
+   "code": "580073",
+   "reason": "etp"
+  },
+  {
+   "code": "580074",
+   "reason": "etp"
+  },
+  {
+   "code": "580075",
+   "reason": "etp"
+  },
+  {
+   "code": "580076",
+   "reason": "etp"
+  },
+  {
+   "code": "580077",
+   "reason": "etp"
+  },
+  {
+   "code": "580078",
+   "reason": "etp"
+  },
+  {
+   "code": "580079",
+   "reason": "etp"
+  },
+  {
+   "code": "580080",
+   "reason": "etp"
+  },
+  {
+   "code": "580081",
+   "reason": "etp"
+  },
+  {
+   "code": "580082",
+   "reason": "etp"
+  },
+  {
+   "code": "580083",
+   "reason": "etp"
+  },
+  {
+   "code": "580084",
+   "reason": "etp"
+  },
+  {
+   "code": "580085",
+   "reason": "etp"
+  },
+  {
+   "code": "580086",
+   "reason": "etp"
+  },
+  {
+   "code": "580087",
+   "reason": "etp"
+  },
+  {
+   "code": "580088",
+   "reason": "etp"
+  },
+  {
+   "code": "580089",
+   "reason": "etp"
+  },
+  {
+   "code": "580090",
+   "reason": "etp"
+  },
+  {
+   "code": "580010",
+   "reason": "etp"
+  },
+  {
+   "code": "610001",
+   "reason": "etp"
+  },
+  {
+   "code": "610003",
+   "reason": "etp"
+  },
+  {
+   "code": "610007",
+   "reason": "etp"
+  },
+  {
+   "code": "610008",
+   "reason": "etp"
+  },
+  {
+   "code": "610009",
+   "reason": "etp"
+  },
+  {
+   "code": "610018",
+   "reason": "etp"
+  },
+  {
+   "code": "610020",
+   "reason": "etp"
+  },
+  {
+   "code": "610022",
+   "reason": "etp"
+  },
+  {
+   "code": "610023",
+   "reason": "etp"
+  },
+  {
+   "code": "610024",
+   "reason": "etp"
+  },
+  {
+   "code": "610025",
+   "reason": "etp"
+  },
+  {
+   "code": "610028",
+   "reason": "etp"
+  },
+  {
+   "code": "610029",
+   "reason": "etp"
+  },
+  {
+   "code": "610030",
+   "reason": "etp"
+  },
+  {
+   "code": "610034",
+   "reason": "etp"
+  },
+  {
+   "code": "610035",
+   "reason": "etp"
+  },
+  {
+   "code": "610036",
+   "reason": "etp"
+  },
+  {
+   "code": "610037",
+   "reason": "etp"
+  },
+  {
+   "code": "610038",
+   "reason": "etp"
+  },
+  {
+   "code": "610039",
+   "reason": "etp"
+  },
+  {
+   "code": "610040",
+   "reason": "etp"
+  },
+  {
+   "code": "610045",
+   "reason": "etp"
+  },
+  {
+   "code": "610047",
+   "reason": "etp"
+  },
+  {
+   "code": "610049",
+   "reason": "etp"
+  },
+  {
+   "code": "610051",
+   "reason": "etp"
+  },
+  {
+   "code": "610055",
+   "reason": "etp"
+  },
+  {
+   "code": "610056",
+   "reason": "etp"
+  },
+  {
+   "code": "610057",
+   "reason": "etp"
+  },
+  {
+   "code": "610058",
+   "reason": "etp"
+  },
+  {
+   "code": "610059",
+   "reason": "etp"
+  },
+  {
+   "code": "610060",
+   "reason": "etp"
+  },
+  {
+   "code": "610061",
+   "reason": "etp"
+  },
+  {
+   "code": "610062",
+   "reason": "etp"
+  },
+  {
+   "code": "610063",
+   "reason": "etp"
+  },
+  {
+   "code": "610064",
+   "reason": "etp"
+  },
+  {
+   "code": "610066",
+   "reason": "etp"
+  },
+  {
+   "code": "610068",
+   "reason": "etp"
+  },
+  {
+   "code": "610069",
+   "reason": "etp"
+  },
+  {
+   "code": "610070",
+   "reason": "etp"
+  },
+  {
+   "code": "610071",
+   "reason": "etp"
+  },
+  {
+   "code": "610072",
+   "reason": "etp"
+  },
+  {
+   "code": "610073",
+   "reason": "etp"
+  },
+  {
+   "code": "610074",
+   "reason": "etp"
+  },
+  {
+   "code": "610075",
+   "reason": "etp"
+  },
+  {
+   "code": "610076",
+   "reason": "etp"
+  },
+  {
+   "code": "610077",
+   "reason": "etp"
+  },
+  {
+   "code": "610078",
+   "reason": "etp"
+  },
+  {
+   "code": "610079",
+   "reason": "etp"
+  },
+  {
+   "code": "610080",
+   "reason": "etp"
+  },
+  {
+   "code": "610081",
+   "reason": "etp"
+  },
+  {
+   "code": "610082",
+   "reason": "etp"
+  },
+  {
+   "code": "610083",
+   "reason": "etp"
+  },
+  {
+   "code": "610084",
+   "reason": "etp"
+  },
+  {
+   "code": "610085",
+   "reason": "etp"
+  },
+  {
+   "code": "610086",
+   "reason": "etp"
+  },
+  {
+   "code": "610087",
+   "reason": "etp"
+  },
+  {
+   "code": "610088",
+   "reason": "etp"
+  },
+  {
+   "code": "610089",
+   "reason": "etp"
+  },
+  {
+   "code": "610090",
+   "reason": "etp"
+  },
+  {
+   "code": "610091",
+   "reason": "etp"
+  },
+  {
+   "code": "610092",
+   "reason": "etp"
+  },
+  {
+   "code": "610093",
+   "reason": "etp"
+  },
+  {
+   "code": "610094",
+   "reason": "etp"
+  },
+  {
+   "code": "610095",
+   "reason": "etp"
+  },
+  {
+   "code": "610096",
+   "reason": "etp"
+  },
+  {
+   "code": "610097",
+   "reason": "etp"
+  },
+  {
+   "code": "610098",
+   "reason": "etp"
+  },
+  {
+   "code": "610099",
+   "reason": "etp"
+  },
+  {
+   "code": "610100",
+   "reason": "etp"
+  },
+  {
+   "code": "610101",
+   "reason": "etp"
+  },
+  {
+   "code": "610102",
+   "reason": "etp"
+  },
+  {
+   "code": "610103",
+   "reason": "etp"
+  },
+  {
+   "code": "610104",
+   "reason": "etp"
+  },
+  {
+   "code": "610105",
+   "reason": "etp"
+  },
+  {
+   "code": "610106",
+   "reason": "etp"
+  },
+  {
+   "code": "700011",
+   "reason": "etp"
+  },
+  {
+   "code": "700012",
+   "reason": "etp"
+  },
+  {
+   "code": "700013",
+   "reason": "etp"
+  },
+  {
+   "code": "700014",
+   "reason": "etp"
+  },
+  {
+   "code": "700017",
+   "reason": "etp"
+  },
+  {
+   "code": "700018",
+   "reason": "etp"
+  },
+  {
+   "code": "700022",
+   "reason": "etp"
+  },
+  {
+   "code": "700023",
+   "reason": "etp"
+  },
+  {
+   "code": "700026",
+   "reason": "etp"
+  },
+  {
+   "code": "700027",
+   "reason": "etp"
+  },
+  {
+   "code": "700028",
+   "reason": "etp"
+  },
+  {
+   "code": "700029",
+   "reason": "etp"
+  },
+  {
+   "code": "700030",
+   "reason": "etp"
+  },
+  {
+   "code": "700031",
+   "reason": "etp"
+  },
+  {
+   "code": "700032",
+   "reason": "etp"
+  },
+  {
+   "code": "700033",
+   "reason": "etp"
+  },
+  {
+   "code": "700034",
+   "reason": "etp"
+  },
+  {
+   "code": "700035",
+   "reason": "etp"
+  },
+  {
+   "code": "700036",
+   "reason": "etp"
+  },
+  {
+   "code": "760004",
+   "reason": "etp"
+  },
+  {
+   "code": "760005",
+   "reason": "etp"
+  },
+  {
+   "code": "760006",
+   "reason": "etp"
+  },
+  {
+   "code": "760007",
+   "reason": "etp"
+  },
+  {
+   "code": "760008",
+   "reason": "etp"
+  },
+  {
+   "code": "760009",
+   "reason": "etp"
+  },
+  {
+   "code": "760010",
+   "reason": "etp"
+  },
+  {
+   "code": "760011",
+   "reason": "etp"
+  },
+  {
+   "code": "760012",
+   "reason": "etp"
+  },
+  {
+   "code": "760013",
+   "reason": "etp"
+  },
+  {
+   "code": "760014",
+   "reason": "etp"
+  },
+  {
+   "code": "760015",
+   "reason": "etp"
+  },
+  {
+   "code": "760016",
+   "reason": "etp"
+  },
+  {
+   "code": "760017",
+   "reason": "etp"
+  },
+  {
+   "code": "760018",
+   "reason": "etp"
+  },
+  {
+   "code": "760019",
+   "reason": "etp"
+  },
+  {
+   "code": "760020",
+   "reason": "etp"
+  },
+  {
+   "code": "760021",
+   "reason": "etp"
+  },
+  {
+   "code": "760022",
+   "reason": "etp"
+  },
+  {
+   "code": "760023",
+   "reason": "etp"
+  },
+  {
+   "code": "760024",
+   "reason": "etp"
+  },
+  {
+   "code": "760025",
+   "reason": "etp"
+  },
+  {
+   "code": "760026",
+   "reason": "etp"
+  },
+  {
+   "code": "760027",
+   "reason": "etp"
+  },
+  {
+   "code": "760028",
+   "reason": "etp"
+  },
+  {
+   "code": "900270",
+   "reason": "managed"
+  },
+  {
+   "code": "0004Y0",
+   "reason": "spac"
+  },
+  {
+   "code": "001840",
+   "reason": "managed"
+  },
+  {
+   "code": "0037T0",
+   "reason": "spac"
+  },
+  {
+   "code": "0041B0",
+   "reason": "spac"
+  },
+  {
+   "code": "0041J0",
+   "reason": "spac"
+  },
+  {
+   "code": "0041L0",
+   "reason": "spac"
+  },
+  {
+   "code": "0044K0",
+   "reason": "spac"
+  },
+  {
+   "code": "0054V0",
+   "reason": "spac"
+  },
+  {
+   "code": "0068Y0",
+   "reason": "spac"
+  },
+  {
+   "code": "0071M0",
+   "reason": "spac"
+  },
+  {
+   "code": "0072Z0",
+   "reason": "spac"
+  },
+  {
+   "code": "007330",
+   "reason": "audit"
+  },
+  {
+   "code": "008290",
+   "reason": "managed"
+  },
+  {
+   "code": "0088D0",
+   "reason": "spac"
+  },
+  {
+   "code": "0091W0",
+   "reason": "spac"
+  },
+  {
+   "code": "0093G0",
+   "reason": "spac"
+  },
+  {
+   "code": "009620",
+   "reason": "audit"
+  },
+  {
+   "code": "0096B0",
+   "reason": "spac"
+  },
+  {
+   "code": "0096D0",
+   "reason": "spac"
+  },
+  {
+   "code": "009730",
+   "reason": "audit"
+  },
+  {
+   "code": "0097F0",
+   "reason": "spac"
+  },
+  {
+   "code": "0098T0",
+   "reason": "spac"
+  },
+  {
+   "code": "0099W0",
+   "reason": "spac"
+  },
+  {
+   "code": "0099X0",
+   "reason": "spac"
+  },
+  {
+   "code": "0101C0",
+   "reason": "spac"
+  },
+  {
+   "code": "0105P0",
+   "reason": "spac"
+  },
+  {
+   "code": "0115H0",
+   "reason": "spac"
+  },
+  {
+   "code": "012340",
+   "reason": "audit"
+  },
+  {
+   "code": "0129K0",
+   "reason": "spac"
+  },
+  {
+   "code": "0130D0",
+   "reason": "spac"
+  },
+  {
+   "code": "0130H0",
+   "reason": "spac"
+  },
+  {
+   "code": "0131D0",
+   "reason": "spac"
+  },
+  {
+   "code": "0132G0",
+   "reason": "spac"
+  },
+  {
+   "code": "0134X0",
+   "reason": "spac"
+  },
+  {
+   "code": "0164H0",
+   "reason": "spac"
+  },
+  {
+   "code": "0165X0",
+   "reason": "spac"
+  },
+  {
+   "code": "016790",
+   "reason": "managed"
+  },
+  {
+   "code": "018700",
+   "reason": "audit"
+  },
+  {
+   "code": "020180",
+   "reason": "managed"
+  },
+  {
+   "code": "021045",
+   "reason": "preferred"
+  },
+  {
+   "code": "023440",
+   "reason": "managed"
+  },
+  {
+   "code": "023760",
+   "reason": "managed"
+  },
+  {
+   "code": "025440",
+   "reason": "audit"
+  },
+  {
+   "code": "025870",
+   "reason": "managed"
+  },
+  {
+   "code": "028080",
+   "reason": "managed"
+  },
+  {
+   "code": "030350",
+   "reason": "managed"
+  },
+  {
+   "code": "031860",
+   "reason": "managed"
+  },
+  {
+   "code": "032685",
+   "reason": "preferred"
+  },
+  {
+   "code": "032960",
+   "reason": "managed"
+  },
+  {
+   "code": "033200",
+   "reason": "audit"
+  },
+  {
+   "code": "033540",
+   "reason": "managed"
+  },
+  {
+   "code": "03481K",
+   "reason": "preferred"
+  },
+  {
+   "code": "035290",
+   "reason": "managed"
+  },
+  {
+   "code": "035610",
+   "reason": "audit"
+  },
+  {
+   "code": "036690",
+   "reason": "managed"
+  },
+  {
+   "code": "036800",
+   "reason": "managed"
+  },
+  {
+   "code": "038880",
+   "reason": "warned"
+  },
+  {
+   "code": "041520",
+   "reason": "audit"
+  },
+  {
+   "code": "041590",
+   "reason": "managed"
+  },
+  {
+   "code": "043090",
+   "reason": "managed"
+  },
+  {
+   "code": "043100",
+   "reason": "managed"
+  },
+  {
+   "code": "043220",
+   "reason": "managed"
+  },
+  {
+   "code": "044180",
+   "reason": "managed"
+  },
+  {
+   "code": "046070",
+   "reason": "managed"
+  },
+  {
+   "code": "049080",
+   "reason": "warned"
+  },
+  {
+   "code": "049180",
+   "reason": "managed"
+  },
+  {
+   "code": "050090",
+   "reason": "audit"
+  },
+  {
+   "code": "052020",
+   "reason": "audit"
+  },
+  {
+   "code": "052770",
+   "reason": "managed"
+  },
+  {
+   "code": "054180",
+   "reason": "managed"
+  },
+  {
+   "code": "054940",
+   "reason": "managed"
+  },
+  {
+   "code": "058450",
+   "reason": "audit"
+  },
+  {
+   "code": "060570",
+   "reason": "managed"
+  },
+  {
+   "code": "062970",
+   "reason": "managed"
+  },
+  {
+   "code": "064090",
+   "reason": "managed"
+  },
+  {
+   "code": "065170",
+   "reason": "audit"
+  },
+  {
+   "code": "065420",
+   "reason": "managed"
+  },
+  {
+   "code": "065570",
+   "reason": "managed"
+  },
+  {
+   "code": "065690",
+   "reason": "audit"
+  },
+  {
+   "code": "066410",
+   "reason": "managed"
+  },
+  {
+   "code": "066790",
+   "reason": "managed"
+  },
+  {
+   "code": "066900",
+   "reason": "managed"
+  },
+  {
+   "code": "066910",
+   "reason": "warned"
+  },
+  {
+   "code": "067630",
+   "reason": "audit"
+  },
+  {
+   "code": "067770",
+   "reason": "managed"
+  },
+  {
+   "code": "068240",
+   "reason": "managed"
+  },
+  {
+   "code": "068940",
+   "reason": "managed"
+  },
+  {
+   "code": "069920",
+   "reason": "managed"
+  },
+  {
+   "code": "071850",
+   "reason": "audit"
+  },
+  {
+   "code": "073190",
+   "reason": "managed"
+  },
+  {
+   "code": "073570",
+   "reason": "managed"
+  },
+  {
+   "code": "073640",
+   "reason": "managed"
+  },
+  {
+   "code": "078590",
+   "reason": "warned"
+  },
+  {
+   "code": "078860",
+   "reason": "audit"
+  },
+  {
+   "code": "079950",
+   "reason": "managed"
+  },
+  {
+   "code": "079970",
+   "reason": "managed"
+  },
+  {
+   "code": "080720",
+   "reason": "managed"
+  },
+  {
+   "code": "082660",
+   "reason": "managed"
+  },
+  {
+   "code": "083660",
+   "reason": "managed"
+  },
+  {
+   "code": "084180",
+   "reason": "managed"
+  },
+  {
+   "code": "087260",
+   "reason": "managed"
+  },
+  {
+   "code": "088290",
+   "reason": "managed"
+  },
+  {
+   "code": "090150",
+   "reason": "managed"
+  },
+  {
+   "code": "091440",
+   "reason": "audit"
+  },
+  {
+   "code": "092190",
+   "reason": "audit"
+  },
+  {
+   "code": "092600",
+   "reason": "managed"
+  },
+  {
+   "code": "096610",
+   "reason": "managed"
+  },
+  {
+   "code": "099520",
+   "reason": "managed"
+  },
+  {
+   "code": "101000",
+   "reason": "managed"
+  },
+  {
+   "code": "105550",
+   "reason": "managed"
+  },
+  {
+   "code": "106080",
+   "reason": "managed"
+  },
+  {
+   "code": "109960",
+   "reason": "audit"
+  },
+  {
+   "code": "121800",
+   "reason": "managed"
+  },
+  {
+   "code": "121850",
+   "reason": "managed"
+  },
+  {
+   "code": "123840",
+   "reason": "audit"
+  },
+  {
+   "code": "131100",
+   "reason": "managed"
+  },
+  {
+   "code": "140410",
+   "reason": "audit"
+  },
+  {
+   "code": "148780",
+   "reason": "managed"
+  },
+  {
+   "code": "153490",
+   "reason": "managed"
+  },
+  {
+   "code": "159910",
+   "reason": "preferred"
+  },
+  {
+   "code": "160190",
+   "reason": "audit"
+  },
+  {
+   "code": "168330",
+   "reason": "audit"
+  },
+  {
+   "code": "175140",
+   "reason": "audit"
+  },
+  {
+   "code": "175250",
+   "reason": "managed"
+  },
+  {
+   "code": "177350",
+   "reason": "managed"
+  },
+  {
+   "code": "179900",
+   "reason": "audit"
+  },
+  {
+   "code": "180400",
+   "reason": "managed"
+  },
+  {
+   "code": "182400",
+   "reason": "managed"
+  },
+  {
+   "code": "183300",
+   "reason": "managed"
+  },
+  {
+   "code": "183490",
+   "reason": "managed"
+  },
+  {
+   "code": "188260",
+   "reason": "audit"
+  },
+  {
+   "code": "191410",
+   "reason": "managed"
+  },
+  {
+   "code": "195990",
+   "reason": "managed"
+  },
+  {
+   "code": "196300",
+   "reason": "managed"
+  },
+  {
+   "code": "196490",
+   "reason": "managed"
+  },
+  {
+   "code": "199430",
+   "reason": "warned"
+  },
+  {
+   "code": "199730",
+   "reason": "managed"
+  },
+  {
+   "code": "204840",
+   "reason": "managed"
+  },
+  {
+   "code": "206560",
+   "reason": "managed"
+  },
+  {
+   "code": "207760",
+   "reason": "managed"
+  },
+  {
+   "code": "210120",
+   "reason": "managed"
+  },
+  {
+   "code": "214610",
+   "reason": "managed"
+  },
+  {
+   "code": "217480",
+   "reason": "managed"
+  },
+  {
+   "code": "219550",
+   "reason": "managed"
+  },
+  {
+   "code": "221800",
+   "reason": "audit"
+  },
+  {
+   "code": "224060",
+   "reason": "audit"
+  },
+  {
+   "code": "225430",
+   "reason": "managed"
+  },
+  {
+   "code": "227610",
+   "reason": "warned"
+  },
+  {
+   "code": "234920",
+   "reason": "managed"
+  },
+  {
+   "code": "241820",
+   "reason": "managed"
+  },
+  {
+   "code": "244460",
+   "reason": "managed"
+  },
+  {
+   "code": "245620",
+   "reason": "managed"
+  },
+  {
+   "code": "246250",
+   "reason": "managed"
+  },
+  {
+   "code": "246720",
+   "reason": "managed"
+  },
+  {
+   "code": "250930",
+   "reason": "managed"
+  },
+  {
+   "code": "258830",
+   "reason": "managed"
+  },
+  {
+   "code": "263050",
+   "reason": "managed"
+  },
+  {
+   "code": "269620",
+   "reason": "managed"
+  },
+  {
+   "code": "270520",
+   "reason": "audit"
+  },
+  {
+   "code": "276040",
+   "reason": "managed"
+  },
+  {
+   "code": "276730",
+   "reason": "managed"
+  },
+  {
+   "code": "284620",
+   "reason": "managed"
+  },
+  {
+   "code": "286750",
+   "reason": "audit"
+  },
+  {
+   "code": "288330",
+   "reason": "managed"
+  },
+  {
+   "code": "291230",
+   "reason": "managed"
+  },
+  {
+   "code": "291650",
+   "reason": "managed"
+  },
+  {
+   "code": "291810",
+   "reason": "managed"
+  },
+  {
+   "code": "294090",
+   "reason": "preferred"
+  },
+  {
+   "code": "294140",
+   "reason": "managed"
+  },
+  {
+   "code": "297090",
+   "reason": "audit"
+  },
+  {
+   "code": "298060",
+   "reason": "managed"
+  },
+  {
+   "code": "299660",
+   "reason": "warned"
+  },
+  {
+   "code": "299900",
+   "reason": "managed"
+  },
+  {
+   "code": "300120",
+   "reason": "managed"
+  },
+  {
+   "code": "304840",
+   "reason": "managed"
+  },
+  {
+   "code": "309710",
+   "reason": "managed"
+  },
+  {
+   "code": "312610",
+   "reason": "managed"
+  },
+  {
+   "code": "313760",
+   "reason": "managed"
+  },
+  {
+   "code": "331380",
+   "reason": "audit"
+  },
+  {
+   "code": "336060",
+   "reason": "managed"
+  },
+  {
+   "code": "340360",
+   "reason": "audit"
+  },
+  {
+   "code": "340930",
+   "reason": "managed"
+  },
+  {
+   "code": "352770",
+   "reason": "managed"
+  },
+  {
+   "code": "354200",
+   "reason": "warned"
+  },
+  {
+   "code": "368600",
+   "reason": "warned"
+  },
+  {
+   "code": "368970",
+   "reason": "managed"
+  },
+  {
+   "code": "369370",
+   "reason": "managed"
+  },
+  {
+   "code": "376900",
+   "reason": "warned"
+  },
+  {
+   "code": "377030",
+   "reason": "managed"
+  },
+  {
+   "code": "377220",
+   "reason": "managed"
+  },
+  {
+   "code": "377460",
+   "reason": "managed"
+  },
+  {
+   "code": "380540",
+   "reason": "managed"
+  },
+  {
+   "code": "393970",
+   "reason": "managed"
+  },
+  {
+   "code": "412540",
+   "reason": "managed"
+  },
+  {
+   "code": "418250",
+   "reason": "managed"
+  },
+  {
+   "code": "458650",
+   "reason": "preferred"
+  },
+  {
+   "code": "465320",
+   "reason": "spac"
+  },
+  {
+   "code": "466690",
+   "reason": "spac"
+  },
+  {
+   "code": "468760",
+   "reason": "spac"
+  },
+  {
+   "code": "469480",
+   "reason": "spac"
+  },
+  {
+   "code": "469880",
+   "reason": "spac"
+  },
+  {
+   "code": "469900",
+   "reason": "spac"
+  },
+  {
+   "code": "471050",
+   "reason": "spac"
+  },
+  {
+   "code": "472220",
+   "reason": "spac"
+  },
+  {
+   "code": "472230",
+   "reason": "spac"
+  },
+  {
+   "code": "473000",
+   "reason": "spac"
+  },
+  {
+   "code": "473050",
+   "reason": "spac"
+  },
+  {
+   "code": "473950",
+   "reason": "spac"
+  },
+  {
+   "code": "474490",
+   "reason": "spac"
+  },
+  {
+   "code": "474660",
+   "reason": "spac"
+  },
+  {
+   "code": "474930",
+   "reason": "spac"
+  },
+  {
+   "code": "475240",
+   "reason": "spac"
+  },
+  {
+   "code": "475250",
+   "reason": "spac"
+  },
+  {
+   "code": "477340",
+   "reason": "spac"
+  },
+  {
+   "code": "477380",
+   "reason": "spac"
+  },
+  {
+   "code": "477470",
+   "reason": "spac"
+  },
+  {
+   "code": "477760",
+   "reason": "spac"
+  },
+  {
+   "code": "478110",
+   "reason": "spac"
+  },
+  {
+   "code": "478390",
+   "reason": "spac"
+  },
+  {
+   "code": "478440",
+   "reason": "spac"
+  },
+  {
+   "code": "479880",
+   "reason": "spac"
+  },
+  {
+   "code": "481890",
+   "reason": "spac"
+  },
+  {
+   "code": "482520",
+   "reason": "spac"
+  },
+  {
+   "code": "482680",
+   "reason": "spac"
+  },
+  {
+   "code": "482690",
+   "reason": "spac"
+  },
+  {
+   "code": "484130",
+   "reason": "spac"
+  },
+  {
+   "code": "486630",
+   "reason": "spac"
+  },
+  {
+   "code": "487360",
+   "reason": "spac"
+  },
+  {
+   "code": "487720",
+   "reason": "spac"
+  },
+  {
+   "code": "487830",
+   "reason": "spac"
+  },
+  {
+   "code": "488060",
+   "reason": "spac"
+  },
+  {
+   "code": "489210",
+   "reason": "spac"
+  },
+  {
+   "code": "489480",
+   "reason": "spac"
+  },
+  {
+   "code": "489730",
+   "reason": "spac"
+  },
+  {
+   "code": "492220",
+   "reason": "spac"
+  },
+  {
+   "code": "493790",
+   "reason": "spac"
+  },
+  {
+   "code": "496070",
+   "reason": "spac"
+  },
+  {
+   "code": "498390",
+   "reason": "spac"
+  }
+ ],
+ "error": null,
+ "spec": "종가베팅 v1.0 (2026-08-02)",
+ "generated_at": "2026-08-03T15:01:02.402144+09:00"
+}
