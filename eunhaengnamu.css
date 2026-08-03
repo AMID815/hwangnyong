@@ -1,0 +1,67 @@
+/* 종가베팅 전용 규칙.
+   style.css(상대강도와 공유하는 기본 테마)는 수정하지 않는다 — 완전 독립 원칙.
+   여기에는 style.css 에 없는 것만 넣는다. */
+
+/* 잠정 배지 — 종가 미확정 상태가 화면에서 사라지면 안 된다 (상시 노출) */
+.prov{margin-top:10px;padding:7px 10px;border-radius:9px;font-size:11.5px;
+  font-weight:700;letter-spacing:.01em;
+  background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold);
+  display:flex;align-items:center;gap:6px}
+
+/* 경고 줄 (순위 커트라인 초과, 네이버 불일치 등) */
+.warns{margin:12px 16px 0;display:flex;flex-direction:column;gap:6px}
+.warns:empty{display:none}
+.warns div{font-size:11.5px;font-weight:600;padding:8px 11px;border-radius:9px;
+  background:var(--loss-dim);color:var(--loss);border:1px solid var(--loss)}
+
+/* 검출 행 — style.css 의 .row/.metrics 위에 얹는 서브라인 */
+.dline{display:flex;gap:11px;padding-left:27px;margin:3px 0 2px;
+  font-size:11.5px;color:var(--faint);font-variant-numeric:tabular-nums;
+  white-space:nowrap;flex-wrap:wrap}
+.dline b{font-weight:600;color:var(--dim)}
+.dline .good{color:var(--new);font-weight:700}   /* 거래량 절반 이하 = 좋은 눌림 */
+.dline .bad{color:var(--loss);font-weight:700}   /* 갭 −3% 이하 = 모르는 악재 의심 */
+
+.chip.rb{background:var(--gold-dim);color:var(--gold)}   /* 상승형 음봉 */
+.chip.rep{background:var(--surface-2);color:var(--dim)}  /* 재검출 */
+.chip.pv{background:#2ecc9a1f;color:var(--new)}          /* 전일 대비도 감소 */
+.chip.dn{background:var(--surface-2);color:var(--faint);font-family:var(--mono)}
+
+/* 거래대금 감소 — 이 프로그램의 핵심 축이라 크게 보여준다 */
+.vline{display:flex;align-items:baseline;gap:8px;padding-left:27px;margin:4px 0 2px;
+  font-variant-numeric:tabular-nums}
+.vline .big{font-size:15px;font-weight:800;letter-spacing:-.02em;color:var(--new)}
+.vline .big.miss{color:var(--faint)}
+.vline .cap{font-size:11.5px;color:var(--faint)}
+.vline .cap b{font-weight:600;color:var(--dim)}
+
+/* 감시중 행 — 아직 조건을 못 맞춘 종목 */
+.wrow{display:block;padding:9px 16px 8px;border-bottom:1px solid var(--border)}
+.wrow:hover{background:var(--surface)}
+.wrow .top{display:flex;align-items:center;gap:9px}
+.wrow .miss{display:flex;gap:4px;flex-wrap:wrap;padding-left:27px;margin-top:4px}
+.wrow .miss span{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;
+  background:var(--loss-dim);color:var(--loss);white-space:nowrap}
+.wrow .miss span.ok{background:#2ecc9a1f;color:var(--new)}
+
+/* 추적 표 — 가로 스크롤은 표 자신에게만. 본문이 가로로 밀리면 안 된다. */
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;
+  border-bottom:1px solid var(--border)}
+table.track{border-collapse:collapse;font-size:11.5px;
+  font-variant-numeric:tabular-nums;white-space:nowrap;min-width:100%}
+table.track th,table.track td{padding:7px 9px;text-align:right;
+  border-bottom:1px solid var(--border)}
+table.track thead th{position:sticky;top:0;background:var(--surface-2);
+  color:var(--faint);font-weight:700;font-size:10.5px;z-index:1}
+table.track th.l,table.track td.l{text-align:left}
+table.track td.nm{font-weight:700;color:var(--text);max-width:110px;
+  overflow:hidden;text-overflow:ellipsis}
+table.track td.nm .code{font-family:var(--mono);font-size:10px;color:var(--faint);
+  font-weight:500;margin-left:4px}
+table.track td.dt{font-family:var(--mono);color:var(--faint);font-size:10.5px}
+table.track tbody tr:hover{background:var(--surface)}
+table.track .p{color:var(--up);font-weight:700}
+table.track .n{color:var(--down);font-weight:700}
+table.track .z{color:var(--faint)}
+/* 기준가·D+1 갭은 판단의 핵심이라 세로 구분선으로 묶어 준다 */
+table.track .sep{border-left:1px solid var(--border-2)}
