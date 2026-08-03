@@ -68,10 +68,14 @@
 
     var c = d.criteria || {};
     var dropPct = Math.round((1 - (c.value_drop_ratio != null ? c.value_drop_ratio : 0.7)) * 100);
+    var rise = c.rise_pct != null ? c.rise_pct : 13;
+    var wdays = c.watch_days != null ? c.watch_days : 10;
+    // 긴 문구는 큰 글씨(.v)가 아니라 캡션 줄(.cap)로 내린다 — 모바일에서 카드 폭이
+    // 95px 남짓이라 .v 에 문장을 넣으면 잘린다 (2026-08-03 실측).
     $("stats").innerHTML =
-      stat("기준봉", (c.rise_pct != null ? c.rise_pct : 13) + "%↑ · " + eok(c.value_eok)) +
-      stat("감시 " + (c.watch_days != null ? c.watch_days : 10) + "일", "음봉 + 대금 " + dropPct + "%↓") +
-      stat("시가총액", "≥ " + eok(c.mcap_eok));
+      stat("기준봉", rise + "%↑", "거래대금 " + eok(c.value_eok) + "↑") +
+      stat("감시 " + wdays + "거래일", "대금 " + dropPct + "%↓", "+ 음봉") +
+      stat("시가총액", eok(c.mcap_eok) + "↑");
 
     var warns = (d.warnings || []).map(function (w) {
       return "<div>⚠ " + esc(WARN[w] || w) + "</div>";
@@ -87,9 +91,10 @@
     paint();
   }
 
-  function stat(k, v) {
+  function stat(k, v, cap) {
     return '<div class="stat"><div class="k">' + esc(k) + '</div><div class="v">' +
-      esc(v) + "</div></div>";
+      esc(v) + "</div>" +
+      (cap ? '<div class="cap">' + esc(cap) + "</div>" : "") + "</div>";
   }
 
   function paint() {
