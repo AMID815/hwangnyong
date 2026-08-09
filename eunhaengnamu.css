@@ -1,18 +1,19 @@
-/* 종가베팅 전용 규칙.
+/* 종가베팅 전용 규칙 — v2 일자별 카드 (2026-08-09).
    style.css(상대강도와 공유하는 기본 테마)는 수정하지 않는다 — 완전 독립 원칙.
    여기에는 style.css 에 없는 것만 넣는다. */
 
-/* 잠정 배지 — 종가 미확정 상태가 화면에서 사라지면 안 된다 (상시 노출) */
+/* 잠정/확정 배지 — 종가 미확정 상태가 화면에서 사라지면 안 된다 (상시 노출) */
 .prov{margin-top:10px;padding:7px 10px;border-radius:9px;font-size:11.5px;
   font-weight:700;letter-spacing:.01em;
   background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold);
   display:flex;align-items:center;gap:6px}
+/* 15:45 확정 실행 뒤에는 경고가 아니라 확정 표시로 바뀐다 */
+.prov.final{background:#2ecc9a1f;color:var(--new);border-color:var(--new)}
 
 /* 조건 카드 — style.css 의 .stat .v 는 19px 숫자용이라 우리 문구엔 크다.
    3칸 균등 분할이라 360px 화면에서 칸당 쓸 수 있는 폭이 85px 남짓인데
    .stat 에 overflow:hidden, .v 에 nowrap 이 걸려 있어 넘치면 조용히 잘린다
-   (2026-08-03 '음봉 + 대금 30%↓' 잘림 실측). style.css 는 상대강도와 공유라
-   못 고치므로 이 페이지에서만 줄인다. */
+   (2026-08-03 실측). style.css 는 공유라 못 고치므로 여기서만 줄인다. */
 .stat .v{font-size:15px}
 .stat .cap{font-size:9.5px;letter-spacing:-.01em}
 @media (max-width:379px){
@@ -21,60 +22,61 @@
   .stat .v{font-size:13.5px;letter-spacing:-.03em}
 }
 
-/* 경고 줄 (순위 커트라인 초과, 네이버 불일치 등) */
+/* 경고 줄 (순위 조회 실패, 네이버 불일치 등) */
 .warns{margin:12px 16px 0;display:flex;flex-direction:column;gap:6px}
 .warns:empty{display:none}
 .warns div{font-size:11.5px;font-weight:600;padding:8px 11px;border-radius:9px;
   background:var(--loss-dim);color:var(--loss);border:1px solid var(--loss)}
 
-/* 검출 행 — style.css 의 .row/.metrics 위에 얹는 서브라인 */
-.dline{display:flex;gap:11px;padding-left:27px;margin:3px 0 2px;
-  font-size:11.5px;color:var(--faint);font-variant-numeric:tabular-nums;
-  white-space:nowrap;flex-wrap:wrap}
-.dline b{font-weight:600;color:var(--dim)}
-.dline .good{color:var(--new);font-weight:700}   /* 거래량 절반 이하 = 좋은 눌림 */
-.dline .bad{color:var(--loss);font-weight:700}   /* 갭 −3% 이하 = 모르는 악재 의심 */
+/* ── 일자별 카드 ──────────────────────────────────────────────────── */
+.daycard{margin:12px 12px 0;border:1px solid var(--border);border-radius:14px;
+  background:var(--surface);overflow:hidden;box-shadow:var(--shadow)}
+.daycard:last-child{margin-bottom:24px}
+/* 오늘 카드는 테두리로 구분 — 맨 위에 온다 */
+.daycard.today{border-color:var(--gold);background:var(--raised)}
 
-.chip.rb{background:var(--gold-dim);color:var(--gold)}   /* 상승형 음봉 */
-.chip.rep{background:var(--surface-2);color:var(--dim)}  /* 재검출 */
-.chip.pv{background:#2ecc9a1f;color:var(--new)}          /* 전일 대비도 감소 */
-.chip.dn{background:var(--surface-2);color:var(--faint);font-family:var(--mono)}
+.dhead{display:flex;align-items:center;gap:8px;padding:10px 13px;
+  background:var(--surface-2);border-bottom:1px solid var(--border)}
+.daycard.today .dhead{background:var(--gold-dim)}
+.dhead .ddate{font-family:var(--mono);font-size:13px;font-weight:700;
+  color:var(--text);letter-spacing:-.01em}
+.dhead .dtag{font-size:10px;font-weight:800;padding:2px 7px;border-radius:6px;
+  background:var(--gold);color:var(--bg);letter-spacing:.02em}
+.dhead .dcount{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--dim)}
 
-/* 거래대금 감소 — 이 프로그램의 핵심 축이라 크게 보여준다 */
-.vline{display:flex;align-items:baseline;gap:8px;padding-left:27px;margin:4px 0 2px;
+.dlist{list-style:none;display:block}
+.drow{padding:9px 13px 10px;border-bottom:1px solid var(--border)}
+.drow:last-child{border-bottom:0}
+.drow .top{display:flex;align-items:center;gap:8px}
+.drow .name{font-weight:700;font-size:14.5px;letter-spacing:-.01em;flex:1;
+  min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.drow .chips{display:flex;gap:4px;flex:none;flex-wrap:wrap;justify-content:flex-end}
+
+/* 기준봉 한 줄 — 등락률(큰 글씨) + 부가 지표 */
+.bline{display:flex;align-items:baseline;gap:9px;margin-top:3px;
   font-variant-numeric:tabular-nums}
-.vline .big{font-size:15px;font-weight:800;letter-spacing:-.02em;color:var(--new)}
-.vline .big.miss{color:var(--faint)}
-.vline .cap{font-size:11.5px;color:var(--faint)}
-.vline .cap b{font-weight:600;color:var(--dim)}
+.bline .rs{font-size:16px;font-weight:800;letter-spacing:-.02em;flex:none}
+.bline .sub2{font-size:11.5px;color:var(--dim);overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
 
-/* 감시중 행 — 아직 조건을 못 맞춘 종목 */
-.wrow{display:block;padding:9px 16px 8px;border-bottom:1px solid var(--border)}
-.wrow:hover{background:var(--surface)}
-.wrow .top{display:flex;align-items:center;gap:9px}
-.wrow .miss{display:flex;gap:4px;flex-wrap:wrap;padding-left:27px;margin-top:4px}
-.wrow .miss span{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;
-  background:var(--loss-dim);color:var(--loss);white-space:nowrap}
-.wrow .miss span.ok{background:#2ecc9a1f;color:var(--new)}
+/* 이후 추이 — D+N 칩. 좁은 화면에서 줄바꿈되며 아래로 자란다 */
+.perf{display:flex;flex-wrap:wrap;gap:4px 6px;margin-top:6px;
+  font-variant-numeric:tabular-nums}
+.perf.none{font-size:11px;color:var(--faint);font-weight:600}
+.perf .pd{display:inline-flex;align-items:baseline;gap:3px;font-size:11px;
+  background:var(--surface-2);border-radius:6px;padding:2px 6px}
+.daycard.today .perf .pd{background:var(--surface)}
+.perf .pd i{font-style:normal;color:var(--faint);font-size:9.5px;font-weight:700}
+.perf .pd b{font-weight:700}
+.perf .pext{font-size:11px;color:var(--faint);margin-left:auto;
+  white-space:nowrap;align-self:center}
+.perf .p{color:var(--up)} .perf .n{color:var(--down)} .perf .z{color:var(--faint)}
 
-/* 추적 표 — 가로 스크롤은 표 자신에게만. 본문이 가로로 밀리면 안 된다. */
-.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;
-  border-bottom:1px solid var(--border)}
-table.track{border-collapse:collapse;font-size:11.5px;
-  font-variant-numeric:tabular-nums;white-space:nowrap;min-width:100%}
-table.track th,table.track td{padding:7px 9px;text-align:right;
-  border-bottom:1px solid var(--border)}
-table.track thead th{position:sticky;top:0;background:var(--surface-2);
-  color:var(--faint);font-weight:700;font-size:10.5px;z-index:1}
-table.track th.l,table.track td.l{text-align:left}
-table.track td.nm{font-weight:700;color:var(--text);max-width:110px;
-  overflow:hidden;text-overflow:ellipsis}
-table.track td.nm .code{font-family:var(--mono);font-size:10px;color:var(--faint);
-  font-weight:500;margin-left:4px}
-table.track td.dt{font-family:var(--mono);color:var(--faint);font-size:10.5px}
-table.track tbody tr:hover{background:var(--surface)}
-table.track .p{color:var(--up);font-weight:700}
-table.track .n{color:var(--down);font-weight:700}
-table.track .z{color:var(--faint)}
-/* 기준가·D+1 갭은 판단의 핵심이라 세로 구분선으로 묶어 준다 */
-table.track .sep{border-left:1px solid var(--border-2)}
+/* 검출 배지 */
+.chip.pv{background:#2ecc9a1f;color:var(--new)}        /* 이평선 통과 가지 */
+.chip.rb{background:var(--gold-dim);color:var(--gold)} /* 갭 가지로 검출 */
+.chip.dn{background:var(--down-dim);color:var(--down)} /* 기준봉이 음봉 */
+.chip.rep{background:var(--surface-2);color:var(--dim)}
+
+.empty{text-align:center;color:var(--faint);padding:36px 24px;font-size:13px;
+  line-height:1.7}
