@@ -114,7 +114,7 @@
     var dates = Object.keys(byDate).sort().reverse();
     var kst = kstToday();
 
-    $("cards").innerHTML = dates.map(function (dt) {
+    $("cards").innerHTML = dates.map(function (dt, i) {
       var list = byDate[dt].slice().sort(function (a, b) {
         return (b.value_eok || 0) - (a.value_eok || 0);   // 거래대금 순
       });
@@ -123,15 +123,40 @@
       // 금요일 카드에 "오늘"이라고 쓰면 거짓말이 된다 (2026-08-09 실측).
       var isRunDate = dt === today;
       var tag = isRunDate ? (dt === kst ? "오늘" : "최근 실행") : "";
+      // 카드 20개 × 종목 10~20개면 400행이라 다 펼쳐두면 못 쓴다.
+      // 최신 카드만 펼치고 나머지는 접는다 (2026-08-09 사용자 지시).
+      var open = i === 0;
+      var lid = "dl-" + dt;
+      var avg = avgLatest(list);
+
       return '<section class="daycard' + (isRunDate ? " today" : "") + '">' +
-        '<div class="dhead">' +
+        '<button class="dhead" type="button" aria-expanded="' + open + '"' +
+          ' aria-controls="' + lid + '">' +
+          '<span class="dchev" aria-hidden="true"></span>' +
           '<span class="ddate">' + esc(mdDow(dt)) + "</span>" +
           (tag ? '<span class="dtag">' + tag + "</span>" : "") +
-          '<span class="dcount">' + list.length + "종목</span>" +
-        "</div>" +
-        '<ul class="dlist">' + list.map(row).join("") + "</ul>" +
+          '<span class="dsum">' +
+            (avg == null ? "" : '<b class="' + cls(avg) + '">' + sign(avg, 1) + "</b>") +
+            '<span class="dcount">' + list.length + "종목</span>" +
+          "</span>" +
+        "</button>" +
+        '<ul class="dlist" id="' + lid + '"' + (open ? "" : " hidden") + ">" +
+        list.map(row).join("") + "</ul>" +
         "</section>";
     }).join("");
+  }
+
+  /** 그날 검출분의 '현재까지' 평균 등락률 — 접힌 카드에서 하루를 한눈에 보려고. */
+  function avgLatest(list) {
+    var vals = [];
+    list.forEach(function (r) {
+      var cp = r.closes_pct || [];
+      for (var i = cp.length - 1; i >= 0; i--) {
+        if (cp[i] != null) { vals.push(cp[i]); break; }
+      }
+    });
+    if (!vals.length) return null;
+    return vals.reduce(function (a, b) { return a + b; }, 0) / vals.length;
   }
 
   function row(r) {
@@ -180,6 +205,18 @@
     }
     return '<div class="perf">' + cells + ext + "</div>";
   }
+
+  // 카드 헤더를 눌러 그날 종목을 펴고 접는다. 위임이라 재렌더에도 살아남는다.
+  // 헤더가 <button> 이라 키보드(Enter/Space)로도 동작한다.
+  $("cards").addEventListener("click", function (e) {
+    var head = e.target.closest(".dhead");
+    if (!head) return;
+    var list = document.getElementById(head.getAttribute("aria-controls"));
+    if (!list) return;
+    var open = head.getAttribute("aria-expanded") === "true";
+    head.setAttribute("aria-expanded", String(!open));
+    list.hidden = open;
+  });
 
   function fail(msg) {
     $("meta").textContent = "불러오기 실패";

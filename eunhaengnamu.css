@@ -35,14 +35,37 @@
 /* 오늘 카드는 테두리로 구분 — 맨 위에 온다 */
 .daycard.today{border-color:var(--gold);background:var(--raised)}
 
-.dhead{display:flex;align-items:center;gap:8px;padding:10px 13px;
-  background:var(--surface-2);border-bottom:1px solid var(--border)}
+/* 카드 헤더 = 접기/펴기 버튼. 20개 카드 × 종목 10~20개라 기본은 접어 둔다. */
+.dhead{display:flex;align-items:center;gap:8px;width:100%;
+  padding:11px 13px;text-align:left;cursor:pointer;
+  appearance:none;-webkit-appearance:none;border:0;border-radius:0;
+  font-family:inherit;color:inherit;
+  background:var(--surface-2);border-bottom:1px solid var(--border);
+  transition:background .12s}
+.dhead:hover{background:var(--raised)}
+.dhead:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 .daycard.today .dhead{background:var(--gold-dim)}
+.daycard.today .dhead:hover{background:var(--gold-dim);filter:brightness(1.15)}
+/* 접힌 카드는 아래 테두리가 필요 없다 */
+.dhead[aria-expanded="false"]{border-bottom-color:transparent}
+
+/* 펼침 표시 — 접힘 ▶ / 펼침 ▼ */
+.dchev{flex:none;width:9px;height:9px;border-right:2px solid var(--faint);
+  border-bottom:2px solid var(--faint);transform:rotate(-45deg);
+  margin:0 1px 2px 0;transition:transform .15s}
+.dhead[aria-expanded="true"] .dchev{transform:rotate(45deg);margin-bottom:4px}
+
 .dhead .ddate{font-family:var(--mono);font-size:13px;font-weight:700;
   color:var(--text);letter-spacing:-.01em}
 .dhead .dtag{font-size:10px;font-weight:800;padding:2px 7px;border-radius:6px;
   background:var(--gold);color:var(--bg);letter-spacing:.02em}
-.dhead .dcount{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--dim)}
+/* 접힌 채로도 그날을 가늠할 수 있게 — 현재까지 평균 등락률 + 종목 수 */
+.dhead .dsum{margin-left:auto;display:flex;align-items:baseline;gap:8px;
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.dhead .dsum b{font-size:12.5px;font-weight:800}
+.dhead .dsum .p{color:var(--up)} .dhead .dsum .n{color:var(--down)}
+.dhead .dsum .z{color:var(--faint)}
+.dhead .dcount{font-size:11.5px;font-weight:700;color:var(--dim)}
 
 .dlist{list-style:none;display:block}
 .drow{padding:9px 13px 10px;border-bottom:1px solid var(--border)}
