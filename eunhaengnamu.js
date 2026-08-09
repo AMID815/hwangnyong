@@ -79,12 +79,14 @@
     //   (2026-08-09: v1 데이터에 "or 갭 10%↑" 가 붙어 나온 버그). 없으면 안 쓴다.
     var c = d.criteria || {};
     var pctTxt = function (v) { return v == null ? "—" : v + "%↑"; };
+    // 갭 임계 0 이하 = 갭 가지 끔(screener.Thresholds 규약). 끈 조건을
+    // "갭 0%↑" 로 적어 두면 켜져 있는 것처럼 읽힌다 — 아예 표시하지 않는다.
+    var gapOn = c.gap_pct != null && c.gap_pct > 0;
     // 큰 글씨(.v)에는 값 하나만 — 카드 폭이 390px에서 93px뿐이라 문장을 넣으면
     // 잘린다(08-03·08-09 실측). 부가 조건은 캡션 줄(.cap)로 내린다.
     $("stats").innerHTML =
       stat("거래대금", c.value_eok == null ? "—" : eok(c.value_eok) + "↑") +
-      stat("기준봉", pctTxt(c.rise_pct),
-           c.gap_pct == null ? "" : "or 갭 " + c.gap_pct + "%↑") +
+      stat("기준봉", pctTxt(c.rise_pct), gapOn ? "or 갭 " + c.gap_pct + "%↑" : "") +
       stat("시가총액", c.mcap_eok == null ? "—" : eok(c.mcap_eok) + "↑",
            "전날 종가 기준");
 
