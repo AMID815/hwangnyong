@@ -13,7 +13,9 @@
     naver_mismatch: "네이버와 캔들 방향 불일치 — 확인 필요",
     naver_unavailable: "네이버 교차검증 생략",
     mac_unit_mismatch: "시가총액 단위 불일치 — 상장주식수 기준으로 대체",
-    ma_off: "이평선 조건 꺼짐 (MA_FILTER=0) — 값 조건만 적용 중"
+    ma_off: "이평선 조건 꺼짐 (MA_FILTER=0) — 값 조건만 적용 중",
+    legacy_spec: "구 조건(v1)으로 만들어진 데이터입니다 — 위 수치는 그때 쓴 값이며, " +
+      "새 조건은 다음 실행부터 반영됩니다"
   };
   var MA_LABEL = { align: "정배열", slope: "기울기", both: "정배열+기울기" };
   var DOW = ["일", "월", "화", "수", "목", "금", "토"];
@@ -72,19 +74,26 @@
       prov.textContent = "✔ " + (d.as_of || "") + " 종가 확정 기준 (정규장 캔들)";
     }
 
+    // ⚠ criteria 는 **그 데이터를 만든 실행이 실제로 쓴 값**이다. 없는 항목에
+    //   기본값을 채워 넣으면 적용되지도 않은 조건을 적용된 것처럼 보여주게 된다
+    //   (2026-08-09: v1 데이터에 "or 갭 10%↑" 가 붙어 나온 버그). 없으면 안 쓴다.
     var c = d.criteria || {};
-    var rise = c.rise_pct != null ? c.rise_pct : 5;
-    var gap = c.gap_pct != null ? c.gap_pct : 10;
+    var pctTxt = function (v) { return v == null ? "—" : v + "%↑"; };
     // 큰 글씨(.v)에는 값 하나만 — 카드 폭이 390px에서 93px뿐이라 문장을 넣으면
     // 잘린다(08-03·08-09 실측). 부가 조건은 캡션 줄(.cap)로 내린다.
     $("stats").innerHTML =
-      stat("거래대금", eok(c.value_eok) + "↑") +
-      stat("기준봉", rise + "%↑", "or 갭 " + gap + "%↑") +
-      stat("시가총액", eok(c.mcap_eok) + "↑", "전날 종가 기준");
+      stat("거래대금", c.value_eok == null ? "—" : eok(c.value_eok) + "↑") +
+      stat("기준봉", pctTxt(c.rise_pct),
+           c.gap_pct == null ? "" : "or 갭 " + c.gap_pct + "%↑") +
+      stat("시가총액", c.mcap_eok == null ? "—" : eok(c.mcap_eok) + "↑",
+           "전날 종가 기준");
 
-    // 이평선 조건이 꺼진 건 설정 이상이다 — 캡션에 묻지 말고 경고로 올린다.
     var warns = (d.warnings || []).slice();
+    // 이평선 조건이 꺼진 건 설정 이상이다 — 캡션에 묻지 말고 경고로 올린다.
     if (c.ma_filter === false) warns.push("ma_off");
+    // 구 조건(v1)으로 만들어진 데이터면 화면 수치가 현재 설정과 다르다.
+    // 표시 오류로 오해하지 않도록 명시한다 — 다음 실행부터 새 조건이 반영된다.
+    if (c.gap_pct == null || c.value_drop_ratio != null) warns.push("legacy_spec");
     $("warns").innerHTML = warns.map(function (w) {
       return "<div>⚠ " + esc(WARN[w] || w) + "</div>";
     }).join("");
@@ -135,8 +144,11 @@
           '<span class="dchev" aria-hidden="true"></span>' +
           '<span class="ddate">' + esc(mdDow(dt)) + "</span>" +
           (tag ? '<span class="dtag">' + tag + "</span>" : "") +
+          // 퍼센트·종목수는 **항상** 자리를 차지한다. 값이 없다고 슬롯을 빼면
+          // 카드마다 숫자 위치가 흔들려 세로로 훑을 수가 없다 (2026-08-09 지시).
           '<span class="dsum">' +
-            (avg == null ? "" : '<b class="' + cls(avg) + '">' + sign(avg, 1) + "</b>") +
+            '<b class="' + (avg == null ? "z" : cls(avg)) + '">' +
+              (avg == null ? "—" : sign(avg, 1)) + "</b>" +
             '<span class="dcount">' + list.length + "종목</span>" +
           "</span>" +
         "</button>" +

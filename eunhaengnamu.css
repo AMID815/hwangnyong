@@ -59,13 +59,20 @@
   color:var(--text);letter-spacing:-.01em}
 .dhead .dtag{font-size:10px;font-weight:800;padding:2px 7px;border-radius:6px;
   background:var(--gold);color:var(--bg);letter-spacing:.02em}
-/* 접힌 채로도 그날을 가늠할 수 있게 — 현재까지 평균 등락률 + 종목 수 */
-.dhead .dsum{margin-left:auto;display:flex;align-items:baseline;gap:8px;
-  font-variant-numeric:tabular-nums;white-space:nowrap}
-.dhead .dsum b{font-size:12.5px;font-weight:800}
+/* 접힌 채로도 그날을 가늠할 수 있게 — 현재까지 평균 등락률 + 종목 수.
+   두 값 모두 **고정폭 우측정렬**이라 카드가 바뀌어도 세로로 줄이 맞는다.
+   슬롯을 비우지 않는 이유: 값이 없다고 빼면 다음 카드의 숫자가 옆으로 밀린다. */
+.dhead .dsum{margin-left:auto;display:flex;align-items:baseline;gap:10px;
+  font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}
+.dhead .dsum b{font-size:12.5px;font-weight:800;
+  min-width:54px;text-align:right}
 .dhead .dsum .p{color:var(--up)} .dhead .dsum .n{color:var(--down)}
 .dhead .dsum .z{color:var(--faint)}
-.dhead .dcount{font-size:11.5px;font-weight:700;color:var(--dim)}
+.dhead .dcount{font-size:11.5px;font-weight:700;color:var(--dim);
+  min-width:44px;text-align:right}
+/* 날짜는 늘어나고 배지는 고정 — 숫자 열이 밀리지 않게 */
+.dhead .ddate{flex:none}
+.dhead .dtag{flex:none}
 
 .dlist{list-style:none;display:block}
 .drow{padding:9px 13px 10px;border-bottom:1px solid var(--border)}
