@@ -28,6 +28,13 @@
     s = String(s || "");
     return s.length === 8 ? s.slice(0, 4) + "-" + s.slice(4, 6) + "-" + s.slice(6) : s;
   }
+  /** 한국 날짜 YYYYMMDD — 브라우저가 어느 시간대에 있든 장 기준으로 판단한다. */
+  function kstToday() {
+    var d = new Date(Date.now() + new Date().getTimezoneOffset() * 60000 + 9 * 3600000);
+    var m = d.getMonth() + 1, dd = d.getDate();
+    return "" + d.getFullYear() + (m < 10 ? "0" : "") + m + (dd < 10 ? "0" : "") + dd;
+  }
+
   function mdDow(s) {
     s = String(s || "");
     if (s.length !== 8) return s;
@@ -105,16 +112,21 @@
       (byDate[r.date] = byDate[r.date] || []).push(r);
     });
     var dates = Object.keys(byDate).sort().reverse();
+    var kst = kstToday();
 
     $("cards").innerHTML = dates.map(function (dt) {
       var list = byDate[dt].slice().sort(function (a, b) {
         return (b.value_eok || 0) - (a.value_eok || 0);   // 거래대금 순
       });
-      var isToday = dt === today;
-      return '<section class="daycard' + (isToday ? " today" : "") + '">' +
+      // 강조는 '이번 실행이 만든 카드'(= 데이터의 실행일)에 준다.
+      // 다만 배지 문구는 실제 날짜와 대조한다 — 주말·휴장에 지난 데이터를 보면서
+      // 금요일 카드에 "오늘"이라고 쓰면 거짓말이 된다 (2026-08-09 실측).
+      var isRunDate = dt === today;
+      var tag = isRunDate ? (dt === kst ? "오늘" : "최근 실행") : "";
+      return '<section class="daycard' + (isRunDate ? " today" : "") + '">' +
         '<div class="dhead">' +
           '<span class="ddate">' + esc(mdDow(dt)) + "</span>" +
-          (isToday ? '<span class="dtag">오늘</span>' : "") +
+          (tag ? '<span class="dtag">' + tag + "</span>" : "") +
           '<span class="dcount">' + list.length + "종목</span>" +
         "</div>" +
         '<ul class="dlist">' + list.map(row).join("") + "</ul>" +
