@@ -1,0 +1,119 @@
+/* 종가베팅 전용 규칙 — style.css(상대강도·눌림베팅과 공유하는 기본 테마)는
+   읽기만 하고 수정하지 않는다. 여기에는 style.css 에 없는 것만 넣는다. */
+
+/* 잠정/확정 배지 — 종가 미확정 상태가 화면에서 흐려지면 안 된다 (항시 노출) */
+.prov{margin-top:10px;padding:7px 10px;border-radius:9px;font-size:11.5px;
+  font-weight:700;letter-spacing:.01em;
+  background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold);
+  display:flex;align-items:center;gap:6px}
+.prov.final{background:#2ecc9a1f;color:var(--new);border-color:var(--new)}
+
+/* 조건 카드 — style.css 의 .stat .v(19px)는 4칸 균등분할에서 잘린다 */
+.stat .v{font-size:14.5px}
+.stat .cap{font-size:9.5px;letter-spacing:-.01em}
+@media (max-width:379px){
+  .stat{padding:8px 6px}
+  .stat .k{font-size:9.5px}
+  .stat .v{font-size:12.5px;letter-spacing:-.03em}
+}
+
+/* 경고 줄 */
+.warns{margin:12px 16px 0;display:flex;flex-direction:column;gap:6px}
+.warns:empty{display:none}
+.warns div{font-size:11.5px;font-weight:600;padding:8px 11px;border-radius:9px;
+  background:var(--loss-dim);color:var(--loss);border:1px solid var(--loss)}
+
+/* ── 섹션 ────────────────────────────────────────────────────────── */
+.sec{margin:14px 12px 0}
+.sec-h{display:flex;align-items:baseline;gap:8px;padding:0 4px 7px}
+.sec-h b{font-size:13.5px;font-weight:800;letter-spacing:-.01em}
+.sec-h .n{font-family:var(--mono);font-size:11.5px;color:var(--faint);font-weight:700}
+.sec-h .hint{margin-left:auto;font-size:10.5px;color:var(--faint)}
+.sec.hot .sec-h b{color:var(--gold)}
+.sec .empty{padding:16px;font-size:12px;color:var(--faint);text-align:center;
+  border:1px dashed var(--border);border-radius:12px;background:var(--surface)}
+
+/* ── 종목 카드 ───────────────────────────────────────────────────── */
+.card{border:1px solid var(--border);border-radius:14px;background:var(--surface);
+  overflow:hidden;box-shadow:var(--shadow);margin-bottom:8px}
+.card.sig{border-color:var(--gold);background:var(--raised)}
+.card.done{opacity:.72}
+
+.chead{display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;
+  text-align:left;cursor:pointer;appearance:none;-webkit-appearance:none;border:0;
+  font-family:inherit;color:inherit;background:var(--surface-2);
+  border-bottom:1px solid var(--border);transition:background .12s}
+.chead:hover{background:var(--raised)}
+.chead:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.chead .nm{font-weight:800;font-size:14.5px;letter-spacing:-.01em;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.chead .cd{font-family:var(--mono);font-size:10.5px;color:var(--faint);flex:none}
+.chead .rt{margin-left:auto;display:flex;align-items:center;gap:6px;flex:none}
+.chead .dn{font-family:var(--mono);font-size:10.5px;color:var(--faint);font-weight:700}
+.chead .arw{font-size:10px;color:var(--faint);transition:transform .15s}
+.card.open .chead .arw{transform:rotate(90deg)}
+
+/* 매수 레벨 — 이 화면의 핵심. 두 하한선과 현재 종가를 나란히 */
+.lv{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border);
+  border-bottom:1px solid var(--border)}
+.lv div{background:var(--surface);padding:8px 9px}
+.card.sig .lv div{background:var(--raised)}
+.lv .k{font-size:9.5px;color:var(--faint);font-weight:700;white-space:nowrap}
+.lv .v{font-size:14px;font-weight:800;font-variant-numeric:tabular-nums;
+  margin-top:2px;white-space:nowrap}
+.lv .v.ok{color:var(--new)} .lv .v.no{color:var(--loss)}
+.lv .v.dim{color:var(--faint);font-size:12px}
+
+/* 기준봉 요약 줄 */
+.bs{padding:8px 12px;font-size:11.5px;color:var(--dim);
+  font-variant-numeric:tabular-nums;border-bottom:1px solid var(--border);
+  display:flex;flex-wrap:wrap;gap:4px 12px}
+.bs b{color:var(--text);font-weight:700}
+.bs .up{color:var(--up);font-weight:700}
+
+/* 관찰 일지 — 접힘 */
+.jn{display:none;padding:2px 0 6px}
+.card.open .jn{display:block}
+.jrow{display:grid;grid-template-columns:52px 30px 1fr auto;gap:8px;
+  align-items:center;padding:6px 12px;font-size:11.5px;
+  font-variant-numeric:tabular-nums;border-top:1px solid var(--border)}
+.jrow:first-child{border-top:0}
+.jrow .d{font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+.jrow .e{font-family:var(--mono);font-size:10px;color:var(--faint);text-align:right}
+.jrow .c{color:var(--dim)}
+.jrow .c b{color:var(--text);font-weight:700}
+.jrow.hit{background:var(--gold-dim)}
+.jrow .fl{display:flex;gap:3px;flex:none}
+
+/* 등락 색 — style.css 에는 .rs.p 형태만 있어 단독 클래스를 여기서 정의한다 */
+.jrow .p{color:var(--up);font-weight:700}
+.jrow .n{color:var(--down);font-weight:700}
+.jrow .z{color:var(--faint)}
+
+/* 진단 수치 줄 — 판정이 아니라 참고값. 캔들 모양과 거래량을 좌우로 분리한다. */
+.jdiag{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;
+  padding:1px 12px 5px 72px;font-size:10.5px;color:var(--faint);
+  font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.jdiag b{color:var(--dim);font-weight:700}
+.jdiag b.over{color:var(--gold)}      /* 기준봉 몸통 위에서 마감 = 눌림이라 보기 어려운 자리 */
+/* 거래량은 아직 조건이 아니라 관찰 수치 — 점선 테두리로 "미적용" 성격을 표시 */
+.jdiag .vol{margin-left:auto;padding:1px 6px;border-radius:6px;
+  border:1px dashed var(--border-2);color:var(--dim);white-space:nowrap}
+.jdiag .vol b{color:var(--text)}
+@media (max-width:379px){
+  .jdiag{padding-left:12px}
+  .jdiag .vol{margin-left:0}
+}
+
+/* 조건 칩 */
+.chip.ok{background:#2ecc9a1f;color:var(--new)}
+.chip.rb{background:var(--up-dim);color:var(--up)}   /* 상승형 음봉(강의 용어) */
+.chip.miss{background:var(--surface-2);color:var(--faint)}
+.chip.warn{background:var(--gold-dim);color:var(--gold)}
+.chip.prov{background:var(--gold-dim);color:var(--gold)}
+.chip.dn{background:var(--down-dim);color:var(--down)}
+
+footer .leg .chip{font-size:10px}
+/* 푸터에서 거래량 표기를 실제 화면과 같은 모양으로 인용 */
+footer .vsample{padding:1px 5px;border-radius:5px;border:1px dashed var(--border-2);
+  color:var(--dim);white-space:nowrap}

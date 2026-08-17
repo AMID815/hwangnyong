@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>종가베팅</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+<!-- style.css 는 상대강도·눌림베팅과 공유하는 기본 테마 — 읽기만 하고 수정하지 않는다.
+     이 페이지 전용 규칙은 jongbae.css 에만 넣는다 (완전 독립 원칙). -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jongbae.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="hrow">
+      <div class="htitle">
+        <div class="eyebrow"><span class="dot"></span>기준봉 · 눌림 음봉</div>
+        <h1>종가베팅</h1>
+        <div class="meta" id="meta">불러오는 중…</div>
+      </div>
+      <!-- 내비 라벨은 짧게 통일 (버튼 3개, 360px에서도 제목과 겹치지 않게) -->
+      <nav class="pagenav" aria-label="페이지 선택">
+        <a href="./">상대강도</a>
+        <a href="./eunhaengnamu.html">눌림</a>
+        <a class="on" href="./jongbae.html" aria-current="page">종배</a>
+      </nav>
+    </div>
+    <div class="prov" id="prov" hidden></div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <main>
+    <div class="warns" id="warns"></div>
+    <div class="notice" id="notice" hidden></div>
+    <div id="sections"></div>
+  </main>
+
+  <!-- ⚠ 조건 수치는 여기 적지 않는다. data-c 스팬을 jongbae.js 가 criteria(그 실행이
+       실제로 쓴 값)로 채운다 — 문구에 숫자를 박으면 .env 를 바꾼 날 화면이 거짓말을
+       한다. 실행 시각도 적지 않는다: 지연 개장일엔 두 실행이 모두 밀리거나 잠정이
+       아예 없다(시장달력_공유노트 §3-1 고정 문구 금지). -->
+  <footer>
+    <div class="leg">
+      <span class="chip ok">음봉</span> 종가 &lt; 시가
+      <span class="chip ok"><span data-c="keep">—</span></span> 기준봉 몸통 보전
+      <span class="chip ok">MA</span> 15분 <span data-c="man">—</span>이평
+      <span data-c="mafloor">—</span>
+      <span class="chip miss">✕</span> 미충족
+      <span class="chip rb">상승형</span> 갭상승 음봉(전일 종가 위 마감)
+      <span class="chip warn">미검증</span> 15분 이평 미확인
+    </div>
+    <b>기준봉</b> = 거래대금 <span data-c="value">—</span>↑ ·
+    종가상승률 <span data-c="rise">—</span>↑ · 시가총액(전날 종가 기준)
+    <span data-c="mcap">—</span>↑ 을 모두 채운 <b>양봉</b>.
+    모든 값은 <b>정규장(KRX)</b> 캔들이다 — 평시 09:00~15:30, 수능 등 운영시간
+    변경일은 그날의 정규장 시간대(예: 10:00~16:30).<br>
+    <b>신호</b> = 기준봉 다음 거래일부터 <b><span data-c="days">—</span>거래일</b> 안에
+    나온 <b>첫 음봉</b> 중 ① 종가가 기준봉 몸통의
+    <b><span data-c="keep2">—</span> 이상</b>을 지키고(시가 8만·종가 10만이면 92,000원↑)
+    ② 종가가 <b>15분봉 <span data-c="man2">—</span>이평의
+    <span data-c="mafloor2">—</span> 이상</b>인 날. 셋을 다 채우면 그 기준봉의 관찰은
+    끝난다(신호 1회). 못 채우면 다음 거래일로 미루고, 창을 넘기면 만료된다.<br>
+    관찰 중 같은 종목에 새 기준봉이 나오면 새 기준으로 다시 센다.
+    <b>장중 잠정치</b>는 종가에 뒤집힐 수 있고, <b>마감 후 확정 실행</b>이 그날의 정본이다.<br>
+    일지의 <span class="vsample">기준봉 대비 거래량</span> 은 <b>아직 판정 조건이
+    아니다</b> — 관찰용으로 기록만 하며, 데이터가 쌓인 뒤 조건 추가를 검토한다.
+    갭·몸통 위치·고점 대비 낙폭도 같은 참고 수치다.
+    <br><br>본 정보는 투자 참고용이며 매매 권유가 아닙니다. 투자 판단과 책임은 본인에게 있습니다.
+  </footer>
+</div>
+<script src="jongbae.js"></script>
+</body>
+</html>
