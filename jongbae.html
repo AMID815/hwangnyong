@@ -20,11 +20,13 @@
         <h1>종가베팅</h1>
         <div class="meta" id="meta">불러오는 중…</div>
       </div>
-      <!-- 내비 라벨은 짧게 통일 (버튼 3개, 360px에서도 제목과 겹치지 않게) -->
-      <nav class="pagenav" aria-label="페이지 선택">
+      <!-- 내비 라벨은 짧게 통일. **자기 버튼(종배)은 넣지 않는다** — 현재 위치는
+           페이지 제목이 이미 알려주고, 360px에서 3버튼이면 내비가 2줄로 접힌다
+           (상대강도 세션 실측·요청 2026-08-17, docs\내비_자기버튼제거_요청.md).
+           style.css 의 .pagenav a.on 규칙은 다른 페이지가 아직 쓰므로 건드리지 않는다. -->
+      <nav class="pagenav" aria-label="다른 페이지">
         <a href="./">상대강도</a>
         <a href="./eunhaengnamu.html">눌림</a>
-        <a class="on" href="./jongbae.html" aria-current="page">종배</a>
       </nav>
     </div>
     <div class="prov" id="prov" hidden></div>
