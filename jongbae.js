@@ -13,6 +13,8 @@
     min15_unavailable: "15분봉 조회 실패 — 일부 종목의 이평 조건 미확인",
     min15_short: "15분봉이 이평 기간에 미달 — 해당 종목은 이평 조건 미확인(조건 미달과 다름)",
     calendar_short: "거래일 달력이 관찰 창보다 짧음 — 신호·만료 확정을 보류했습니다",
+    align_short: "일봉 이력이 21거래일에 미달 — 해당 종목은 정배열 조건 미확인(조건 미달과 다름)",
+    base_volume_missing: "일부 관찰에 기준봉 거래량이 없어 거래량 조건을 확인 못 함 — 그 종목은 신호가 나지 않습니다",
     naver_mismatch: "네이버와 음봉 판정 불일치 — 확인 필요",
     naver_unavailable: "네이버 교차검증 생략"
   };
@@ -95,7 +97,7 @@
     $("sections").innerHTML =
       section(d.provisional ? "신호 후보 (잠정)" : "오늘 신호", sig, "hot",
               d.provisional ? "동시호가 전 판단용 · 종가에 뒤집힐 수 있음"
-                            : "조건 3개를 모두 충족 — 관찰 종료",
+                            : "조건 5개를 모두 충족 — 관찰 종료",
               d.provisional ? "현재 신호 후보 없음" : "오늘 신호 없음") +
       section("관찰 중", watch, "",
               "기준봉 후 " + (c.observe_days == null ? "—" : c.observe_days) +
@@ -124,7 +126,9 @@
       man: c.ma_n == null ? "—" : String(c.ma_n),
       man2: c.ma_n == null ? "—" : String(c.ma_n),
       mafloor: pct(c.ma_floor_pct), mafloor2: pct(c.ma_floor_pct),
-      days: c.observe_days == null ? "—" : String(c.observe_days)
+      days: c.observe_days == null ? "—" : String(c.observe_days),
+      align: (c.ma_align_periods || []).join("·") || "—",
+      vratio: pct(c.vol_ratio_pct), vratio2: pct(c.vol_ratio_pct)
     };
     var nodes = document.querySelectorAll("[data-c]");
     for (var i = 0; i < nodes.length; i++) {
@@ -167,9 +171,10 @@
       }).join("") + "</section>";
   }
 
-  function lvCell(k, v, cls) {
+  function lvCell(k, v, cls, cap) {
     return '<div><div class="k">' + esc(k) + '</div><div class="v ' + cls + '">' +
-      esc(v) + "</div></div>";
+      esc(v) + "</div>" +
+      (cap ? '<div class="cap">' + esc(cap) + "</div>" : "") + "</div>";
   }
 
   /** 매수 레벨 칸의 라벨 — 조건값에서 만든다 (임계값을 바꾸면 라벨도 따라간다). */
@@ -203,7 +208,10 @@
 
       '<div class="lv">' +
       lvCell(keepLabel(), won(base.level60), "") +
-      lvCell(maLabel(), maFloor, "") +
+      lvCell(maLabel(), maFloor, "",
+             last && last.ma100 != null
+               ? (CRIT.ma_n == null ? "이평" : CRIT.ma_n + "이평") + " " + won(last.ma100)
+               : "") +
       lvCell(last && last.provisional ? "현재가(잠정)" : "종가",
              last ? won(last.close) : "—", closeCls) +
       "</div>" +
@@ -236,7 +244,10 @@
       chip(r.bearish, "음봉") +
       chip(r.level_ok, "60%") +
       chip(r.ma_ok, "MA") +
+      chip(r.align_ok, "정배열") +
+      chip(r.vol_ok, "거래량") +
       (r.rising_bear ? '<span class="chip rb">상승형</span>' : "") +
+      (r.align_unverified ? '<span class="chip warn">정배열미확인</span>' : "") +
       (r.ma_unverified ? '<span class="chip warn">MA미검증</span>' : "") +
       (r.window_unverified ? '<span class="chip warn">창미확인</span>' : "") +
       (r.reason === "no_bar" ? '<span class="chip miss">봉없음</span>' : "") +
@@ -263,11 +274,24 @@
       shape.push('몸통 <b class="' + (r.body_pos_pct > 100 ? "over" : "") + '">' +
                  Math.round(r.body_pos_pct) + "%</b>");
     if (r.drop_from_high_pct != null) shape.push("고점대비 " + pct(r.drop_from_high_pct));
+    if (r.ma100 != null)
+      shape.push((CRIT.ma_n == null ? "이평" : CRIT.ma_n + "이평") + " " + won(r.ma100));
 
-    var vol = r.vol_ratio_pct == null
-      ? ""
-      : '<span class="vol">기준봉 대비 거래량 <b>' +
-        Math.round(r.vol_ratio_pct) + "%</b></span>";
+    // 정배열이 어느 분기로 통과했는지 — 배열(3일≥5일)인지 기울기인지
+    if (r.align_by) shape.push("정배열 " + (r.align_by === "level" ? "배열" : "기울기"));
+
+    // **거래량이 판정 조건**(조건⑤), 거래대금은 참고 기록 — 둘은 다른 값이라 나란히 둔다
+    var vparts = [];
+    if (r.vol_ratio_pct != null)
+      vparts.push('<b class="' + (r.vol_ok === false ? "over" : "") + '">거래량 ' +
+                  Math.round(r.vol_ratio_pct) + "%</b>" +
+                  // 잠정은 그 시점까지의 누적이라 실제보다 낮게 나온다(통과 쪽 편향)
+                  (r.vol_partial ? '<span class="pt">(장중 누적)</span>' : ""));
+    if (r.value_ratio_pct != null)
+      vparts.push("대금 " + Math.round(r.value_ratio_pct) + "%");
+    var vol = vparts.length
+      ? '<span class="vol">기준봉 대비 ' + vparts.join(" · ") + "</span>"
+      : "";
 
     if (!shape.length && !vol) return "";
     return '<div class="jdiag">' +
@@ -275,7 +299,11 @@
       vol + "</div>";
   }
 
+  /** 조건 칩 — **3상태**다. true 통과 / false 미달(✕) / null·undefined 미측정(–).
+      조건이 늘기 전에 기록된 일지 행은 새 조건 키가 없어 null 로 온다. 이걸 false 로
+      그리면 "그때 미달이었다"는 거짓말이 된다(판정 자체를 안 한 날이다). */
   function chip(ok, label) {
+    if (ok == null) return '<span class="chip na">–' + esc(label) + "</span>";
     return '<span class="chip ' + (ok ? "ok" : "miss") + '">' +
       (ok ? "" : "✕") + esc(label) + "</span>";
   }

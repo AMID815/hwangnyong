@@ -63,6 +63,9 @@
   margin-top:2px;white-space:nowrap}
 .lv .v.ok{color:var(--new)} .lv .v.no{color:var(--loss)}
 .lv .v.dim{color:var(--faint);font-size:12px}
+/* 레벨 칸 부제 — 하한선 아래에 이평선 원값을 같이 보여준다(HTS 대조용) */
+.lv .cap{font-size:9.5px;color:var(--faint);margin-top:1px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
 
 /* 기준봉 요약 줄 */
 .bs{padding:8px 12px;font-size:11.5px;color:var(--dim);
@@ -100,6 +103,7 @@
 .jdiag .vol{margin-left:auto;padding:1px 6px;border-radius:6px;
   border:1px dashed var(--border-2);color:var(--dim);white-space:nowrap}
 .jdiag .vol b{color:var(--text)}
+.jdiag .vol .pt{color:var(--gold);margin-left:2px}   /* 장중 누적 표시 */
 @media (max-width:379px){
   .jdiag{padding-left:12px}
   .jdiag .vol{margin-left:0}
@@ -109,6 +113,8 @@
 .chip.ok{background:#2ecc9a1f;color:var(--new)}
 .chip.rb{background:var(--up-dim);color:var(--up)}   /* 상승형 음봉(강의 용어) */
 .chip.miss{background:var(--surface-2);color:var(--faint)}
+/* 미측정 — 미달(✕)과 시각적으로 구분한다. 조건이 늘기 전 일지 행이 여기 해당 */
+.chip.na{background:transparent;color:var(--faint);border:1px dashed var(--border-2)}
 .chip.warn{background:var(--gold-dim);color:var(--gold)}
 .chip.prov{background:var(--gold-dim);color:var(--gold)}
 .chip.dn{background:var(--down-dim);color:var(--down)}
