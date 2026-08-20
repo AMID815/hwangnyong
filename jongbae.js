@@ -84,7 +84,8 @@
       stat("기준봉", c.rise_pct == null ? "—" : c.rise_pct + "%↑", "양봉만") +
       stat("시가총액", c.mcap_eok == null ? "—" : eok(c.mcap_eok) + "↑", "전날 종가") +
       stat("눌림 구간",
-           c.level_keep_pct == null ? "—" : c.level_keep_pct + "~100%",
+           (c.level_keep_pct == null || c.level_cap_pct == null) ? "—"
+             : c.level_keep_pct + "~" + c.level_cap_pct + "%",
            c.ma_n == null ? "" : "· " + c.ma_n + "이평 " + c.ma_floor_pct + "%");
 
     $("warns").innerHTML = (d.warnings || []).map(function (w) {
@@ -123,6 +124,7 @@
       rise: pct(c.rise_pct),
       mcap: c.mcap_eok == null ? "—" : eok(c.mcap_eok),
       keep: pct(c.level_keep_pct), keep2: pct(c.level_keep_pct),
+      cap: pct(c.level_cap_pct), cap2: pct(c.level_cap_pct),
       man: c.ma_n == null ? "—" : String(c.ma_n),
       man2: c.ma_n == null ? "—" : String(c.ma_n),
       mafloor: pct(c.ma_floor_pct), mafloor2: pct(c.ma_floor_pct),
@@ -208,7 +210,7 @@
 
       '<div class="lv">' +
       lvCell(keepLabel(), won(base.level60), "",
-             base.close == null ? "" : "상한 " + won(base.close)) +
+             base.cap == null ? "" : "상한 " + won(base.cap)) +
       lvCell(maLabel(), maFloor, "",
              last && last.ma100 != null
                ? (CRIT.ma_n == null ? "이평" : CRIT.ma_n + "이평") + " " + won(last.ma100)
