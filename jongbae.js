@@ -83,9 +83,8 @@
       stat("거래대금", c.value_eok == null ? "—" : eok(c.value_eok) + "↑") +
       stat("기준봉", c.rise_pct == null ? "—" : c.rise_pct + "%↑", "양봉만") +
       stat("시가총액", c.mcap_eok == null ? "—" : eok(c.mcap_eok) + "↑", "전날 종가") +
-      stat("눌림 구간",
-           (c.level_keep_pct == null || c.level_cap_pct == null) ? "—"
-             : c.level_keep_pct + "~" + c.level_cap_pct + "%",
+      stat(c.level_cap_pct == null ? "눌림 하한" : "눌림 구간",
+           c.level_keep_pct == null ? "—" : bandLabel(c),
            c.ma_n == null ? "" : "· " + c.ma_n + "이평 " + c.ma_floor_pct + "%");
 
     $("warns").innerHTML = (d.warnings || []).map(function (w) {
@@ -125,6 +124,13 @@
       mcap: c.mcap_eok == null ? "—" : eok(c.mcap_eok),
       keep: pct(c.level_keep_pct), keep2: pct(c.level_keep_pct),
       cap: pct(c.level_cap_pct), cap2: pct(c.level_cap_pct),
+      band: bandLabel(c),
+      // 설명문의 예시 수치(시가 8만·종가 10만)도 임계값에서 파생한다 —
+      // 본문에 92,000 을 박아 두면 LEVEL_KEEP_PCT 를 바꾼 날 같은 문장 안에서
+      // 앞의 "60%"와 뒤의 금액이 서로를 부정한다.
+      exlo: c.level_keep_pct == null ? "—"
+            : won(EX_OPEN + (c.level_keep_pct / 100) * (EX_CLOSE - EX_OPEN)),
+      exhi: c.level_cap_pct == null ? "—" : won(EX_CLOSE * c.level_cap_pct / 100),
       man: c.ma_n == null ? "—" : String(c.ma_n),
       man2: c.ma_n == null ? "—" : String(c.ma_n),
       mafloor: pct(c.ma_floor_pct), mafloor2: pct(c.ma_floor_pct),
@@ -196,7 +202,7 @@
     var cls = "card" + (isSig ? " sig" : "") +
       (w.status === "expired" || w.status === "renewed" ? " done" : "");
 
-    var closeCls = last ? (last.level_ok && last.ma_ok ? "ok" : "no") : "dim";
+    var closeCls = last ? (levelOk(last, base) && last.ma_ok ? "ok" : "no") : "dim";
     var maFloor = last && last.ma_floor_price != null
       ? won(last.ma_floor_price) : "—";
 
@@ -227,7 +233,8 @@
       "<span>시총 <b>" + eok(base.mcap_eok) + "</b></span>" +
       "</div>" +
 
-      '<div class="jn">' + (jn.length ? jn.map(jrow).join("")
+      '<div class="jn">' + (jn.length
+        ? jn.map(function (r) { return jrow(r, base); }).join("")
         : '<div class="jrow"><span class="c">아직 관찰 기록 없음</span></div>') +
       "</div></div>";
   }
@@ -242,10 +249,10 @@
   /** 일지 한 줄 — 그날 3조건 + 진단 라벨.
       진단 라벨(상승형·갭·몸통위치·고점대비)은 판정에 관여하지 않는다 — 갭상승
       음봉을 자동 배제하지 않고 눈으로 구분하기 위한 표시다(사용자 결정 2026-08-17). */
-  function jrow(r) {
+  function jrow(r, base) {
     var flags =
       chip(r.bearish, "음봉") +
-      chip(r.level_ok, "60%") +
+      chip(levelOk(r, base), bandLabel()) +
       chip(r.ma_ok, "MA") +
       chip(r.align_ok, "정배열") +
       chip(r.vol_ok, "거래량") +
@@ -305,6 +312,37 @@
   /** 조건 칩 — **3상태**다. true 통과 / false 미달(✕) / null·undefined 미측정(–).
       조건이 늘기 전에 기록된 일지 행은 새 조건 키가 없어 null 로 온다. 이걸 false 로
       그리면 "그때 미달이었다"는 거짓말이 된다(판정 자체를 안 한 날이다). */
+  /** 설명문 예시에 쓰는 가상의 기준봉 (시가 8만 → 종가 10만). 예시니까 고정값이지만,
+      거기서 파생되는 보전선·상한 금액은 criteria 로 계산한다. */
+  var EX_OPEN = 80000, EX_CLOSE = 100000;
+
+  /** 조건② 라벨 — 이제 하한·상한 **양방향**이라 "60%"만 쓰면 상한 탈락 행이
+      "하한 미달"로 읽힌다. 범례 칩과 일지 칩이 같은 문자열을 쓰도록 여기서 만든다. */
+  function bandLabel(c) {
+    c = c || CRIT || {};
+    var lo = c.level_keep_pct == null ? "—" : c.level_keep_pct;
+    // 상한을 안 알려주는 구 발행본에서는 **아는 것만** 말한다 — "60~—%" 처럼
+    // 빈칸을 노출하거나, 모르는 상한을 100 으로 추측해 채우지 않는다.
+    if (c.level_cap_pct == null) return lo + "%";
+    return lo + "~" + c.level_cap_pct + "%";
+  }
+
+  /** 그 일지 행이 상한 안인가. **구 발행본 보정용**이다.
+      2026-08-20 이전에 찍힌 행의 level_ok 에는 상한이 안 들어 있어서, 그대로 그리면
+      같은 카드에 "상한 105,000"을 적어 놓고 120,000 을 초록 통과로 표시한다.
+      새 파이썬이 찍은 행은 level_ok 에 이미 상한이 포함돼 있어 이 보정이 no-op 이다.
+      상한을 모르면(base.cap 없음) 건드리지 않는다 — 추측해서 탈락시키지 않는다. */
+  function capOk(r, base) {
+    if (!base || base.cap == null || !r || r.close == null) return true;
+    return r.close <= base.cap;
+  }
+
+  /** 상한까지 반영한 조건② 결과. 미확인(null)은 미확인 그대로 둔다. */
+  function levelOk(r, base) {
+    if (!r || r.level_ok == null) return null;
+    return r.level_ok && capOk(r, base);
+  }
+
   function chip(ok, label) {
     if (ok == null) return '<span class="chip na">–' + esc(label) + "</span>";
     return '<span class="chip ' + (ok ? "ok" : "miss") + '">' +

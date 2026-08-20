@@ -86,7 +86,18 @@
 .jrow .c{color:var(--dim)}
 .jrow .c b{color:var(--text);font-weight:700}
 .jrow.hit{background:var(--gold-dim)}
-.jrow .fl{display:flex;gap:3px;flex:none}
+/* 조건 칩이 5개라 좁은 폭에서 이 트랙이 카드 밖으로 밀려 **거래량·잠정 칩이 통째로
+   잘렸다** (360px 실측: 행 402px vs 카드 안쪽 334px, .card{overflow:hidden} 이라
+   가로 스크롤도 안 생겨 잘린 줄도 몰랐다). wrap 을 허용해 grid auto 트랙이
+   min-content(칩 한 개 폭)까지 줄어들 수 있게 한다. */
+.jrow .fl{display:flex;gap:3px;flex-wrap:wrap;justify-content:flex-end}
+/* wrap 만으로는 부족하다 — grid 의 auto 트랙은 max-content 를 고집해 트랙째 밀려난다
+   (360px 실측: wrap 을 켜도 행 421px). 좁은 폭에서는 칩을 **아래 줄로** 내린다.
+   경계 480px 근거: 최악 행(칩 6개) 421px + 카드 좌우 여백 26px ≒ 447px. */
+@media (max-width:480px){
+  .jrow{grid-template-columns:52px 30px 1fr}
+  .jrow .fl{grid-column:1 / -1;justify-content:flex-end;padding-top:2px}
+}
 
 /* 등락 색 — style.css 에는 .rs.p 형태만 있어 단독 클래스를 여기서 정의한다 */
 .jrow .p{color:var(--up);font-weight:700}
